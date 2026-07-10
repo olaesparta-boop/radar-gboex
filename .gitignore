@@ -1,0 +1,12 @@
+# segredos
+.env
+
+# banco e dados gerados
+radar.db
+dashboard/data.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/

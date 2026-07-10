@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar GBOEX — Monitor de Menções</title>
+  <link rel="icon" href="https://www.gboex.com.br/wp-content/uploads/2025/03/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <header class="hdr">
+    <div class="hdr-in">
+      <span class="logo-lockup"><img class="brand-logo" src="data:image/webp;base64,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" alt="GBOEX"></span>
+      <div class="eyebrow">Previdência e Seguro de Pessoas · desde 1913</div>
+      <h1>Radar <strong>GBOEX</strong></h1>
+      <p>Monitor de notícias, dados e menções — o que falam da marca.</p>
+      <div class="hdr-meta">
+        <span id="generated">—</span>
+        <button id="refresh" title="Recarregar data.json">↻ Atualizar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- abas: Geral + uma por fonte -->
+  <nav class="tabs" id="tabs"></nav>
+
+  <main id="main">
+    <!-- barra de período (filtra tudo) -->
+    <div class="periodbar">
+      <span class="pb-label">Período de análise</span>
+      <div class="pb-seg" id="period" role="tablist">
+        <button class="pb-opt" data-days="30">30 dias</button>
+        <button class="pb-opt" data-days="90">90 dias</button>
+        <button class="pb-opt" data-days="365">12 meses</button>
+        <button class="pb-opt on" data-days="0">Todo o histórico</button>
+      </div>
+    </div>
+
+    <!-- ================= VISÃO GERAL ================= -->
+    <section class="view" id="view-overview">
+      <section class="kpis" id="kpis"></section>
+
+      <section class="grid">
+        <div class="card wide">
+          <h2>Volume e sentimento — <span id="lb">todo o histórico</span></h2>
+          <canvas id="timelineChart" height="90"></canvas>
+        </div>
+        <div class="card">
+          <h2>Sentimento</h2>
+          <canvas id="sentimentChart" height="180"></canvas>
+        </div>
+        <div class="card wide">
+          <h2>Por fonte <span class="hint">(clique para abrir a aba)</span></h2>
+          <div class="src-breakdown" id="sourceBreakdown"></div>
+        </div>
+        <div class="card">
+          <h2>Principais veículos/perfis</h2>
+          <ul class="sources" id="sources"></ul>
+        </div>
+      </section>
+
+      <section class="card alerts" id="alertsCard">
+        <h2>⚠️ Alertas de risco reputacional <span class="pill" id="alertCount">0</span></h2>
+        <div id="alerts"></div>
+      </section>
+
+      <section class="card">
+        <div class="mentions-head">
+          <h2>Menções</h2>
+          <div class="filters">
+            <input type="search" id="q" placeholder="Buscar no texto…" />
+            <select id="fSource"><option value="">Todas as fontes</option></select>
+            <select id="fChannel"><option value="">Todos os canais</option></select>
+            <select id="fSentiment">
+              <option value="">Todos sentimentos</option>
+              <option value="positivo">Positivo</option>
+              <option value="neutro">Neutro</option>
+              <option value="negativo">Negativo</option>
+            </select>
+            <label class="chk"><input type="checkbox" id="fAlert" /> só alertas</label>
+            <button id="clearFilters" title="Limpar filtros">limpar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="mentionsTable">
+            <thead>
+              <tr><th>Data</th><th>Fonte</th><th>Autor/Veículo</th><th>Menção (link)</th><th>Sent.</th></tr>
+            </thead>
+            <tbody id="mentionsBody"></tbody>
+          </table>
+        </div>
+        <p class="muted" id="tableInfo"></p>
+      </section>
+    </section>
+
+    <!-- ================= DASHBOARD POR FONTE ================= -->
+    <section class="view" id="view-source" hidden>
+      <div class="src-hero" id="srcHero"></div>
+
+      <section class="kpis" id="srcKpis"></section>
+
+      <section class="grid">
+        <div class="card wide">
+          <h2>Volume e sentimento — <span class="src-lb">todo o histórico</span></h2>
+          <canvas id="srcTimelineChart" height="90"></canvas>
+        </div>
+        <div class="card">
+          <h2>Sentimento</h2>
+          <canvas id="srcSentimentChart" height="180"></canvas>
+        </div>
+        <div class="card">
+          <h2 id="srcTopTitle">Principais autores/perfis</h2>
+          <ul class="sources" id="srcTop"></ul>
+        </div>
+        <div class="card wide">
+          <h2>Destaques negativos</h2>
+          <div id="srcNeg"></div>
+        </div>
+      </section>
+
+      <!-- painel exclusivo do Reclame Aqui -->
+      <section class="card" id="srcRAcard" hidden>
+        <h2>Principais problemas — Reclame Aqui <span class="hint">(clique num tema para filtrar)</span></h2>
+        <div class="ra-stats" id="raStats"></div>
+        <div class="ra-problems" id="raProblems"></div>
+      </section>
+
+      <section class="card">
+        <div class="mentions-head">
+          <h2 id="srcMentionsTitle">Menções</h2>
+          <div class="filters">
+            <input type="search" id="srcQ" placeholder="Buscar no texto…" />
+            <select id="srcFSentiment">
+              <option value="">Todos sentimentos</option>
+              <option value="positivo">Positivo</option>
+              <option value="neutro">Neutro</option>
+              <option value="negativo">Negativo</option>
+            </select>
+            <label class="chk"><input type="checkbox" id="srcFAlert" /> só alertas</label>
+            <button id="srcClear" title="Limpar filtros">limpar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Autor/Veículo</th><th>Menção (link)</th><th>Sent.</th></tr>
+            </thead>
+            <tbody id="srcMentionsBody"></tbody>
+          </table>
+        </div>
+        <p class="muted" id="srcTableInfo"></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    Radar <strong>GBOEX</strong> · Grêmio Beneficente, entidade de previdência e seguro de pessoas desde 1913 ·
+    dados gerados por <code>main.py</code> · atualize com <code>python main.py</code>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
