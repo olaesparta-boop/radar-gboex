@@ -21,7 +21,7 @@ def main() -> int:
 
     conn = sqlite3.connect(str(config.DB_PATH))
     conn.row_factory = sqlite3.Row
-    rows = [dict(r) for r in conn.execute("SELECT id, title, text, is_alert FROM mentions")]
+    rows = [dict(r) for r in conn.execute("SELECT id, title, text FROM mentions")]
     print(f"  {len(rows)} menções no banco…")
 
     blobs = [f"{r['title']}. {r.get('text') or ''}".strip() for r in rows]
@@ -29,10 +29,10 @@ def main() -> int:
 
     cur = conn.cursor()
     mudou = 0
-    for r, (label, score, alert) in zip(rows, results):
+    for r, (label, score) in zip(rows, results):
         cur.execute(
-            "UPDATE mentions SET sentiment=?, sentiment_score=?, is_alert=? WHERE id=?",
-            (label, score, int(bool(alert or r["is_alert"])), r["id"]),
+            "UPDATE mentions SET sentiment=?, sentiment_score=? WHERE id=?",
+            (label, score, r["id"]),
         )
         mudou += 1
     conn.commit()

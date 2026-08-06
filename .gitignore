@@ -1,9 +1,15 @@
 # segredos
 .env
 
-# banco e dados gerados
+# banco local (e backups) — não vai para o GitHub
 radar.db
-dashboard/data.json
+radar.db.*
+
+# dashboard/data.json É versionado de propósito:
+# é ele que alimenta o painel publicado no GitHub Pages.
+
+# configurações locais do Claude Code (permissões desta máquina)
+.claude/settings.local.json
 
 # python
 __pycache__/

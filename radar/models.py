@@ -30,7 +30,6 @@ class Mention:
     sentiment: str = "neutro"   # "positivo" | "neutro" | "negativo"
     sentiment_score: float = 0.0  # -1.0 .. +1.0
     is_owned: bool = False      # True se veio de canal oficial do GBOEX
-    is_alert: bool = False      # True se casa com termos de risco (golpe, processo, etc.)
     # metadados
     collected_at: str = field(default_factory=_now_iso)
     raw_id: str = ""            # id no sistema de origem, se houver

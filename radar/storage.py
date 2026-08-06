@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS mentions (
     sentiment       TEXT,
     sentiment_score REAL,
     is_owned        INTEGER,
-    is_alert        INTEGER,
     collected_at    TEXT,
     raw_id          TEXT
 );
@@ -55,11 +54,11 @@ class Storage:
                 """INSERT OR IGNORE INTO mentions
                    (id, source, channel, title, url, text, author, domain,
                     language, published_at, sentiment, sentiment_score,
-                    is_owned, is_alert, collected_at, raw_id)
+                    is_owned, collected_at, raw_id)
                    VALUES (:id,:source,:channel,:title,:url,:text,:author,:domain,
                     :language,:published_at,:sentiment,:sentiment_score,
-                    :is_owned,:is_alert,:collected_at,:raw_id)""",
-                {**d, "is_owned": int(d["is_owned"]), "is_alert": int(d["is_alert"])},
+                    :is_owned,:collected_at,:raw_id)""",
+                {**d, "is_owned": int(d["is_owned"])},
             )
             novas += cur.rowcount
         self._conn.commit()

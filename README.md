@@ -3,11 +3,11 @@
 Monitor de **notícias, dados e menções sobre a marca GBOEX** — o que a imprensa,
 clientes, corretores e o público falam *sobre* o GBOEX (não o que o GBOEX publica).
 
-Coleta de várias fontes → análise de sentimento e alertas → dashboard web.
+Coleta de várias fontes → análise de sentimento → dashboard web.
 
 ```
 Google News ┐
-GDELT       ├─► coleta (Python) ─► sentimento/alerta ─► SQLite ─► data.json ─► 📊 dashboard
+GDELT       ├─► coleta (Python) ─► sentimento ─► SQLite ─► data.json ─► 📊 dashboard
 Reclame Aqui├
 Redes (Apify)┘
 ```
@@ -81,8 +81,8 @@ classificada pelo Claude (`SENTIMENT_MODEL`, padrão Haiku).
 - `QUERIES` — termos de busca. `NEGATIVE_FILTERS` — termos que descartam ruído.
 - `LOOKBACK_DAYS` — janela de coleta (padrão 30 dias).
 - `OWNED_DOMAINS` — domínios oficiais do GBOEX (marcados como contexto).
-- Termos de **alerta** (golpe, fraude, processo, Procon…) em
-  `radar/sentiment.py → _ALERT_TERMS`.
+- Léxico de sentimento (termos positivos/negativos) em
+  `radar/sentiment.py → _POS` / `_NEG`.
 
 ---
 
@@ -96,8 +96,8 @@ Nó **Schedule Trigger** (ex.: a cada 6h) → nó **Execute Command**:
 python C:\Users\Rodrigo\Desktop\Radar_GBOEX\main.py
 ```
 Opcional: um segundo **Execute Command** publicando `dashboard/` num host, ou um
-nó de e-mail lendo `data.json` para enviar resumo. (O `data.json` já traz KPIs,
-alertas e a lista pronta.)
+nó de e-mail lendo `data.json` para enviar resumo. (O `data.json` já traz KPIs
+e a lista pronta.)
 
 ### Opção B — Agendador de Tarefas do Windows
 Crie uma tarefa que executa, no diretório do projeto:
@@ -124,7 +124,7 @@ Radar_GBOEX/
 ├── radar/
 │   ├── models.py      # Mention (modelo unificado)
 │   ├── storage.py     # SQLite + deduplicação
-│   ├── sentiment.py   # léxico PT-BR + IA opcional + alertas
+│   ├── sentiment.py   # léxico PT-BR + IA opcional
 │   ├── pipeline.py    # enriquecimento
 │   ├── export.py      # agregações → data.json
 │   └── collectors/    # google_news, gdelt, gboex_site, reclame_aqui, apify_social
@@ -150,7 +150,7 @@ Radar_GBOEX/
 
 Total atual: **132 menções de terceiros** (Instagram 46 · Reclame Aqui 40 · Facebook 32
 · Notícias 13 · YouTube 1).
-- ✅ Sentimento léxico, alertas, dedup, filtro anti-ruído, dashboard: funcionando.
+- ✅ Sentimento léxico, dedup, filtro anti-ruído, dashboard: funcionando.
 
 ### Custo Apify (plano FREE ~US$5/mês)
 Rodar Instagram+YouTube+Reclame Aqui a cada 6h consome crédito. Para produção:

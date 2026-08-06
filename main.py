@@ -1,7 +1,7 @@
 """
 Radar GBOEX — orquestrador.
 
-Fluxo: coleta (todas as fontes) → enriquece (sentimento/alerta) →
+Fluxo: coleta (todas as fontes) → enriquece (sentimento) →
 grava no SQLite (dedup) → exporta data.json para o dashboard.
 
 Uso:
@@ -60,7 +60,7 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
     if not all_mentions:
         print("\nNenhuma menção coletada. Verifique conexão/chaves.\n")
 
-    print(f"\n== Enriquecendo {len(all_mentions)} menções (sentimento/alerta) ==")
+    print(f"\n== Enriquecendo {len(all_mentions)} menções (sentimento) ==")
     pipeline.enrich(all_mentions)
 
     store = Storage(config.DB_PATH)

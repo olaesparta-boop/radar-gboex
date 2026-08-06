@@ -108,24 +108,22 @@ function overviewData() {
   const bsd = {};
   ext.forEach(m => {
     const d = bsd[m.source] || (bsd[m.source] =
-      { total: 0, positivo: 0, neutro: 0, negativo: 0, alerts: 0 });
-    d.total++; d[m.sentiment] = (d[m.sentiment] || 0) + 1; if (m.is_alert) d.alerts++;
+      { total: 0, positivo: 0, neutro: 0, negativo: 0 });
+    d.total++; d[m.sentiment] = (d[m.sentiment] || 0) + 1;
   });
   const by_source_detail = Object.fromEntries(
     Object.entries(bsd).sort((a, b) => b[1].total - a[1].total));
   const bySrc = {};
   ext.forEach(m => { const k = m.author || m.domain || m.source; bySrc[k] = (bySrc[k] || 0) + 1; });
   const top_sources = Object.entries(bySrc).sort((a, b) => b[1] - a[1]).slice(0, 12);
-  const alerts = DATA.mentions.filter(m => m.is_alert && withinPeriod(m))
-    .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || "")).slice(0, 50);
   const sources = new Set(ext.map(m => m.author || m.domain || m.source)).size;
   return {
     kpis: {
       total_mentions: g.total, positivo: g.positivo, neutro: g.neutro, negativo: g.negativo,
-      net_sentiment: g.net, alerts: alerts.length, sources, ra_score: DATA.kpis.ra_score,
+      net_sentiment: g.net, sources, ra_score: DATA.kpis.ra_score,
     },
     by_sentiment: { positivo: g.positivo, neutro: g.neutro, negativo: g.negativo },
-    by_source_detail, top_sources, timeline: g.timeline, alerts,
+    by_source_detail, top_sources, timeline: g.timeline,
   };
 }
 
@@ -157,7 +155,6 @@ function renderAll() {
   renderSentiment(OV.by_sentiment);
   renderSourceBreakdown(OV.by_source_detail);
   renderSources(OV.top_sources);
-  renderAlerts(OV.alerts);
   renderTable();
 
   // mantém a aba atual se a fonte ainda tiver dados no período
@@ -178,7 +175,6 @@ function buildTabs() {
     tabs.push(
       `<button class="tab" data-tab="${src}">${srcIcon(src)} ${srcLabel(src)}
          <span class="tab-n">${v.total}</span>
-         ${v.alerts ? `<span class="tab-alert" title="${v.alerts} alerta(s)">⚠${v.alerts}</span>` : ""}
        </button>`);
   }
   nav.innerHTML = tabs.join("");
@@ -209,9 +205,9 @@ function kpi(label, value, cls = "", sub = "", act = "") {
 function renderKpis(k) {
   const html = [
     kpi("Menções (terceiros)", k.total_mentions, "", `${k.sources} fontes distintas`, "all"),
-    kpi("Positivas", k.positivo, "pos", "", "s:positivo"),
-    kpi("Negativas", k.negativo, "neg", "", "s:negativo"),
-    kpi("Alertas", k.alerts, k.alerts > 0 ? "warn" : "", "risco reputacional", "alert"),
+    kpi("Positivas", k.positivo, "pos", pct(k.positivo, k.total_mentions), "s:positivo"),
+    kpi("Neutras", k.neutro, "", pct(k.neutro, k.total_mentions), "s:neutro"),
+    kpi("Negativas", k.negativo, "neg", pct(k.negativo, k.total_mentions), "s:negativo"),
   ].join("");
   const box = document.getElementById("kpis");
   box.innerHTML = html;
@@ -221,11 +217,9 @@ function renderKpis(k) {
 
 function applyOverviewKpi(act) {
   ["q", "fSource", "fChannel", "fSentiment"].forEach(id => document.getElementById(id).value = "");
-  document.getElementById("fAlert").checked = false;
   OV_DATE = null;
   OV_EXTERNAL = true; // os KPIs contam terceiros → a tabela reflete só terceiros
-  if (act === "alert") document.getElementById("fAlert").checked = true;
-  else if (act && act.startsWith("s:")) document.getElementById("fSentiment").value = act.slice(2);
+  if (act && act.startsWith("s:")) document.getElementById("fSentiment").value = act.slice(2);
   renderTable();
   focusTable("mentionsTable");
 }
@@ -263,7 +257,7 @@ function renderSourceBreakdown(detail) {
       <div class="src-row" data-src="${src}" title="Abrir dashboard de ${srcLabel(src)}">
         <div class="src-head">
           <span class="src-name">${srcIcon(src)} ${srcLabel(src)}</span>
-          <span class="src-total">${v.total}${v.alerts ? ` <span class="src-alert">⚠${v.alerts}</span>` : ""}</span>
+          <span class="src-total">${v.total}</span>
         </div>
         <div class="src-bar" style="width:${w}%">
           <span style="width:${p(v.positivo)}%" class="b-pos"></span>
@@ -288,28 +282,13 @@ function renderSources(top) {
   }));
 }
 
-function renderAlerts(alerts) {
-  document.getElementById("alertCount").textContent = alerts.length;
-  const box = document.getElementById("alerts");
-  if (!alerts.length) {
-    box.innerHTML = `<p class="muted">Nenhum alerta no período. 👍</p>`;
-    return;
-  }
-  box.innerHTML = alerts.map(a => `
-    <div class="alert-item">
-      <a href="${a.url}" target="_blank" rel="noopener">${esc(a.title)}</a>
-      <div class="src">${fmtDate(a.published_at)} · ${srcIcon(a.source)} ${esc(a.author || a.domain || srcLabel(a.source))}</div>
-    </div>`).join("");
-}
-
 /* ---------------- DASHBOARD POR FONTE ---------------- */
 function aggregate(rows) {
-  const g = { total: rows.length, positivo: 0, neutro: 0, negativo: 0, alerts: 0 };
+  const g = { total: rows.length, positivo: 0, neutro: 0, negativo: 0 };
   const daily = {};
   const byAuthor = {};
   for (const m of rows) {
     g[m.sentiment] = (g[m.sentiment] || 0) + 1;
-    if (m.is_alert) g.alerts++;
     const day = (m.published_at || "").slice(0, 10);
     (daily[day] ||= { total: 0, positivo: 0, neutro: 0, negativo: 0 });
     daily[day].total++;
@@ -346,7 +325,6 @@ function renderSourceDashboard(src) {
     kpi("Positivas", g.positivo, "pos", pct(g.positivo, g.total), "s:positivo"),
     kpi("Neutras", g.neutro, "", pct(g.neutro, g.total), "s:neutro"),
     kpi("Negativas", g.negativo, "neg", pct(g.negativo, g.total), "s:negativo"),
-    kpi("Alertas", g.alerts, g.alerts > 0 ? "warn" : "", "risco reputacional", "alert"),
   ].join("");
   skBox.querySelectorAll(".kpi-click").forEach(el =>
     el.addEventListener("click", () => applySourceKpi(el.dataset.act)));
@@ -382,7 +360,7 @@ function renderSourceDashboard(src) {
     .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || "")).slice(0, 6);
   document.getElementById("srcNeg").innerHTML = negs.length
     ? negs.map(m => `
-      <div class="alert-item neg-item">
+      <div class="hl-item neg-item">
         <a href="${m.url}" target="_blank" rel="noopener">${esc(m.title)}</a>
         <div class="src">${fmtDate(m.published_at)} · ${esc(m.author || m.domain || "—")}</div>
       </div>`).join("")
@@ -445,11 +423,9 @@ function pct(n, total) { return total ? `${(n / total * 100).toFixed(0)}%` : "0%
 function applySourceKpi(act) {
   document.getElementById("srcQ").value = "";
   document.getElementById("srcFSentiment").value = "";
-  document.getElementById("srcFAlert").checked = false;
   SRC_DATE = null; SRC_THEME = null;
   if (!document.getElementById("srcRAcard").hidden) renderRAProblems(SRC_ROWS);
-  if (act === "alert") document.getElementById("srcFAlert").checked = true;
-  else if (act && act.startsWith("s:")) document.getElementById("srcFSentiment").value = act.slice(2);
+  if (act && act.startsWith("s:")) document.getElementById("srcFSentiment").value = act.slice(2);
   renderSourceTable(SRC_ROWS);
   focusTable("srcMentionsTitle");
 }
@@ -457,14 +433,13 @@ function applySourceKpi(act) {
 let SRC_ROWS = [];
 function setupSourceFilters(rows) {
   SRC_ROWS = rows;
-  ["srcQ", "srcFSentiment", "srcFAlert"].forEach(id => {
+  ["srcQ", "srcFSentiment"].forEach(id => {
     const el = document.getElementById(id);
     el.oninput = () => renderSourceTable(SRC_ROWS);
   });
   document.getElementById("srcClear").onclick = () => {
     document.getElementById("srcQ").value = "";
     document.getElementById("srcFSentiment").value = "";
-    document.getElementById("srcFAlert").checked = false;
     SRC_DATE = null; SRC_THEME = null;
     if (!document.getElementById("srcRAcard").hidden) renderRAProblems(SRC_ROWS);
     renderSourceTable(SRC_ROWS);
@@ -474,12 +449,10 @@ function setupSourceFilters(rows) {
 function renderSourceTable(rows) {
   const q = document.getElementById("srcQ").value.toLowerCase();
   const se = document.getElementById("srcFSentiment").value;
-  const onlyAlert = document.getElementById("srcFAlert").checked;
 
   const theme = SRC_THEME ? RA_THEMES.find(t => t.key === SRC_THEME) : null;
   const filtered = rows.filter(m => {
     if (se && m.sentiment !== se) return false;
-    if (onlyAlert && !m.is_alert) return false;
     if (SRC_DATE && (m.published_at || "").slice(0, 10) !== SRC_DATE) return false;
     if (theme && !matchTheme(m, theme)) return false;
     if (q && !((m.title + " " + (m.text || "") + " " + (m.author || "")).toLowerCase().includes(q))) return false;
@@ -491,7 +464,7 @@ function renderSourceTable(rows) {
       <td class="date">${fmtDate(m.published_at)}</td>
       <td>${esc(m.author || m.domain || "—")}</td>
       <td><a href="${m.url}" target="_blank" rel="noopener">${esc(m.title)}</a></td>
-      <td><span class="s-${m.sentiment}" title="${m.sentiment}">●</span> ${m.is_alert ? '<span class="badge-alert" title="alerta">⚠</span>' : ""}</td>
+      <td><span class="s-${m.sentiment}" title="${m.sentiment}">●</span></td>
     </tr>`).join("") ||
     `<tr><td colspan="4" class="empty">Nenhuma menção com esses filtros.</td></tr>`;
 
@@ -590,12 +563,11 @@ function setupFilters(d) {
     o.value = c; o.textContent = CHANNEL_LABEL[c] || c;
     chSel.appendChild(o);
   });
-  ["q", "fSource", "fChannel", "fSentiment", "fAlert"].forEach(id =>
+  ["q", "fSource", "fChannel", "fSentiment"].forEach(id =>
     document.getElementById(id).oninput = renderTable);
   document.getElementById("refresh").onclick = load;
   document.getElementById("clearFilters").onclick = () => {
     ["q", "fSource", "fChannel", "fSentiment"].forEach(id => document.getElementById(id).value = "");
-    document.getElementById("fAlert").checked = false;
     OV_DATE = null; OV_EXTERNAL = false;
     renderTable();
   };
@@ -606,7 +578,6 @@ function renderTable() {
   const src = document.getElementById("fSource").value;
   const ch = document.getElementById("fChannel").value;
   const se = document.getElementById("fSentiment").value;
-  const onlyAlert = document.getElementById("fAlert").checked;
 
   const rows = DATA.mentions.filter(m => {
     if (!withinPeriod(m)) return false;
@@ -614,7 +585,6 @@ function renderTable() {
     if (src && m.source !== src) return false;
     if (ch && m.channel !== ch) return false;
     if (se && m.sentiment !== se) return false;
-    if (onlyAlert && !m.is_alert) return false;
     if (OV_DATE && (m.published_at || "").slice(0, 10) !== OV_DATE) return false;
     if (q && !((m.title + " " + (m.text || "") + " " + (m.author || "")).toLowerCase().includes(q))) return false;
     return true;
@@ -627,7 +597,7 @@ function renderTable() {
       <td><span class="tag src-tag">${srcIcon(m.source)} ${srcLabel(m.source)}</span></td>
       <td>${esc(m.author || m.domain || "—")}${m.is_owned ? ' <span class="muted">(oficial)</span>' : ""}</td>
       <td><a href="${m.url}" target="_blank" rel="noopener">${esc(m.title)}</a></td>
-      <td><span class="s-${m.sentiment}" title="${m.sentiment}">●</span> ${m.is_alert ? '<span class="badge-alert" title="alerta">⚠</span>' : ""}</td>
+      <td><span class="s-${m.sentiment}" title="${m.sentiment}">●</span></td>
     </tr>`).join("") ||
     `<tr><td colspan="5" class="empty">Nenhuma menção com esses filtros.</td></tr>`;
 

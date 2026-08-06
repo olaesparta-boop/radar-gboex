@@ -2,7 +2,7 @@
 Gera o data.json que alimenta o dashboard.
 
 Faz as agregações que o painel precisa: totais, série temporal, distribuição
-por canal e por sentimento, principais veículos, alertas e lista de menções.
+por canal e por sentimento, principais veículos e lista de menções.
 """
 from __future__ import annotations
 
@@ -69,11 +69,9 @@ def build_payload(rows: list[dict]) -> dict:
     for r in external:
         s = r["source"]
         d = by_source_detail.setdefault(
-            s, {"total": 0, "positivo": 0, "neutro": 0, "negativo": 0, "alerts": 0})
+            s, {"total": 0, "positivo": 0, "neutro": 0, "negativo": 0})
         d["total"] += 1
         d[r["sentiment"]] = d.get(r["sentiment"], 0) + 1
-        if r["is_alert"]:
-            d["alerts"] += 1
     # ordena por volume
     by_source_detail = dict(
         sorted(by_source_detail.items(), key=lambda kv: kv[1]["total"], reverse=True))
@@ -85,9 +83,6 @@ def build_payload(rows: list[dict]) -> dict:
         d["total"] += 1
         d[r["sentiment"]] = d.get(r["sentiment"], 0) + 1
     timeline = [{"date": k, **v} for k, v in sorted(daily.items())]
-
-    alerts = [r for r in rows if r["is_alert"]]
-    alerts.sort(key=lambda r: r["published_at"], reverse=True)
 
     # score de reputação, se o Reclame Aqui trouxe
     ra_score = next((r for r in rows if r["channel"] == "indicador"), None)
@@ -113,7 +108,6 @@ def build_payload(rows: list[dict]) -> dict:
             "neutro": by_sentiment.get("neutro", 0),
             "negativo": neg,
             "net_sentiment": net,
-            "alerts": len(alerts),
             "sources": len(by_source),
             "ra_score": ra_score["title"] if ra_score else None,
         },
@@ -122,7 +116,6 @@ def build_payload(rows: list[dict]) -> dict:
         "by_source_detail": by_source_detail,
         "top_sources": by_source.most_common(12),
         "timeline": timeline,
-        "alerts": alerts[:50],
         "mentions": recent,
     }
 

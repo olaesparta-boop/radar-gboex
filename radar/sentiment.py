@@ -5,8 +5,7 @@ Estratégia em duas camadas:
   1. Léxico embutido (offline, sem custo, sem chave) — padrão.
   2. Se ANTHROPIC_API_KEY estiver setada, usa Claude para maior precisão.
 
-Também detecta ALERTAS: termos que sugerem risco reputacional (golpe,
-fraude, processo, não paga, etc.) — independentemente do sentimento.
+A classificação é a única saída: positivo | neutro | negativo (+ score).
 """
 from __future__ import annotations
 
@@ -39,14 +38,6 @@ _NEG = {
     "nao resolve", "nao resolveu", "descumpriu", "irregular", "raiva",
 }
 _NEGATORS = {"nao", "nunca", "jamais", "nem", "sem"}
-
-# --- termos que disparam ALERTA (risco reputacional / crise) ------------------
-_ALERT_TERMS = [
-    "golpe", "fraude", "estelionato", "processo", "processar", "justica",
-    "procon", "reclame aqui", "nao paga", "nao pagou", "calote", "roubo",
-    "pilantra", "denuncia", "denunc", "crime", "liminar", "acao judicial",
-    "falencia", "falir", "liquidacao", "susep", "cancelamento em massa",
-]
 
 
 def _strip_accents(s: str) -> str:
@@ -94,11 +85,6 @@ def _lexicon_score(text: str) -> tuple[str, float]:
     return label, round(s, 3)
 
 
-def detect_alert(text: str) -> bool:
-    norm = _normalize(text)
-    return any(term in norm for term in _ALERT_TERMS)
-
-
 # --- camada opcional com Claude ----------------------------------------------
 def _llm_score(text: str) -> Optional[tuple[str, float]]:
     if not config.ANTHROPIC_API_KEY:
@@ -136,12 +122,9 @@ def _llm_score(text: str) -> Optional[tuple[str, float]]:
         return None  # qualquer falha cai no léxico
 
 
-def analyze(text: str) -> tuple[str, float, bool]:
-    """Retorna (sentimento, score, is_alert)."""
-    alert = detect_alert(text)
-    result = _llm_score(text) or _lexicon_score(text)
-    label, score = result
-    return label, score, alert
+def analyze(text: str) -> tuple[str, float]:
+    """Retorna (sentimento, score)."""
+    return _llm_score(text) or _lexicon_score(text)
 
 
 # --- classificação em LOTE com Claude (rápida e barata) -----------------------
@@ -198,14 +181,14 @@ def _llm_score_batch(texts: list[str]) -> Optional[list[Optional[tuple[str, floa
         return None
 
 
-def analyze_batch(texts: list[str]) -> list[tuple[str, float, bool]]:
-    """(sentimento, score, is_alert) para cada texto. Usa Claude em lote quando
-    há chave; cai no léxico item a item quando não há ou em qualquer falha."""
-    out: list[tuple[str, float, bool]] = [("neutro", 0.0, False)] * len(texts)
+def analyze_batch(texts: list[str]) -> list[tuple[str, float]]:
+    """(sentimento, score) para cada texto. Usa Claude em lote quando há chave;
+    cai no léxico item a item quando não há ou em qualquer falha."""
+    out: list[tuple[str, float]] = [("neutro", 0.0)] * len(texts)
     for start in range(0, len(texts), _BATCH):
         chunk = texts[start:start + _BATCH]
         llm = _llm_score_batch(chunk)
         for j, t in enumerate(chunk):
             res = (llm[j] if llm and llm[j] else None) or _lexicon_score(t)
-            out[start + j] = (res[0], res[1], detect_alert(t))
+            out[start + j] = (res[0], res[1])
     return out
