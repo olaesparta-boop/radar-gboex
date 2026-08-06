@@ -44,6 +44,32 @@ Rodar de novo só adiciona o que é novo (deduplicação automática por URL).
 
 ---
 
+## 2.1 Painel publicado (GitHub Pages)
+
+O dashboard também fica no ar, **público**, em:
+
+**<https://olaesparta-boop.github.io/radar-gboex/>**
+
+Para atualizar o painel publicado depois de uma coleta:
+
+```bash
+python main.py                          # gera o dashboard/data.json novo
+git add dashboard/data.json
+git commit -m "dados: atualiza radar"
+git push
+```
+
+O push dispara o workflow `.github/workflows/pages.yml`, que republica a pasta
+`dashboard/` em ~1 minuto. O banco (`radar.db`) e o `.env` **não** vão para o
+GitHub — só o `data.json`, que é o que o painel lê.
+
+> ⚠️ O site é público e o `data.json` contém o texto das reclamações e os
+> perfis/autores das menções. Se isso precisar deixar de ser aberto, o caminho é
+> tornar o repositório privado (Pages privado exige plano pago) ou migrar a
+> hospedagem para um serviço com proteção por senha.
+
+---
+
 ## 3. Fontes e o que cada uma exige
 
 | Collector       | Fonte                          | Chave? | Observação |
