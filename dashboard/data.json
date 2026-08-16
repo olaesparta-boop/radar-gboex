@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-06T17:32:00.536654+00:00",
+  "generated_at": "2026-08-16T23:53:15.817022+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 300,
-    "positivo": 152,
-    "neutro": 57,
+    "total_mentions": 305,
+    "positivo": 154,
+    "neutro": 60,
     "negativo": 91,
-    "net_sentiment": 20.3,
-    "sources": 137,
+    "net_sentiment": 20.7,
+    "sources": 138,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
+    "noticia": 28,
     "social": 221,
-    "reclamacao": 56,
-    "noticia": 23
+    "reclamacao": 56
   },
   "by_sentiment": {
-    "neutro": 57,
-    "positivo": 152,
+    "positivo": 154,
+    "neutro": 60,
     "negativo": 91
   },
   "by_source_detail": {
@@ -47,9 +47,9 @@
       "negativo": 2
     },
     "google_news": {
-      "total": 23,
-      "positivo": 9,
-      "neutro": 14,
+      "total": 28,
+      "positivo": 11,
+      "neutro": 17,
       "negativo": 0
     },
     "youtube": {
@@ -65,11 +65,15 @@
       56
     ],
     [
+      "SEGS Portal Nacional",
+      6
+    ],
+    [
       "Sonho Seguro",
       5
     ],
     [
-      "SEGS Portal Nacional",
+      "Consumidor RS",
       4
     ],
     [
@@ -102,10 +106,6 @@
     ],
     [
       "mariolescano",
-      3
-    ],
-    [
-      "Estela de Moura Rey",
       3
     ]
   ],
@@ -300,6 +300,13 @@
       "negativo": 0
     },
     {
+      "date": "2019-04-02",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
+      "negativo": 0
+    },
+    {
       "date": "2019-04-07",
       "total": 3,
       "positivo": 3,
@@ -468,6 +475,13 @@
       "negativo": 0
     },
     {
+      "date": "2025-05-23",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
       "date": "2025-07-24",
       "total": 1,
       "positivo": 0,
@@ -476,9 +490,9 @@
     },
     {
       "date": "2025-08-29",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 1,
+      "neutro": 2,
       "negativo": 0
     },
     {
@@ -504,6 +518,13 @@
     },
     {
       "date": "2026-02-13",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2026-02-15",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
@@ -1033,9 +1054,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-08-14",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "13f1fe9ab5aa476ce0afb85bd5326fb49a0eb071",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOGctVWlNLTA1Zi1UUGNfOEtXTGJnTjRxS081ak5PNW5zVHZiaXY0eDN6dnlNazVfMk1OWHJYVjVFclRvbklhdll5QzBiSFA3dFp1elQ5OHdLVWJ5M0NFdHhyZFkxNFdNbEhkdm9GRXA2dUlXZzVJZ05CRGMwUktpYjhB0gGHAUFVX3lxTE5EQ3J5S3E1LWRjY3Rtb2VUWXBCaTRuWHRBcXduMTlPb2p5M2ZPVGl3VEhoWnZPNVhyRVdadFBNQzNyZ1B1ZTBtTTNNNjdDTThuS1czUExNQkhfdzJkNmFhSHNxYThBSnNvZUtDVEMyNVpGZ3Bad256V0hTWlRxc2N3MTE2WlpPUQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNOGctVWlNLTA1Zi1UUGNfOEtXTGJnTjRxS081ak5PNW5zVHZiaXY0eDN6dnlNazVfMk1OWHJYVjVFclRvbklhdll5QzBiSFA3dFp1elQ5OHdLVWJ5M0NFdHhyZFkxNFdNbEhkdm9GRXA2dUlXZzVJZ05CRGMwUktpYjhB0gGHAUFVX3lxTE5EQ3J5S3E1LWRjY3Rtb2VUWXBCaTRuWHRBcXduMTlPb2p5M2ZPVGl3VEhoWnZPNVhyRVdadFBNQzNyZ1B1ZTBtTTNNNjdDTThuS1czUExNQkhfdzJkNmFhSHNxYThBSnNvZUtDVEMyNVpGZ3Bad256V0hTWlRxc2N3MTE2WlpPUQ?oc=5\" target=\"_blank\">GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-08-14T18:23:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 1.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-16T23:53:02.935924+00:00",
+      "raw_id": ""
+    },
     {
       "id": "378605b791f49bb572323f2290994ebe3d6e9933",
       "source": "instagram",
@@ -5984,6 +6029,23 @@
       "raw_id": ""
     },
     {
+      "id": "3179e813a4a917bdf1f0b9fa25181d01a6e9dc24",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Novo conceito de Comunicação do GBOEX leva assinatura da Integrada - Coletiva.net",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdnNGaGs0SmhLclQxWGVvcnNkdGlhOWFHLVUwSUZTVDJaUlAzUlF3YU5iSTNjUFhfZUtTSHlSbVRUVnUwOGYyM3VpOUFSMEs5bzRNaEtmd0pGalJUR2N2dExRbmExTllXUDJLRDlacHN2WWdPMFZJVXhDd2FYQmdZOW5FLXhOdjB4eHU5dGhUVjU4eEFsa3JLUnhqTFZhUQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQdnNGaGs0SmhLclQxWGVvcnNkdGlhOWFHLVUwSUZTVDJaUlAzUlF3YU5iSTNjUFhfZUtTSHlSbVRUVnUwOGYyM3VpOUFSMEs5bzRNaEtmd0pGalJUR2N2dExRbmExTllXUDJLRDlacHN2WWdPMFZJVXhDd2FYQmdZOW5FLXhOdjB4eHU5dGhUVjU4eEFsa3JLUnhqTFZhUQ?oc=5\" target=\"_blank\">Novo conceito de Comunicação do GBOEX leva assinatura da Integrada</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Coletiva.net</font>",
+      "author": "Coletiva.net",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-02-15T02:15:59+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-16T23:53:02.936343+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "c33b259138c21e1e526174b1e824f0ac6e09892f",
       "source": "instagram",
       "channel": "social",
@@ -6137,6 +6199,23 @@
       "raw_id": ""
     },
     {
+      "id": "23458b97c640e52209138864a82e5f3055bb5fcb",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX reinaugura Unidade Rio de Janeiro - Consumidor RS",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE84UHgzak1sMGVuVWlMX2EtMHQ4VVFzdENEb3M4RnQ4ODBTTDhveF84elUxd2xsRHVJWjVUanJEa2UzTjg3NnJZOVF2U0N5dWNXdTkwNlZ3S3RMSDRWdzlLVXFhQ3I3ZzhyUWFOYkc0LXR4X1VOcUE?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE84UHgzak1sMGVuVWlMX2EtMHQ4VVFzdENEb3M4RnQ4ODBTTDhveF84elUxd2xsRHVJWjVUanJEa2UzTjg3NnJZOVF2U0N5dWNXdTkwNlZ3S3RMSDRWdzlLVXFhQ3I3ZzhyUWFOYkc0LXR4X1VOcUE?oc=5\" target=\"_blank\">GBOEX reinaugura Unidade Rio de Janeiro</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Consumidor RS</font>",
+      "author": "Consumidor RS",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2025-08-29T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-16T23:53:02.936896+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "5bb7a75b424601c072eb9adaf759be1eaba08ec4",
       "source": "google_news",
       "channel": "noticia",
@@ -6185,6 +6264,23 @@
       "sentiment_score": 0.6,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.884289+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "2e0b2091dc80f48b249626e3c5d8973babd61851",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX comemora 112 anos de realizações - Consumidor RS",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SX24yYVhfOU5tUEZvRUpJU0ZHdWR5THJFMXM4UlpMMDdadHlGczVuci1TQVhJM1ZXLVlnVkJhaDFGZHNEM2M5V1lPazNrOFd3WW1CeHZaNGxZbmZoSHgwS2tfRUItM0hwcGFmWHlvZFE?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE9SX24yYVhfOU5tUEZvRUpJU0ZHdWR5THJFMXM4UlpMMDdadHlGczVuci1TQVhJM1ZXLVlnVkJhaDFGZHNEM2M5V1lPazNrOFd3WW1CeHZaNGxZbmZoSHgwS2tfRUItM0hwcGFmWHlvZFE?oc=5\" target=\"_blank\">GBOEX comemora 112 anos de realizações</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Consumidor RS</font>",
+      "author": "Consumidor RS",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2025-05-23T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-16T23:53:02.938693+00:00",
       "raw_id": ""
     },
     {
@@ -7596,6 +7692,23 @@
       "sentiment_score": 0.7,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.882395+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "085347e171c53c3b2fcac2a585e6938d95f7eac2",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX recebe destaque no Prêmio Segurador Brasil 2019 | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcXd4NFhFQ1A1VS1HTjNqSmZMTnYtQnRQMjlBdWVvSXMwc09pc2VXLXpDTTJNcm1CNlNuTmF3a2YzYnZGdmlmeUx6Wm5ISDA3N1JpOGsxTXR1OEcxTUVaVnVuVmljRnJIQ0pwc0RoYU9vUjNsQjc0NUZpT0ozeDY0RENWc0lTUDZTak5aejU3RWJNS0JUZVVJ0gGcAUFVX3lxTE9QLUJFU3RfX2JPSnlNbDE5dlRKLWtrMEl1ellwWkY4ejVBOF9VZDEtUm1URUtBckZPblNzTDc3ZTJSbWxUMU9VMjdzMjdpWkd6VDFhR28waWNnUUNtRklwakVxRWNvQVVEcGRheWVHOW03SVJ3NGNIQ2pzRjN4VVJDYlg1LUo4Yks3cWpXcERkeU9MT0c2V1NsMjF4bw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQcXd4NFhFQ1A1VS1HTjNqSmZMTnYtQnRQMjlBdWVvSXMwc09pc2VXLXpDTTJNcm1CNlNuTmF3a2YzYnZGdmlmeUx6Wm5ISDA3N1JpOGsxTXR1OEcxTUVaVnVuVmljRnJIQ0pwc0RoYU9vUjNsQjc0NUZpT0ozeDY0RENWc0lTUDZTak5aejU3RWJNS0JUZVVJ0gGcAUFVX3lxTE9QLUJFU3RfX2JPSnlNbDE5dlRKLWtrMEl1ellwWkY4ejVBOF9VZDEtUm1URUtBckZPblNzTDc3ZTJSbWxUMU9VMjdzMjdpWkd6VDFhR28waWNnUUNtRklwakVxRWNvQVVEcGRheWVHOW03SVJ3NGNIQ2pzRjN4VVJDYlg1LUo4Yks3cWpXcERkeU9MT0c2V1NsMjF4bw?oc=5\" target=\"_blank\">GBOEX recebe destaque no Prêmio Segurador Brasil 2019 | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2019-04-02T07:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.667,
+      "is_owned": 0,
+      "collected_at": "2026-08-16T23:53:02.939342+00:00",
       "raw_id": ""
     },
     {
