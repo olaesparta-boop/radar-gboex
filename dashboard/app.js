@@ -75,11 +75,22 @@ const matchTheme = (m, t) => {
   return t.kws.some(k => s.includes(k));
 };
 
-async function load() {
+/* busca o data.json publicado; se não der (arquivo único aberto offline),
+   usa a cópia embutida por build_standalone.py */
+async function fetchData() {
   try {
     const res = await fetch("data.json?_=" + Date.now());
     if (!res.ok) throw new Error(res.status);
-    DATA = await res.json();
+    return await res.json();
+  } catch (e) {
+    if (window.RADAR_DATA) return window.RADAR_DATA;
+    throw e;
+  }
+}
+
+async function load() {
+  try {
+    DATA = await fetchData();
     render();
   } catch (e) {
     document.getElementById("main").innerHTML =
@@ -565,7 +576,7 @@ function setupFilters(d) {
   });
   ["q", "fSource", "fChannel", "fSentiment"].forEach(id =>
     document.getElementById(id).oninput = renderTable);
-  document.getElementById("refresh").onclick = load;
+  document.getElementById("refresh").onclick = onRefresh;
   document.getElementById("clearFilters").onclick = () => {
     ["q", "fSource", "fChannel", "fSentiment"].forEach(id => document.getElementById(id).value = "");
     OV_DATE = null; OV_EXTERNAL = false;
@@ -617,4 +628,189 @@ function esc(s) {
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 }
 
+/* =======================================================================
+   COLETA REMOTA — o botão "Atualizar" dispara o workflow do GitHub Actions
+   ("Coleta Radar GBOEX"), espera a coleta terminar e recarrega o painel.
+   Sem token salvo, o botão apenas rebusca o data.json publicado.
+   ======================================================================= */
+const GH = {
+  owner: "olaesparta-boop",
+  repo: "radar-gboex",
+  workflow: "coleta.yml",
+  ref: "main",
+};
+const GH_TOKEN_KEY = "radar_gboex_gh_token";
+const GH_MODE_KEY = "radar_gboex_modo";
+
+const ghToken = () => localStorage.getItem(GH_TOKEN_KEY) || "";
+const ghModoGratis = () => localStorage.getItem(GH_MODE_KEY) === "gratis";
+/* a coleta remota só faz sentido no painel publicado: rodando local, o
+   data.json que o navegador lê é o do seu computador, não o do GitHub */
+const podeColetar = () => !!ghToken() && /github\.io$/.test(location.hostname);
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+function status(msg, { erro = false, girando = false } = {}) {
+  const el = document.getElementById("refreshStatus");
+  if (!el) return;
+  if (!msg) { el.hidden = true; el.innerHTML = ""; return; }
+  el.hidden = false;
+  el.className = "rf-status" + (erro ? " err" : "");
+  el.innerHTML = (girando ? '<span class="spin"></span>' : "") + esc(msg);
+}
+
+async function ghApi(caminho, opcoes = {}) {
+  const res = await fetch("https://api.github.com" + caminho, {
+    ...opcoes,
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: "Bearer " + ghToken(),
+      "X-GitHub-Api-Version": "2022-11-28",
+      ...(opcoes.body ? { "Content-Type": "application/json" } : {}),
+      ...(opcoes.headers || {}),
+    },
+  });
+  if (res.status === 401) throw new Error("Token inválido ou expirado.");
+  if (res.status === 403) throw new Error("Token sem permissão de Actions neste repositório.");
+  if (res.status === 404) throw new Error("Repositório/workflow não encontrado para este token.");
+  if (!res.ok && res.status !== 204) {
+    let detalhe = "";
+    try { detalhe = (await res.json()).message || ""; } catch { /* sem corpo */ }
+    throw new Error(`GitHub respondeu ${res.status}${detalhe ? ": " + detalhe : ""}.`);
+  }
+  return res.status === 204 ? null : res.json();
+}
+
+/* dispara o workflow e devolve a execução criada (a API do dispatch não
+   retorna o id, então procuramos a execução mais nova depois do disparo) */
+async function dispararColeta() {
+  const base = `/repos/${GH.owner}/${GH.repo}`;
+  const marco = Date.now() - 60000;   // margem p/ relógio do GitHub
+
+  await ghApi(`${base}/actions/workflows/${GH.workflow}/dispatches`, {
+    method: "POST",
+    body: JSON.stringify({
+      ref: GH.ref,
+      inputs: { modo: ghModoGratis() ? "gratis" : "completa" },
+    }),
+  });
+
+  for (let i = 0; i < 15; i++) {
+    await sleep(4000);
+    const r = await ghApi(`${base}/actions/workflows/${GH.workflow}/runs?event=workflow_dispatch&per_page=5`);
+    const run = (r.workflow_runs || []).find(w => Date.parse(w.created_at) >= marco);
+    if (run) return run;
+    status("Coleta na fila…", { girando: true });
+  }
+  throw new Error("A coleta foi pedida, mas a execução não apareceu. Veja a aba Actions.");
+}
+
+async function esperarFim(runId) {
+  const base = `/repos/${GH.owner}/${GH.repo}`;
+  const inicio = Date.now();
+  while (Date.now() - inicio < 20 * 60000) {
+    const run = await ghApi(`${base}/actions/runs/${runId}`);
+    if (run.status === "completed") return run;
+    const min = Math.floor((Date.now() - inicio) / 60000);
+    const seg = Math.floor(((Date.now() - inicio) % 60000) / 1000);
+    status(`Coletando menções… ${min}:${String(seg).padStart(2, "0")}`, { girando: true });
+    await sleep(6000);
+  }
+  throw new Error("A coleta passou de 20 minutos. Acompanhe pela aba Actions.");
+}
+
+/* o GitHub Pages leva ~1 min para republicar: esperamos o data.json mudar */
+async function esperarPublicacao(geradoAntes) {
+  const limite = Date.now() + 5 * 60000;
+  while (Date.now() < limite) {
+    try {
+      const novo = await fetchData();
+      if (novo.generated_at !== geradoAntes) { DATA = novo; render(); return true; }
+    } catch { /* publicação em andamento */ }
+    status("Publicando o painel…", { girando: true });
+    await sleep(8000);
+  }
+  return false;
+}
+
+let coletando = false;
+
+async function onRefresh() {
+  if (coletando) return;
+  const btn = document.getElementById("refresh");
+
+  if (!podeColetar()) {
+    status("Buscando dados…", { girando: true });
+    await load();
+    status("");
+    if (!ghToken() && /github\.io$/.test(location.hostname)) {
+      status("Só recarreguei os dados publicados. Configure em ⚙ para coletar na hora.");
+      setTimeout(() => status(""), 9000);
+    }
+    return;
+  }
+
+  coletando = true;
+  btn.disabled = true;
+  const geradoAntes = DATA?.generated_at;
+  try {
+    status("Pedindo uma coleta nova…", { girando: true });
+    const run = await dispararColeta();
+    const fim = await esperarFim(run.id);
+    if (fim.conclusion !== "success") {
+      throw new Error(`A coleta terminou como "${fim.conclusion}". Veja o log na aba Actions.`);
+    }
+    status("Coleta pronta, publicando…", { girando: true });
+    const ok = await esperarPublicacao(geradoAntes);
+    status(ok ? "Painel atualizado ✓" : "Coleta feita, mas o painel ainda não republicou. Tente Atualizar em 1 min.",
+      { erro: !ok });
+    setTimeout(() => status(""), 9000);
+  } catch (e) {
+    status(e.message || "Falha ao atualizar.", { erro: true });
+  } finally {
+    coletando = false;
+    btn.disabled = false;
+  }
+}
+
+function setupColetaRemota() {
+  const modal = document.getElementById("ghModal");
+  if (!modal) return;
+  const input = document.getElementById("ghTokenInput");
+  const gratis = document.getElementById("ghFree");
+  const abrir = () => {
+    input.value = ghToken();
+    gratis.checked = ghModoGratis();
+    modal.hidden = false;
+    input.focus();
+  };
+  const fechar = () => { modal.hidden = true; };
+
+  document.getElementById("ghConfig").onclick = abrir;
+  document.getElementById("ghClose").onclick = fechar;
+  modal.onclick = (e) => { if (e.target === modal) fechar(); };
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") fechar(); });
+
+  document.getElementById("ghSave").onclick = () => {
+    const t = input.value.trim();
+    if (t) localStorage.setItem(GH_TOKEN_KEY, t); else localStorage.removeItem(GH_TOKEN_KEY);
+    localStorage.setItem(GH_MODE_KEY, gratis.checked ? "gratis" : "completa");
+    fechar();
+    status(t ? "Coleta remota ativada. Use ↻ Atualizar." : "Token removido.");
+    setTimeout(() => status(""), 6000);
+  };
+  document.getElementById("ghForget").onclick = () => {
+    localStorage.removeItem(GH_TOKEN_KEY);
+    input.value = "";
+    fechar();
+    status("Token removido.");
+    setTimeout(() => status(""), 6000);
+  };
+
+  document.getElementById("refresh").title = podeColetar()
+    ? "Disparar uma coleta nova no GitHub e recarregar o painel"
+    : "Recarregar os dados publicados (configure em ⚙ para coletar na hora)";
+}
+
+setupColetaRemota();
 load();

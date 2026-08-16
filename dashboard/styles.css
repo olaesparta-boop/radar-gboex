@@ -195,8 +195,51 @@ footer strong{color:var(--brand);}
 footer code{background:var(--panel-2);padding:2px 6px;border-radius:5px;}
 .empty{text-align:center;color:var(--muted);padding:40px;}
 
+/* ---------------- coleta remota: status + configuração ---------------- */
+.hdr-meta button.icon-btn{padding:7px 10px;font-size:13px;line-height:1;}
+.hdr-meta button[disabled]{opacity:.55;cursor:progress;}
+.rf-status{display:inline-flex;align-items:center;gap:7px;color:#D8C56A;font-size:12px;max-width:320px;}
+.rf-status.err{color:#F3B9B2;}
+.rf-status .spin{
+  width:11px;height:11px;border-radius:50%;flex:none;
+  border:2px solid rgba(216,197,106,.35);border-top-color:#D8C56A;
+  animation:rfspin .8s linear infinite;
+}
+@keyframes rfspin{to{transform:rotate(360deg);}}
+
+.modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,37,64,.55);padding:20px;}
+.modal[hidden]{display:none;}
+.modal-card{
+  background:var(--surface);border-radius:var(--radius);border:1px solid var(--line);
+  box-shadow:0 18px 50px rgba(10,37,64,.28);max-width:560px;width:100%;
+  max-height:88vh;overflow:auto;padding:24px 26px;
+}
+.modal-card h3{font-size:19px;color:var(--brand-deep);margin-bottom:8px;}
+.modal-lead{margin:0 0 14px;font-size:13.5px;color:var(--ink-soft);}
+.modal-steps{margin:0 0 16px;padding-left:20px;font-size:13px;color:var(--ink-soft);}
+.modal-steps li{margin-bottom:5px;}
+.modal-steps a{color:var(--brand);}
+.modal-field{display:block;margin-bottom:12px;}
+.modal-field span{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:5px;}
+.modal-field input{
+  width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:var(--r-sm);
+  font-family:var(--sans);font-size:13.5px;color:var(--ink);background:var(--paper);
+}
+.modal-field input:focus{outline:2px solid rgba(16,58,99,.25);border-color:var(--brand);}
+.modal-check{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--ink-soft);margin-bottom:14px;}
+.modal-note{font-size:12px;color:var(--muted);background:var(--panel-2);border-radius:var(--r-sm);padding:10px 12px;margin:0 0 16px;}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+.modal-actions button{
+  background:var(--surface);color:var(--ink-soft);border:1px solid var(--line);
+  padding:8px 15px;border-radius:var(--r-sm);cursor:pointer;font-family:var(--sans);font-size:13px;transition:.15s;
+}
+.modal-actions button:hover{border-color:var(--brand);color:var(--brand);}
+.modal-actions button.primary{background:var(--brand);border-color:var(--brand);color:#fff;}
+.modal-actions button.primary:hover{background:var(--brand-deep);color:#fff;}
+
 @media print{
-  .tabs,.filters,.hdr-meta button,#refresh{display:none!important;}
+  .tabs,.filters,.hdr-meta button,#refresh,.modal,.rf-status{display:none!important;}
   .hdr{background:#fff;color:var(--ink);border-bottom:2px solid var(--brand-deep);}
   .hdr h1,.hdr p{color:var(--ink)!important;}
   .eyebrow{color:var(--brand)!important;}

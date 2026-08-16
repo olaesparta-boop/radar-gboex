@@ -1,0 +1,109 @@
+name: Coleta Radar GBOEX
+
+# Roda a coleta no servidor do GitHub, grava o resultado no repositório
+# (radar.db + dashboard/data.json) e republica o painel na branch gh-pages.
+#
+# Disparos:
+#   - schedule .......... coleta automática diária
+#   - workflow_dispatch . botão "Atualizar" do painel / aba Actions
+
+on:
+  schedule:
+    - cron: "0 11 * * *"        # 08:00 no horário de Brasília
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Fontes a coletar"
+        type: choice
+        default: completa
+        options:
+          - completa            # tudo (usa crédito Apify)
+          - gratis              # só Google News, GDELT e site GBOEX
+
+concurrency:
+  group: coleta-radar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: python -m pip install -r requirements.txt
+
+      - name: Coletar menções
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENTIMENT_MODEL: ${{ vars.SENTIMENT_MODEL }}
+        run: |
+          if [ "${{ inputs.modo }}" = "gratis" ]; then
+            python main.py --only google_news,gdelt,gboex_site
+          else
+            python main.py
+          fi
+
+      - name: Gravar dados no repositório
+        run: |
+          git config user.name  "radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add radar.db dashboard/data.json
+          if git diff --cached --quiet; then
+            echo "Nada mudou nesta coleta."
+            exit 0
+          fi
+          git commit -m "dados: coleta de $(date -u +'%d/%m/%Y %H:%M UTC')"
+          for tentativa in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            echo "push falhou (tentativa $tentativa), repetindo..."
+            sleep 5
+          done
+          exit 1
+
+      - name: Publicar painel na branch gh-pages
+        run: |
+          # o arquivo único é gerado aqui: fica sempre com os dados da coleta e
+          # não engorda o histórico do repositório (gh-pages é reescrita a cada vez)
+          python build_standalone.py
+          publicar="$RUNNER_TEMP/pages"
+          rm -rf "$publicar"
+          cp -r dashboard "$publicar"
+          cp Radar_GBOEX_dashboard.html "$publicar/"
+          touch "$publicar/.nojekyll"
+          cd "$publicar"
+          git init -q -b gh-pages
+          git config user.name  "radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "painel: publica coleta de $(date -u +'%d/%m/%Y %H:%M UTC')"
+          git push -q --force \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" \
+            gh-pages
+
+      - name: Resumo
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          d = json.loads(pathlib.Path("dashboard/data.json").read_text(encoding="utf-8"))
+          k = d["kpis"]
+          print("## Coleta concluída\n")
+          print(f"- Gerado em: `{d['generated_at']}`")
+          print(f"- Menções de terceiros: **{k['total_mentions']}**")
+          print(f"- Positivas {k['positivo']} · neutras {k['neutro']} · negativas {k['negativo']}")
+          print(f"- Sentimento líquido: **{k['net_sentiment']}**")
+          print("\nPainel: https://olaesparta-boop.github.io/radar-gboex/")
+          PY

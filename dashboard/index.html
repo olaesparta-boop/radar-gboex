@@ -20,7 +20,9 @@
       <p>Monitor de notícias, dados e menções — o que falam da marca.</p>
       <div class="hdr-meta">
         <span id="generated">—</span>
-        <button id="refresh" title="Recarregar data.json">↻ Atualizar</button>
+        <span id="refreshStatus" class="rf-status" hidden></span>
+        <button id="refresh" title="Buscar dados novos">↻ Atualizar</button>
+        <button id="ghConfig" class="icon-btn" title="Configurar coleta remota">⚙</button>
       </div>
     </div>
   </header>
@@ -152,8 +154,45 @@
 
   <footer>
     Radar <strong>GBOEX</strong> · Grêmio Beneficente, entidade de previdência e seguro de pessoas desde 1913 ·
-    dados gerados por <code>main.py</code> · atualize com <code>python main.py</code>
+    coleta automática diária pelo GitHub Actions · botão <strong>Atualizar</strong> dispara uma coleta na hora
   </footer>
+
+  <!-- ============ configuração da coleta remota ============ -->
+  <div class="modal" id="ghModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="ghModalTitle">
+      <h3 id="ghModalTitle">Coleta remota</h3>
+      <p class="modal-lead">
+        O painel é um site estático: ele sozinho não consegue vasculhar as fontes.
+        Quem coleta é o <strong>GitHub Actions</strong>. Com um token seu salvo aqui,
+        o botão <strong>Atualizar</strong> dispara uma coleta nova e recarrega o painel
+        quando ela terminar (leva de 2 a 6 minutos).
+      </p>
+      <ol class="modal-steps">
+        <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (token <em>fine-grained</em>).</li>
+        <li>Em <em>Repository access</em>, escolha <strong>Only select repositories → radar-gboex</strong>.</li>
+        <li>Em <em>Permissions → Repository permissions</em>, marque <strong>Actions: Read and write</strong>.</li>
+        <li>Gere o token, copie e cole abaixo.</li>
+      </ol>
+      <label class="modal-field">
+        <span>Token</span>
+        <input type="password" id="ghTokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false" />
+      </label>
+      <label class="modal-check">
+        <input type="checkbox" id="ghFree" />
+        <span>Coletar só as fontes grátis (notícias) — não consome crédito do Apify</span>
+      </label>
+      <p class="modal-note">
+        O token fica salvo <strong>só neste navegador</strong> (localStorage), nunca vai
+        para o repositório. Ele permite disparar e ler execuções deste repositório —
+        se vazar, revogue em <em>Settings → Developer settings</em>.
+      </p>
+      <div class="modal-actions">
+        <button id="ghSave" class="primary">Salvar</button>
+        <button id="ghForget">Remover token</button>
+        <button id="ghClose">Fechar</button>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

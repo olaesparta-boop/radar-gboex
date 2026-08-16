@@ -1,12 +1,19 @@
 # segredos
 .env
 
-# banco local (e backups) — não vai para o GitHub
-radar.db
+# backups do banco ficam locais
 radar.db.*
+
+# radar.db É versionado de propósito: é a memória do radar (histórico e
+# deduplicação). A coleta roda no GitHub Actions, que precisa do banco anterior
+# para não perder as menções mais antigas que a janela de LOOKBACK_DAYS.
 
 # dashboard/data.json É versionado de propósito:
 # é ele que alimenta o painel publicado no GitHub Pages.
+
+# arquivo único do painel: é gerado (build_standalone.py) e publicado
+# direto no gh-pages, não precisa entrar no histórico do repositório
+Radar_GBOEX_dashboard.html
 
 # configurações locais do Claude Code (permissões desta máquina)
 .claude/settings.local.json
