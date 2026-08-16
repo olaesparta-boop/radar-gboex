@@ -1,0 +1,52 @@
+name: Publicar painel
+
+# Republica o painel (branch gh-pages) sem coletar nada — para quando só o
+# visual/código do dashboard muda. A coleta de dados fica em coleta.yml.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dashboard/**"
+      - "build_standalone.py"
+      - ".github/workflows/publicar.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: publicar-painel
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar painel em arquivo único
+        run: python build_standalone.py
+
+      - name: Publicar na branch gh-pages
+        run: |
+          publicar="$RUNNER_TEMP/pages"
+          rm -rf "$publicar"
+          cp -r dashboard "$publicar"
+          cp Radar_GBOEX_dashboard.html "$publicar/"
+          touch "$publicar/.nojekyll"
+          cd "$publicar"
+          git init -q -b gh-pages
+          git config user.name  "radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "painel: publica ${GITHUB_SHA:0:7}"
+          git push -q --force \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" \
+            gh-pages
