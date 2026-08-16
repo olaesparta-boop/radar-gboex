@@ -175,7 +175,11 @@
       </ol>
       <label class="modal-field">
         <span>Token</span>
-        <input type="password" id="ghTokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false" />
+        <!-- data-*ignore: pede aos gerenciadores de senha que ignorem o campo
+             (não é senha de conta; o popup deles atrapalharia a colagem) -->
+        <input type="password" id="ghTokenInput" placeholder="github_pat_…"
+               autocomplete="off" spellcheck="false" name="radar-gh-token"
+               data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other" />
       </label>
       <label class="modal-check">
         <input type="checkbox" id="ghFree" />

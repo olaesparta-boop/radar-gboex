@@ -782,7 +782,6 @@ function setupColetaRemota() {
     input.value = ghToken();
     gratis.checked = ghModoGratis();
     modal.hidden = false;
-    input.focus();
   };
   const fechar = () => { modal.hidden = true; };
 

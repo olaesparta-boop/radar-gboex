@@ -44,24 +44,61 @@ Rodar de novo só adiciona o que é novo (deduplicação automática por URL).
 
 ---
 
-## 2.1 Painel publicado (GitHub Pages)
+## 2.1 Painel publicado (GitHub Pages) — e a coleta na nuvem
 
-O dashboard também fica no ar, **público**, em:
+O dashboard fica no ar, **público**, em:
 
 **<https://olaesparta-boop.github.io/radar-gboex/>**
+(versão em arquivo único: `.../Radar_GBOEX_dashboard.html`)
 
-Para atualizar o painel publicado depois de uma coleta:
+Você **não precisa** rodar nada na sua máquina para o painel se manter vivo:
+a coleta roda no próprio GitHub, pelo workflow `.github/workflows/coleta.yml`.
+
+| Quando | O que acontece |
+|--------|----------------|
+| Todo dia às 08h (BRT) | o GitHub roda `main.py`, grava `radar.db` + `dashboard/data.json` no repositório e republica o painel |
+| Botão **↻ Atualizar** no painel | dispara essa mesma coleta na hora e recarrega o painel quando ela termina (2 a 6 min) |
+| Aba **Actions → Coleta Radar GBOEX → Run workflow** | mesma coisa, pelo site do GitHub |
+
+Rodar `python main.py` no seu computador continua funcionando; para mandar o
+resultado ao ar, `git add radar.db dashboard/data.json && git commit && git push`
+— mas dê um `git pull` antes, porque o robô também escreve nesses arquivos.
+
+### Ligar o botão "Atualizar"
+
+O painel é um site estático: sozinho ele não coleta nada, quem coleta é o
+Actions. Para o botão poder acionar o Actions, cada navegador precisa de um
+token seu (fica só no `localStorage` daquele navegador, nunca no repositório):
+
+1. No painel, clique na engrenagem **⚙** ao lado de *Atualizar*.
+2. Gere um token **fine-grained** em
+   <https://github.com/settings/personal-access-tokens/new>:
+   *Repository access* → **Only select repositories → radar-gboex**;
+   *Permissions → Repository permissions* → **Actions: Read and write**.
+3. Cole no campo, salve. Pronto — o **↻ Atualizar** passa a coletar de verdade.
+
+Sem token salvo, o botão apenas rebusca o `data.json` publicado (o que a coleta
+diária deixou). Na engrenagem há também a opção **"só fontes grátis"**, que
+coleta apenas notícias e não consome crédito do Apify.
+
+### Chaves da coleta na nuvem (segredos do repositório)
+
+O `.env` não vai para o GitHub. As chaves precisam ser cadastradas uma vez em
+*Settings → Secrets and variables → Actions*, ou pelo terminal:
 
 ```bash
-python main.py                          # gera o dashboard/data.json novo
-git add dashboard/data.json
-git commit -m "dados: atualiza radar"
-git push
+gh secret set -f .env -R olaesparta-boop/radar-gboex
+gh variable set SENTIMENT_MODEL -R olaesparta-boop/radar-gboex --body "claude-haiku-4-5-20251001"
 ```
 
-O push dispara o workflow `.github/workflows/pages.yml`, que republica a pasta
-`dashboard/` em ~1 minuto. O banco (`radar.db`) e o `.env` **não** vão para o
-GitHub — só o `data.json`, que é o que o painel lê.
+Sem `APIFY_TOKEN` cadastrado, a coleta na nuvem funciona só com as fontes
+grátis (Google News, GDELT, site GBOEX) — Reclame Aqui e redes ficam de fora.
+
+> ⚠️ O site é público e o `data.json` (assim como o `radar.db`, agora versionado
+> para servir de memória entre as execuções na nuvem) contém o texto das
+> reclamações e os perfis/autores das menções. Se isso precisar deixar de ser
+> aberto, o caminho é tornar o repositório privado (Pages privado exige plano
+> pago) ou migrar a hospedagem para um serviço com proteção por senha.
 
 > ⚠️ O site é público e o `data.json` contém o texto das reclamações e os
 > perfis/autores das menções. Se isso precisar deixar de ser aberto, o caminho é
@@ -114,9 +151,12 @@ classificada pelo Claude (`SENTIMENT_MODEL`, padrão Haiku).
 
 ## 5. Rodar sozinho (agendamento)
 
-O radar é um script; qualquer agendador serve.
+**Em produção isso já está resolvido pelo GitHub Actions** (seção 2.1): a coleta
+diária está no `.github/workflows/coleta.yml`. Para mudar a frequência, edite o
+`cron` lá (ex.: `0 11,23 * * *` = duas vezes ao dia). As opções abaixo valem se
+você quiser rodar a coleta na sua própria máquina/servidor.
 
-### Opção A — n8n (recomendado)
+### Opção A — n8n
 Nó **Schedule Trigger** (ex.: a cada 6h) → nó **Execute Command**:
 ```
 python C:\Users\Rodrigo\Desktop\Radar_GBOEX\main.py
@@ -145,8 +185,11 @@ a cada X horas. Deixe `serve.py` rodando à parte (ou publique o `dashboard/`).
 Radar_GBOEX/
 ├── main.py            # orquestrador: coleta → enriquece → grava → exporta
 ├── serve.py           # servidor local do dashboard
+├── build_standalone.py# gera o painel em arquivo único (CSS/JS/dados embutidos)
 ├── config.py          # palavras-chave, fontes, chaves, actors
 ├── .env               # segredos (não versionar)
+├── .github/workflows/
+│   └── coleta.yml     # coleta diária + botão "Atualizar" + publicação no Pages
 ├── radar/
 │   ├── models.py      # Mention (modelo unificado)
 │   ├── storage.py     # SQLite + deduplicação
@@ -155,7 +198,7 @@ Radar_GBOEX/
 │   ├── export.py      # agregações → data.json
 │   └── collectors/    # google_news, gdelt, gboex_site, reclame_aqui, apify_social
 ├── dashboard/         # index.html, styles.css, app.js, data.json
-└── radar.db           # banco (gerado)
+└── radar.db           # banco (versionado: é a memória entre as coletas na nuvem)
 ```
 
 ## 7. Estado atual (validado com token real — jul/2026)
