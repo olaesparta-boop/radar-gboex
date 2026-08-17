@@ -78,8 +78,8 @@ token seu (fica só no `localStorage` daquele navegador, nunca no repositório):
 3. Cole no campo, salve. Pronto — o **↻ Atualizar** passa a coletar de verdade.
 
 Sem token salvo, o botão apenas rebusca o `data.json` publicado (o que a coleta
-diária deixou). Na engrenagem há também a opção **"só fontes grátis"**, que
-coleta apenas notícias e não consome crédito do Apify.
+semanal deixou). Na engrenagem há também a opção **"só fontes grátis"**, que
+coleta apenas notícias e não consome nada da verba.
 
 ### Chaves da coleta na nuvem (segredos do repositório)
 
@@ -101,11 +101,6 @@ grátis (Google News, GDELT, site GBOEX) — Reclame Aqui e redes ficam de fora.
 > reclamações e os perfis/autores das menções. Se isso precisar deixar de ser
 > aberto, o caminho é tornar o repositório privado (Pages privado exige plano
 > pago) ou migrar a hospedagem para um serviço com proteção por senha.
-
-> ⚠️ O site é público e o `data.json` contém o texto das reclamações e os
-> perfis/autores das menções. Se isso precisar deixar de ser aberto, o caminho é
-> tornar o repositório privado (Pages privado exige plano pago) ou migrar a
-> hospedagem para um serviço com proteção por senha.
 
 ---
 
@@ -154,9 +149,10 @@ classificada pelo Claude (`SENTIMENT_MODEL`, padrão Haiku).
 ## 5. Rodar sozinho (agendamento)
 
 **Em produção isso já está resolvido pelo GitHub Actions** (seção 2.1): a coleta
-diária está no `.github/workflows/coleta.yml`. Para mudar a frequência, edite o
-`cron` lá (ex.: `0 11,23 * * *` = duas vezes ao dia). As opções abaixo valem se
-você quiser rodar a coleta na sua própria máquina/servidor.
+semanal está no `.github/workflows/coleta.yml`. Para mudar a frequência, edite o
+`cron` lá (ex.: `0 11 * * 1,4` = segundas e quintas) — lembrando que cada coleta
+completa consome verba. As opções abaixo valem se você quiser rodar a coleta na
+sua própria máquina/servidor.
 
 ### Opção A — n8n
 Nó **Schedule Trigger** (ex.: a cada 6h) → nó **Execute Command**:
