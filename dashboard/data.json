@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-17T00:16:22.253146+00:00",
+  "generated_at": "2026-08-17T00:26:24.309753+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 318,
@@ -9592,5 +9592,12 @@
       "collected_at": "2026-08-17T00:12:38.828954+00:00",
       "raw_id": ""
     }
-  ]
+  ],
+  "apify": {
+    "usado_usd": 11.51,
+    "teto_usd": 29.0,
+    "restante_usd": 17.49,
+    "ciclo_inicio": "2026-08-16T00:00:00.000Z",
+    "ciclo_fim": "2026-09-15T23:59:59.999Z"
+  }
 }

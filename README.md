@@ -56,7 +56,7 @@ a coleta roda no próprio GitHub, pelo workflow `.github/workflows/coleta.yml`.
 
 | Quando | O que acontece |
 |--------|----------------|
-| Todo dia às 08h (BRT) | o GitHub roda `main.py`, grava `radar.db` + `dashboard/data.json` no repositório e republica o painel |
+| Toda segunda-feira às 08h (BRT) | o GitHub roda `main.py`, grava `radar.db` + `dashboard/data.json` no repositório e republica o painel |
 | Botão **↻ Atualizar** no painel | dispara essa mesma coleta na hora e recarrega o painel quando ela termina (2 a 6 min) |
 | Aba **Actions → Coleta Radar GBOEX → Run workflow** | mesma coisa, pelo site do GitHub |
 
@@ -223,7 +223,16 @@ Total atual: **132 menções de terceiros** (Instagram 46 · Reclame Aqui 40 · 
 · Notícias 13 · YouTube 1).
 - ✅ Sentimento léxico, dedup, filtro anti-ruído, dashboard: funcionando.
 
-### Custo Apify (plano FREE ~US$5/mês)
-Rodar Instagram+YouTube+Reclame Aqui a cada 6h consome crédito. Para produção:
-rodar redes/RA 1x/dia (notícias podem ser de hora em hora, são grátis) ou migrar
-para plano pago. Ajuste a frequência no agendador e `APIFY_MAX_ITEMS` no `config.py`.
+### Custo Apify — e o medidor no painel
+Conta em plano **STARTER**: teto de **US$ 29 por ciclo** (o ciclo vira dia 16).
+Medido em 17/08/2026, uma **coleta completa custa ≈ US$ 1,90** — por isso o cron
+é **semanal** (≈ US$ 8/ciclo) e não diário (≈ US$ 57 estouraria o teto).
+
+O painel mostra um **medidor de crédito** (abaixo dos KPIs, aba Geral) com quanto
+sobra no ciclo, quanto a última coleta custou e para quantas coletas ainda dá.
+Os números são lidos na hora da coleta (`radar/apify_usage.py` → `data.json`);
+sem `APIFY_TOKEN` o medidor não aparece.
+
+Se precisar apertar o custo: use o modo **"só fontes grátis"** na ⚙ do painel,
+reduza `APIFY_MAX_ITEMS` no `config.py` ou desligue collectors caros
+(`linkedin`, `facebook`) em `config.py`.

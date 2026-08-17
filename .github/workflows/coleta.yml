@@ -4,12 +4,16 @@ name: Coleta Radar GBOEX
 # (radar.db + dashboard/data.json) e republica o painel na branch gh-pages.
 #
 # Disparos:
-#   - schedule .......... coleta automática diária
+#   - schedule .......... coleta automática semanal
 #   - workflow_dispatch . botão "Atualizar" do painel / aba Actions
+#
+# Cadência semanal por causa do custo: uma coleta completa consome ~US$ 2 de
+# crédito Apify (teto do plano: US$ 29/ciclo). Diário estouraria o teto; para
+# dado fresco fora da segunda-feira, use o botão "Atualizar" do painel.
 
 on:
   schedule:
-    - cron: "0 11 * * *"        # 08:00 no horário de Brasília
+    - cron: "0 11 * * 1"        # segunda-feira, 08:00 no horário de Brasília
   workflow_dispatch:
     inputs:
       modo:

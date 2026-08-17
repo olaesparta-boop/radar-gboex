@@ -17,7 +17,7 @@ import time
 import traceback
 
 import config
-from radar import pipeline, export
+from radar import pipeline, export, apify_usage
 from radar.storage import Storage
 from radar.collectors import (
     google_news, gdelt, gboex_site, reclame_aqui, apify_social, facebook,
@@ -42,6 +42,9 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
         names.remove("apify_social")
 
     all_mentions = []
+    # foto do crédito Apify antes da coleta: a diferença no fim diz quanto
+    # esta rodada custou (vira o medidor do painel)
+    credito_antes = apify_usage.snapshot()
     print(f"\n== Radar {config.BRAND} — coleta iniciada ==\n")
     for name in names:
         mod = COLLECTORS.get(name)
@@ -70,7 +73,14 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
     store.close()
     print(f"  {novas} novas | {repetidas} já existiam | {total_db} no total (banco)")
 
-    out = export.write(rows)
+    credito = apify_usage.com_custo_da_coleta(credito_antes, apify_usage.snapshot())
+    if credito:
+        custo = credito.get("custo_coleta_usd")
+        print(f"  crédito Apify: US$ {credito['usado_usd']:.2f} de "
+              f"{credito['teto_usd']:.2f} usados no ciclo"
+              + (f" | esta coleta: US$ {custo:.2f}" if custo else ""))
+
+    out = export.write(rows, apify=credito)
     print(f"\n== data.json gerado: {out} ==")
     print("   abra o dashboard com:  python serve.py\n")
     return 0

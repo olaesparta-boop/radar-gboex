@@ -162,6 +162,7 @@ function renderAll() {
 
   buildTabs();
   renderKpis(OV.kpis);
+  renderApifyMeter(DATA.apify);
   renderTimeline(OV.timeline);
   renderSentiment(OV.by_sentiment);
   renderSourceBreakdown(OV.by_source_detail);
@@ -626,6 +627,52 @@ function renderTable() {
 function esc(s) {
   return String(s ?? "").replace(/[&<>"]/g, c =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+/* ---------------- medidor de crédito Apify ----------------
+   Só as redes sociais e o Reclame Aqui custam dinheiro (crédito Apify, teto
+   mensal). O valor vem no data.json, medido na hora da coleta. */
+const usd = (v) => "US$ " + Number(v).toLocaleString("pt-BR",
+  { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function renderApifyMeter(a) {
+  const box = document.getElementById("apifyMeter");
+  if (!box) return;
+  if (!a || !a.teto_usd) { box.innerHTML = ""; return; }
+
+  const usadoPct = Math.min(100, (a.usado_usd / a.teto_usd) * 100);
+  /* estado: cor + palavra (nunca só cor) */
+  const estado = usadoPct >= 85 ? { cls: "crit", txt: "No limite" }
+    : usadoPct >= 60 ? { cls: "warn", txt: "Atenção" }
+      : { cls: "ok", txt: "Folga" };
+
+  const renova = a.ciclo_fim
+    ? ` · renova em ${new Date(a.ciclo_fim).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}`
+    : "";
+  /* a barra mostra o CONSUMIDO — dito em texto para não depender da leitura da cor */
+  const rodape = "A barra mostra o consumo do ciclo." + (a.custo_coleta_usd
+    ? ` Última coleta completa: ≈ ${usd(a.custo_coleta_usd)}` +
+      (a.coletas_restantes ? ` — dá para cerca de ${a.coletas_restantes} coleta(s) até
+${new Date(a.ciclo_fim).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}.` : ".")
+    : "");
+
+  box.innerHTML = `
+    <div class="meter-card">
+      <div class="meter-head">
+        <span class="meter-label">Crédito Apify
+          <span class="hint">(redes sociais e Reclame Aqui)</span></span>
+        <span class="meter-state m-${estado.cls}">● ${estado.txt}</span>
+      </div>
+      <div class="meter-nums">
+        <span><strong class="meter-hero">${usd(a.restante_usd)}</strong> disponíveis</span>
+        <span class="meter-right">${usd(a.usado_usd)} de ${usd(a.teto_usd)} usados${renova}</span>
+      </div>
+      <div class="meter-track" role="img"
+           aria-label="${usadoPct.toFixed(0)}% do crédito do ciclo consumido">
+        <div class="meter-fill m-${estado.cls}" style="width:${usadoPct.toFixed(1)}%"></div>
+      </div>
+      <p class="meter-foot">${esc(rodape)}</p>
+    </div>`;
 }
 
 /* =======================================================================
