@@ -15,6 +15,7 @@ import argparse
 import sys
 import time
 import traceback
+from datetime import datetime, timezone
 
 import config
 from radar import pipeline, export, apify_usage
@@ -42,9 +43,24 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
         names.remove("apify_social")
 
     all_mentions = []
-    # foto do crédito Apify antes da coleta: a diferença no fim diz quanto
-    # esta rodada custou (vira o medidor do painel)
-    credito_antes = apify_usage.snapshot()
+    # foto do consumo antes da coleta: a diferença no fim diz quanto esta
+    # rodada custou (é o que alimenta o mapa de consumo do painel)
+    consumo_antes = apify_usage.snapshot()
+    ciclo = (consumo_antes or {}).get("ciclo_inicio")
+
+    store = Storage(config.DB_PATH)
+    gasto_ciclo = store.cycle_cost(ciclo) if ciclo else 0.0
+
+    # verba do ciclo estourada => roda só o que é grátis até o ciclo virar
+    freado = False
+    if ciclo and config.BUDGET_ENFORCE and gasto_ciclo >= config.RADAR_BUDGET_USD:
+        pagos = [n for n in names if n in config.PAID_COLLECTORS]
+        if pagos:
+            freado = True
+            names = [n for n in names if n not in config.PAID_COLLECTORS]
+            print(f"\n[verba] US$ {gasto_ciclo:.2f} de {config.RADAR_BUDGET_USD:.2f} "
+                  f"já usados neste ciclo — pulando fontes pagas: {', '.join(pagos)}")
+
     print(f"\n== Radar {config.BRAND} — coleta iniciada ==\n")
     for name in names:
         mod = COLLECTORS.get(name)
@@ -66,21 +82,33 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
     print(f"\n== Enriquecendo {len(all_mentions)} menções (sentimento) ==")
     pipeline.enrich(all_mentions)
 
-    store = Storage(config.DB_PATH)
     novas, repetidas = store.upsert_many(all_mentions)
     total_db = store.count()
-    rows = store.all_rows()
-    store.close()
     print(f"  {novas} novas | {repetidas} já existiam | {total_db} no total (banco)")
 
-    credito = apify_usage.com_custo_da_coleta(credito_antes, apify_usage.snapshot())
-    if credito:
-        custo = credito.get("custo_coleta_usd")
-        print(f"  crédito Apify: US$ {credito['usado_usd']:.2f} de "
-              f"{credito['teto_usd']:.2f} usados no ciclo"
+    custo = apify_usage.custo_da_rodada(consumo_antes, apify_usage.snapshot())
+    if ciclo and custo > 0:
+        store.record_run_cost(
+            datetime.now(timezone.utc).isoformat(), ciclo, custo)
+        gasto_ciclo = store.cycle_cost(ciclo)
+
+    # numa rodada só de fontes grátis o custo é zero: a referência do painel
+    # passa a ser a última coleta paga que já foi medida
+    referencia = custo if custo > 0 else store.last_run_cost()
+
+    rows = store.all_rows()
+    store.close()
+
+    consumo = None
+    if consumo_antes:
+        consumo = apify_usage.painel(
+            gasto_ciclo, (consumo_antes or {}).get("ciclo_fim"),
+            custo_coleta_usd=referencia, freado=freado)
+        print(f"  verba do ciclo: US$ {consumo['gasto_usd']:.2f} de "
+              f"{consumo['orcamento_usd']:.2f} usados"
               + (f" | esta coleta: US$ {custo:.2f}" if custo else ""))
 
-    out = export.write(rows, apify=credito)
+    out = export.write(rows, consumo=consumo)
     print(f"\n== data.json gerado: {out} ==")
     print("   abra o dashboard com:  python serve.py\n")
     return 0

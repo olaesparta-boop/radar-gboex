@@ -28,6 +28,14 @@ CREATE TABLE IF NOT EXISTS mentions (
 CREATE INDEX IF NOT EXISTS idx_published ON mentions(published_at);
 CREATE INDEX IF NOT EXISTS idx_channel   ON mentions(channel);
 CREATE INDEX IF NOT EXISTS idx_sentiment ON mentions(sentiment);
+
+-- custo de cada rodada, para saber quanto da verba do ciclo já foi usada
+CREATE TABLE IF NOT EXISTS run_costs (
+    run_at      TEXT PRIMARY KEY,
+    cycle_start TEXT,
+    custo_usd   REAL
+);
+CREATE INDEX IF NOT EXISTS idx_cycle ON run_costs(cycle_start);
 """
 
 
@@ -72,6 +80,27 @@ class Storage:
 
     def count(self) -> int:
         return self._conn.execute("SELECT COUNT(*) FROM mentions").fetchone()[0]
+
+    # --- verba consumida por ciclo de cobrança --------------------------------
+    def record_run_cost(self, run_at: str, cycle_start: str, custo_usd: float) -> None:
+        self._conn.execute(
+            "INSERT OR REPLACE INTO run_costs (run_at, cycle_start, custo_usd)"
+            " VALUES (?,?,?)", (run_at, cycle_start, float(custo_usd)))
+        self._conn.commit()
+
+    def last_run_cost(self) -> float:
+        """Custo da última coleta paga medida — referência do painel quando a
+        rodada atual foi só de fontes grátis (custo zero)."""
+        row = self._conn.execute(
+            "SELECT custo_usd FROM run_costs ORDER BY run_at DESC LIMIT 1").fetchone()
+        return round(float(row[0]), 2) if row else 0.0
+
+    def cycle_cost(self, cycle_start: str) -> float:
+        """Quanto o radar já gastou no ciclo (0.0 se não houver registro)."""
+        row = self._conn.execute(
+            "SELECT COALESCE(SUM(custo_usd), 0) FROM run_costs WHERE cycle_start = ?",
+            (cycle_start,)).fetchone()
+        return round(float(row[0]), 2)
 
     def close(self) -> None:
         self._conn.close()

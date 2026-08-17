@@ -7,9 +7,9 @@ name: Coleta Radar GBOEX
 #   - schedule .......... coleta automática semanal
 #   - workflow_dispatch . botão "Atualizar" do painel / aba Actions
 #
-# Cadência semanal por causa do custo: uma coleta completa consome ~US$ 2 de
-# crédito Apify (teto do plano: US$ 29/ciclo). Diário estouraria o teto; para
-# dado fresco fora da segunda-feira, use o botão "Atualizar" do painel.
+# Cadência semanal por causa do custo: uma coleta completa consome ~US$ 2 da
+# verba do radar (config.RADAR_BUDGET_USD). Para dado fresco fora da
+# segunda-feira, use o botão "Atualizar" do painel.
 
 on:
   schedule:

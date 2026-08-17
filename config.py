@@ -173,6 +173,19 @@ LINKEDIN = {
 # inundar o radar). Vale só para channel="social"; notícias e RA não são limitados.
 SOCIAL_MAX_PER_AUTHOR = 3
 
+# --- orçamento do radar -------------------------------------------------------
+# Quanto o radar pode gastar POR CICLO de cobrança nas coletas pagas (redes
+# sociais e Reclame Aqui). É a verba reservada para esta tarefa — o saldo real
+# da conta não entra no painel, que é público.
+RADAR_BUDGET_USD = 5.0
+# Com o orçamento estourado, a coleta continua rodando só nas fontes grátis
+# (notícias) até o ciclo virar. Deixe False para nunca frear.
+BUDGET_ENFORCE = True
+# Collectors que consomem a verba; o resto é gratuito.
+PAID_COLLECTORS = [
+    "reclame_aqui", "apify_social", "facebook", "social_comments", "linkedin",
+]
+
 # --- armazenamento e saída ----------------------------------------------------
 DB_PATH = BASE_DIR / "radar.db"
 DASHBOARD_DIR = BASE_DIR / "dashboard"

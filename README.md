@@ -223,16 +223,23 @@ Total atual: **132 menções de terceiros** (Instagram 46 · Reclame Aqui 40 · 
 · Notícias 13 · YouTube 1).
 - ✅ Sentimento léxico, dedup, filtro anti-ruído, dashboard: funcionando.
 
-### Custo Apify — e o medidor no painel
-Conta em plano **STARTER**: teto de **US$ 29 por ciclo** (o ciclo vira dia 16).
-Medido em 17/08/2026, uma **coleta completa custa ≈ US$ 1,90** — por isso o cron
-é **semanal** (≈ US$ 8/ciclo) e não diário (≈ US$ 57 estouraria o teto).
+### Verba das coletas pagas e o mapa de consumo
+O radar tem uma **verba própria por ciclo**: `RADAR_BUDGET_USD` no `config.py`
+(hoje **US$ 5**). É o quanto as fontes pagas (redes sociais e Reclame Aqui)
+podem consumir por ciclo — o saldo da conta do provedor **não** entra aqui nem
+no painel, que é público.
 
-O painel mostra um **medidor de crédito** (abaixo dos KPIs, aba Geral) com quanto
-sobra no ciclo, quanto a última coleta custou e para quantas coletas ainda dá.
-Os números são lidos na hora da coleta (`radar/apify_usage.py` → `data.json`);
-sem `APIFY_TOKEN` o medidor não aparece.
+Uma coleta completa custa ≈ US$ 1,90 (medido em 17/08/2026), daí o cron
+**semanal**: ~US$ 8/ciclo caberia mal em US$ 5, então a semana usa a verba e o
+resto do mês fica para os cliques em *Atualizar* — quando a verba acaba, a
+coleta **continua rodando só com as fontes grátis** até o ciclo virar
+(`BUDGET_ENFORCE = False` desliga esse freio).
 
-Se precisar apertar o custo: use o modo **"só fontes grátis"** na ⚙ do painel,
-reduza `APIFY_MAX_ITEMS` no `config.py` ou desligue collectors caros
-(`linkedin`, `facebook`) em `config.py`.
+O painel mostra isso como **Mapa de consumo** (abaixo dos KPIs, aba Geral):
+quanto resta da verba, quanto a última coleta custou e quantas ainda cabem. A
+medição é feita na hora da coleta (`radar/apify_usage.py`), o gasto de cada
+rodada fica na tabela `run_costs` do `radar.db` e só o resumo vai para o
+`data.json`. Sem `APIFY_TOKEN` não há medição e o mapa não aparece.
+
+Para gastar menos: modo **"só fontes grátis"** na ⚙ do painel, `APIFY_MAX_ITEMS`
+menor ou tirar collectors caros de `PAID_COLLECTORS`/`config.py`.

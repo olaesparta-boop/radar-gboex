@@ -53,7 +53,7 @@ def _clean_social(external: list[dict]) -> list[dict]:
     return kept
 
 
-def build_payload(rows: list[dict], apify: dict | None = None) -> dict:
+def build_payload(rows: list[dict], consumo: dict | None = None) -> dict:
     # apenas voz de terceiros conta para reputação; canais próprios ficam de fora
     external = _clean_social(
         [r for r in rows if not r["is_owned"] and r["channel"] != "indicador"])
@@ -117,24 +117,24 @@ def build_payload(rows: list[dict], apify: dict | None = None) -> dict:
         "top_sources": by_source.most_common(12),
         "timeline": timeline,
         "mentions": recent,
-        # consumo do crédito Apify (None quando não há token): alimenta o
-        # medidor no painel. Ver radar/apify_usage.py
-        "apify": apify,
+        # mapa de consumo: verba do ciclo reservada às coletas pagas e quanto
+        # dela já foi usada. None quando não há medição. Ver radar/apify_usage.py
+        "consumo": consumo,
     }
 
 
 def write(rows: list[dict], path: Path | None = None,
-          apify: dict | None = None) -> Path:
+          consumo: dict | None = None) -> Path:
     path = path or config.DATA_JSON
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     # quem regenera o data.json sem consultar o Apify (ex.: reclassify_sentiment)
     # não deve apagar o medidor: mantém a última leitura conhecida
-    if apify is None and Path(path).exists():
+    if consumo is None and Path(path).exists():
         try:
-            apify = json.loads(Path(path).read_text(encoding="utf-8")).get("apify")
+            consumo = json.loads(Path(path).read_text(encoding="utf-8")).get("consumo")
         except Exception:
-            apify = None
-    payload = build_payload(rows, apify=apify)
+            consumo = None
+    payload = build_payload(rows, consumo=consumo)
     Path(path).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
