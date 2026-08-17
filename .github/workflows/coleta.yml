@@ -90,6 +90,8 @@ jobs:
           cp -r dashboard "$publicar"
           cp Radar_GBOEX_dashboard.html "$publicar/"
           touch "$publicar/.nojekyll"
+          # evita o navegador misturar app.js em cache com data.json novo
+          python stamp_assets.py "$publicar" "${GITHUB_SHA:0:7}"
           cd "$publicar"
           git init -q -b gh-pages
           git config user.name  "radar-bot"
