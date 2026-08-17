@@ -56,7 +56,8 @@ a coleta roda no próprio GitHub, pelo workflow `.github/workflows/coleta.yml`.
 
 | Quando | O que acontece |
 |--------|----------------|
-| Toda segunda-feira às 08h (BRT) | o GitHub roda `main.py`, grava `radar.db` + `dashboard/data.json` no repositório e republica o painel |
+| Toda segunda-feira às 08h (BRT) | coleta **completa** (todas as fontes, usa a verba): o GitHub roda `main.py`, grava `radar.db` + `dashboard/data.json` no repositório e republica o painel |
+| Todos os outros dias, 08h (BRT) | coleta **grátis** — só Google News, GDELT e site GBOEX; mantém o painel com movimento diário sem tocar na verba |
 | Botão **↻ Atualizar** no painel | dispara essa mesma coleta na hora e recarrega o painel quando ela termina (2 a 6 min) |
 | Aba **Actions → Coleta Radar GBOEX → Run workflow** | mesma coisa, pelo site do GitHub |
 
@@ -148,9 +149,11 @@ classificada pelo Claude (`SENTIMENT_MODEL`, padrão Haiku).
 
 ## 5. Rodar sozinho (agendamento)
 
-**Em produção isso já está resolvido pelo GitHub Actions** (seção 2.1): a coleta
-semanal está no `.github/workflows/coleta.yml`. Para mudar a frequência, edite o
-`cron` lá (ex.: `0 11 * * 1,4` = segundas e quintas) — lembrando que cada coleta
+**Em produção isso já está resolvido pelo GitHub Actions** (seção 2.1): os dois
+agendamentos estão no `.github/workflows/coleta.yml` — o `cron` de segunda roda
+a coleta completa, o dos demais dias roda só as fontes grátis. Para incluir
+outro dia na completa, mova-o de um `cron` para o outro (ex.: quinta = tirar o
+`4` do segundo e usar `0 11 * * 1,4` no primeiro), lembrando que cada coleta
 completa consome verba. As opções abaixo valem se você quiser rodar a coleta na
 sua própria máquina/servidor.
 
@@ -225,10 +228,10 @@ O radar tem uma **verba própria por ciclo**: `RADAR_BUDGET_USD` no `config.py`
 podem consumir por ciclo — o saldo da conta do provedor **não** entra aqui nem
 no painel, que é público.
 
-Uma coleta completa custa ≈ US$ 1,90 (medido em 17/08/2026), daí o cron
-**semanal**: ~US$ 8/ciclo caberia mal em US$ 5, então a semana usa a verba e o
-resto do mês fica para os cliques em *Atualizar* — quando a verba acaba, a
-coleta **continua rodando só com as fontes grátis** até o ciclo virar
+Uma coleta completa custa ≈ US$ 1,90 (medido em 17/08/2026). Por isso a
+divisão: **completa só às segundas** (~US$ 8/ciclo caberia mal em US$ 5) e
+**grátis nos outros dias**, que não consome nada. Quando a verba do ciclo
+acaba, a coleta **continua rodando só com as fontes grátis** até o ciclo virar
 (`BUDGET_ENFORCE = False` desliga esse freio).
 
 O painel mostra isso como **Mapa de consumo** (abaixo dos KPIs, aba Geral):

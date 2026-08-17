@@ -4,16 +4,18 @@ name: Coleta Radar GBOEX
 # (radar.db + dashboard/data.json) e republica o painel na branch gh-pages.
 #
 # Disparos:
-#   - schedule .......... coleta automática semanal
-#   - workflow_dispatch . botão "Atualizar" do painel / aba Actions
+#   - schedule (segunda) ... coleta COMPLETA, com as fontes pagas
+#   - schedule (demais dias) coleta GRÁTIS, só notícias — não toca na verba
+#   - workflow_dispatch .... botão "Atualizar" do painel / aba Actions
 #
-# Cadência semanal por causa do custo: uma coleta completa consome ~US$ 2 da
-# verba do radar (config.RADAR_BUDGET_USD). Para dado fresco fora da
-# segunda-feira, use o botão "Atualizar" do painel.
+# A cadência é assim por causa do custo: a coleta completa consome ~US$ 2 da
+# verba do radar (config.RADAR_BUDGET_USD), enquanto Google News, GDELT e o
+# site do GBOEX são gratuitos e podem rodar todo dia.
 
 on:
   schedule:
-    - cron: "0 11 * * 1"        # segunda-feira, 08:00 no horário de Brasília
+    - cron: "0 11 * * 1"          # segunda 08:00 BRT — completa
+    - cron: "0 11 * * 0,2,3,4,5,6"  # demais dias 08:00 BRT — só fontes grátis
   workflow_dispatch:
     inputs:
       modo:
@@ -57,7 +59,17 @@ jobs:
           # config.py cai no padrão (Haiku)
           SENTIMENT_MODEL: ${{ secrets.SENTIMENT_MODEL }}
         run: |
-          if [ "${{ inputs.modo }}" = "gratis" ]; then
+          # disparo manual manda o modo; no automático, só a segunda é completa
+          MODO="${{ inputs.modo }}"
+          if [ -z "$MODO" ]; then
+            if [ "${{ github.event.schedule }}" = "0 11 * * 1" ]; then
+              MODO=completa
+            else
+              MODO=gratis
+            fi
+          fi
+          echo "modo desta coleta: $MODO"
+          if [ "$MODO" = "gratis" ]; then
             python main.py --only google_news,gdelt,gboex_site
           else
             python main.py
