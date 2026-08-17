@@ -1,25 +1,25 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-17T01:15:29.206058+00:00",
+  "generated_at": "2026-08-17T11:23:57.978631+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 318,
-    "positivo": 164,
-    "neutro": 61,
+    "total_mentions": 320,
+    "positivo": 165,
+    "neutro": 62,
     "negativo": 93,
-    "net_sentiment": 22.3,
-    "sources": 143,
+    "net_sentiment": 22.5,
+    "sources": 145,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "reclamacao": 59,
-    "social": 231,
+    "social": 233,
     "noticia": 28
   },
   "by_sentiment": {
     "negativo": 93,
-    "positivo": 164,
-    "neutro": 61
+    "positivo": 165,
+    "neutro": 62
   },
   "by_source_detail": {
     "instagram": {
@@ -53,9 +53,9 @@
       "negativo": 0
     },
     "youtube": {
-      "total": 4,
-      "positivo": 0,
-      "neutro": 4,
+      "total": 6,
+      "positivo": 1,
+      "neutro": 5,
       "negativo": 0
     }
   },
@@ -115,6 +115,13 @@
       "total": 1,
       "positivo": 1,
       "neutro": 0,
+      "negativo": 0
+    },
+    {
+      "date": "2007-10-16",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
       "negativo": 0
     },
     {
@@ -472,6 +479,13 @@
       "total": 1,
       "positivo": 0,
       "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-04-09",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
       "negativo": 0
     },
     {
@@ -861,8 +875,8 @@
     },
     {
       "date": "2026-07-02",
-      "total": 3,
-      "positivo": 1,
+      "total": 2,
+      "positivo": 0,
       "neutro": 0,
       "negativo": 2
     },
@@ -1029,8 +1043,8 @@
     },
     {
       "date": "2026-08-05",
-      "total": 3,
-      "positivo": 2,
+      "total": 4,
+      "positivo": 3,
       "neutro": 0,
       "negativo": 1
     },
@@ -1382,6 +1396,23 @@
       "raw_id": ""
     },
     {
+      "id": "48686aafc6db038d9984ec1f0be7de268c0c53a9",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "O plano Vida Longa do GBOEX foi pensado para quem olha para o futuro e deseja garantir que o cuidado com a família se mantenha em todas as fases.\n\nÉ a tranquilidade de saber que a ",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid07YEXFhcfsMevsRrbeo86nVSmEMbe1mFQYBgYskb4gqUD6FLUTu7SrzYCsM3VKZBfl",
+      "text": "O plano Vida Longa do GBOEX foi pensado para quem olha para o futuro e deseja garantir que o cuidado com a família se mantenha em todas as fases.\n\nÉ a tranquilidade de saber que a sua proteção estará sempre presente, amparando as pessoas mais importantes da sua história independentemente do que o amanhã reserve.\n\nAs informações de registro dos planos, você encontra no link da bio.\n\n#GBOEX #VidaLonga #PlanejamentoFamiliar",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-08-12T17:00:22+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.910264+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "05abc008e0d4e80b19722625a5cac08e05d69648",
       "source": "facebook",
       "channel": "canal_proprio",
@@ -1515,6 +1546,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-08-17T00:14:56.300768+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "c0c19eacaeb82114e5c62a45cd8970f2e3c9ca39",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "A vida está em constante movimento, e a forma como você cuida de si e de quem ama precisa acompanhar essa evolução. 🔄\n\nÉ por isso que o Vida 360 GBOEX foi pensado para estar presen",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid0niEw8181fjP1eDbwc9yvTJf98vyDMktPua1ARy2ydvFC3tdPnVbr16HoYGYKXye3l",
+      "text": "A vida está em constante movimento, e a forma como você cuida de si e de quem ama precisa acompanhar essa evolução. 🔄\n\nÉ por isso que o Vida 360 GBOEX foi pensado para estar presente em todas as fases da sua história. Ele oferece um amparo completo: proporciona a proteção financeira que a sua família precisa para o amanhã, enquanto traz soluções práticas para os imprevistos do dia a dia hoje.\n\nUm cuidado que olha para todos os ângulos da sua rotina.\n\nAs informações de registro dos planos estão disponíveis no link da bio.\n\n#GBOEX #Vida360 #PeculioESeguroDePessoas",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-08-10T14:00:29+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.910343+00:00",
       "raw_id": ""
     },
     {
@@ -1722,6 +1770,23 @@
       "raw_id": ""
     },
     {
+      "id": "f3808ab73d30a4822bca1d9cfc367814d7840bb2",
+      "source": "facebook",
+      "channel": "social",
+      "title": "GBOEX Proteção e Segurança Sempre!!!\n🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid02AC7LA38xWcVwZyqHuYbjPn4NQDE5ypbJrbTeNBdDCDqfrGfFgNZT2JV1egWqFyQMl?comment_id=1033830929510052",
+      "text": "GBOEX Proteção e Segurança Sempre!!!\n🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷",
+      "author": "Mario Lescano",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-08-05T21:21:34+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.667,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:20:35.484561+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "a4e71e6295bacd1bbef19eb2fddefba107d257ca",
       "source": "facebook",
       "channel": "social",
@@ -1787,6 +1852,23 @@
       "sentiment_score": 0.8,
       "is_owned": 1,
       "collected_at": "2026-08-06T17:11:12.257844+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "3db84d586120f2142e7f3392040059130dfa24df",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "Bens materiais, conquistas e investimentos são importantes, mas nada se compara ao valor das pessoas que estão ao seu lado!\n\nE é por isso que cuidar do amanhã de quem você ama é a ",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid02m24SWaiTddUUG7MbT2R5B69m1Jhn2sFsSjVpxz7ByiSZbqyRWQWvbTJUJ4RWSdGml",
+      "text": "Bens materiais, conquistas e investimentos são importantes, mas nada se compara ao valor das pessoas que estão ao seu lado!\n\nE é por isso que cuidar do amanhã de quem você ama é a atitude mais valiosa que existe. Com nossos planos de pecúlio e seguro de pessoas, você proporciona um amparo financeiro estruturado e focado no bem-estar do seu lar.\n\nÉ sobre oferecer tranquilidade e cuidado para quem faz a sua vida valer a pena.\n\n#GBOEX #PeculioESeguroDePessoas",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-08-04T14:00:24+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.333,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.910487+00:00",
       "raw_id": ""
     },
     {
@@ -2025,6 +2107,23 @@
       "sentiment_score": 0.8,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:11:12.258823+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "7b6186e49af85aac03e185cbc47c945086bb0b8f",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "Escolher um plano de Pecúlio e Seguro de Pessoas do GBOEX é a escolha inteligente para quem quer segurança e prefere uma vida tranquila ao saber que está sempre preparado para poss",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid02AC7LA38xWcVwZyqHuYbjPn4NQDE5ypbJrbTeNBdDCDqfrGfFgNZT2JV1egWqFyQMl",
+      "text": "Escolher um plano de Pecúlio e Seguro de Pessoas do GBOEX é a escolha inteligente para quem quer segurança e prefere uma vida tranquila ao saber que está sempre preparado para possíveis imprevistos.\n\n#GBOEX #EducaçãoFinanceira",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-07-30T13:30:24+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 1.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.910624+00:00",
       "raw_id": ""
     },
     {
@@ -2521,6 +2620,23 @@
       "raw_id": ""
     },
     {
+      "id": "958476d228d71ff0f53b3c5faf090361391d5ab5",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "Amizade de verdade é aquela que traz leveza para a rotina e oferece cuidado quando você mais precisa! 💙\n\nAquele amigo que é a sua rede de apoio e sempre pergunta se você chegou bem",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid0tnSgfc9BfJjq5omARWvpeNbS5RYU7Qx5WiWG4WyEJZqjBUnLL1p2Fu33ViXLeS2Fl",
+      "text": "Amizade de verdade é aquela que traz leveza para a rotina e oferece cuidado quando você mais precisa! 💙\n\nAquele amigo que é a sua rede de apoio e sempre pergunta se você chegou bem é uma das formas mais bonitas de proteção. Afinal, cuidar de quem importa é o que realmente faz a diferença.\n\nMarque aquele amigo especial aqui nos comentários ou envie este post para celebrar quem sempre está ao seu lado! Feliz Dia do Amigo! 🎉\n\n#GBOEX #DiaDoAmigo",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-07-20T12:00:53+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.333,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.910801+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "1b4fb83455d0a1fff7f5d5299e07c1c4c4fb53c7",
       "source": "facebook",
       "channel": "canal_proprio",
@@ -2997,6 +3113,23 @@
       "raw_id": ""
     },
     {
+      "id": "e3ab30cba8b1e95dec7129b5c47b7345d15a9d79",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "Cada fase da vida pede uma estratégia diferente. Seja para criar uma reserva financeira ou garantir assistências para o dia a dia, temos a opção certa para os seus objetivos atuais",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid028pc3UVh2f89Vg5rFoTrY4kjeD9fCF19ArKTmDFvdqc6dPUQEMVJGdZMtAPf4N8FNl",
+      "text": "Cada fase da vida pede uma estratégia diferente. Seja para criar uma reserva financeira ou garantir assistências para o dia a dia, temos a opção certa para os seus objetivos atuais. ✅\n\nQual dessas caixinhas você marcaria hoje?\n\nAcesse o link da bio para conferir os detalhes de cada plano e fazer a sua escolha.\n\n#GBOEX #Planejamento",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-07-08T13:00:23+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.911081+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "1429cba5f11e34d5b88e8745a7f3d3d9dbfc7d0d",
       "source": "facebook",
       "channel": "canal_proprio",
@@ -3337,23 +3470,6 @@
       "raw_id": "tVWB3iykL6OWe0EY"
     },
     {
-      "id": "0f2c9e2739a102267c24045ed20ed78aef951509",
-      "source": "facebook",
-      "channel": "social",
-      "title": "GBOEX SEMPRE!!!\n🇧🇷🇧🇷🇧🇷",
-      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid0275oDcuUYBF7PidcLrMuG1db9jhPNW7FbsUqyCNYvAZ1GHBAhfCsTwxGd9cj31AJrl?comment_id=1026327093271778",
-      "text": "GBOEX SEMPRE!!!\n🇧🇷🇧🇷🇧🇷",
-      "author": "Mario Lescano",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2026-07-02T15:41:51+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:31.811372+00:00",
-      "raw_id": ""
-    },
-    {
       "id": "5b8d87562b3a1a62a32525d2cb3463fab86d9c12",
       "source": "reclame_aqui",
       "channel": "reclamacao",
@@ -3691,6 +3807,23 @@
       "sentiment_score": 0.7,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:50:15.786038+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "483b3b4e356b771b27e3e446ff34e901b5217989",
+      "source": "facebook",
+      "channel": "canal_proprio",
+      "title": "Quem planeja com o GBOEX conta com amparo em todos os momentos, inclusive no dia a dia. Nossos planos de pecúlio e seguro de pessoas vão muito além do futuro e oferecem assistência",
+      "url": "https://www.facebook.com/GBOEXoficial/posts/pfbid02v5MsoQzR6D3xHr23pCBb4ZL1VQeCFmViePszTcPRoSehbS7pp8R9ZfudRozvMfxXl",
+      "text": "Quem planeja com o GBOEX conta com amparo em todos os momentos, inclusive no dia a dia. Nossos planos de pecúlio e seguro de pessoas vão muito além do futuro e oferecem assistências práticas desenvolvidas para resolver os imprevistos da sua rotina rapidamente.\n\nDe serviços residenciais essenciais a suportes de conveniência, você garante a tranquilidade de estar protegido agora mesmo, nas pequenas e grandes situações.\n\nÉ o valor do seu investimento retornando em facilidades para o seu presente.\n\nAs informações de registro dos planos estão disponíveis no link da bio.\n\n#GBOEX #Assistências #Proteção #Planejamento",
+      "author": "GBOEX (oficial)",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2026-06-26T19:00:21+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.667,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:20:20.911304+00:00",
       "raw_id": ""
     },
     {
@@ -6958,6 +7091,23 @@
       "raw_id": ""
     },
     {
+      "id": "50cabb8ea48fa18f10de311ea1d5981713111918",
+      "source": "youtube",
+      "channel": "social",
+      "title": "O GBOEX buscava premiar seus principais corretores e parceiros comerciais com uma experiência inesquecível, reforçando o reconhecimento pelo desempenho excepcional e fortalecendo o…",
+      "url": "https://www.youtube.com/watch?v=PnmsQzNKy0E",
+      "text": "O GBOEX buscava premiar seus principais corretores e parceiros comerciais com uma experiência inesquecível, reforçando o reconhecimento pelo desempenho excepcional e fortalecendo o vínculo com a marca. O desafio era proporcionar uma viagem de incentivo que equilibrasse a exclusividade, cultura e lazer, garantindo momentos memoráveis e uma execução impecável. \n\nA resposta foi uma viagem de incentivo para Portugal, combinando tradição, sofisticação e experiências autênticas. A Eventesse desenhou um roteiro premium, alinhado ao perfil do público, com vivências personalizadas em Lisboa e no Vale do Douro, explorando o melhor da cultura, gastronomia e hospitalidade portuguesa.",
+      "author": "Eventesse Live Marketing",
+      "domain": "youtube.com",
+      "language": "pt",
+      "published_at": "2025-04-09T13:15:52+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.667,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:19:02.258163+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "1fc0a4bc5169de6ec1901ed2946459ef01d72a5a",
       "source": "youtube",
       "channel": "social",
@@ -6972,6 +7122,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:04:52.979353+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "b0524a30c53ca2119266c4173740ddae5185fb4b",
+      "source": "youtube",
+      "channel": "canal_proprio",
+      "title": "Conheça um pouco mais sobre os Serviços de Assistência oferecidos pelo Vida 360 GBOEX.",
+      "url": "https://www.youtube.com/watch?v=D4Wvi32t9QM",
+      "text": "Conheça um pouco mais sobre os Serviços de Assistência oferecidos pelo Vida 360 GBOEX.",
+      "author": "GBOEX",
+      "domain": "youtube.com",
+      "language": "pt",
+      "published_at": "2025-03-12T14:32:29+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-17T11:19:02.258691+00:00",
       "raw_id": ""
     },
     {
@@ -7825,6 +7992,23 @@
       "raw_id": ""
     },
     {
+      "id": "5491ba26d5aec4fbbab4d7f8d5b171c183803453",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: nao tem atendimento ao publico mas na hora de cobrar bem caro eles sabem muito bem. estou faz uma semana tentando contato tentando um boleto que está indisponiv",
+      "url": "https://www.facebook.com/irapuanro/posts/pfbid0VgKtGfnjdxehMAcDAAhwPfX8ojdqYFV3vPo1F6hUX8K7hgxawRFXkKW68a82cuFEl",
+      "text": "nao tem atendimento ao publico mas na hora de cobrar bem caro eles sabem muito bem. estou faz uma semana tentando contato tentando um boleto que está indisponivel no site e nao tem nenhum canal de atendimento. o whats eles nem visualizam.",
+      "author": "Irapuan Oliveira",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2020-11-05T14:16:33+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.091527+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "61f8b90e907046840615c8ed9dbf30d506ea6f6c",
       "source": "facebook",
       "channel": "social",
@@ -7859,23 +8043,6 @@
       "raw_id": ""
     },
     {
-      "id": "baadc8abc12485404b3b2f7095bb0a57bd20a41d",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: nao tem atendimento ao publico mas na hora de cobrar bem caro eles sabem muito bem. estou faz uma semana tentando contato tentando um boleto que está indisponiv",
-      "url": "https://www.facebook.com/irapuanro/posts/pfbid02ZaA2n6esrHVSAJyPCtsnvZCcbMmFcyycdRx6zFCEoCEfknj1NZhZmvVbHXph2ob8l",
-      "text": "nao tem atendimento ao publico mas na hora de cobrar bem caro eles sabem muito bem. estou faz uma semana tentando contato tentando um boleto que está indisponivel no site e nao tem nenhum canal de atendimento. o whats eles nem visualizam.",
-      "author": "Irapuan Oliveira",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2020-11-05T14:16:33+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.031632+00:00",
-      "raw_id": ""
-    },
-    {
       "id": "d1d89feb5a1e0698c572d426ad9fc9befa4b6675",
       "source": "youtube",
       "channel": "canal_proprio",
@@ -7890,6 +8057,23 @@
       "sentiment_score": 0.7,
       "is_owned": 1,
       "collected_at": "2026-07-10T14:40:33.843096+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "40b29cbd5dd20aa29282add226ec96cee28827f0",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Não recomendo, estou tentando contato para um vizinho que é associado.\nNão recomendo pq o primeiro contato que tentei fazer o número 0800 não aceita ligação de ",
+      "url": "https://www.facebook.com/rosalia.figueiredo.1/posts/pfbid02JrFvHuQh9p7pLYRgy3mrmBtE9SadGLMjaZgsVA6zFXQShoaHP6KU5bx6awajur4Dl",
+      "text": "Não recomendo, estou tentando contato para um vizinho que é associado.\nNão recomendo pq o primeiro contato que tentei fazer o número 0800 não aceita ligação de celular (as pessoas hoje em dia a maioria tem celular e não mais fixo) o número de celular disponível no site não aceita ligação, somente mensagens de whats o que a pessoa associada não utiliza, tive de mandar mensagem pelo meu!!!!\nO Caht do site, ninguém responde e até o momento aguardo retorno de e-mail, chat, whats...\nDesde o mês passado meu vizinho (idoso) esta tentando contato sem sucesso, compreendemos o momento de pandemia por isso ele vem a meses tentando ligar!!!\nAté o momento não recebeu o boleto para pagamento.\nEsperamos confiantes um retorno e como eu disse no inicio eu não recomendaria!",
+      "author": "Rosália Figueiredo",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2020-07-20T17:40:10+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.091599+00:00",
       "raw_id": ""
     },
     {
@@ -7924,23 +8108,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.554941+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "1333cfe25fc8e97445110d29d1146c69e438019a",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Não recomendo, estou tentando contato para um vizinho que é associado.\nNão recomendo pq o primeiro contato que tentei fazer o número 0800 não aceita ligação de ",
-      "url": "https://www.facebook.com/rosalia.figueiredo.1/posts/pfbid0FM1AhViefQExipKzf7m4vC7qKeEaCkmbG1dAFJJct1hnqd6skFk6JPeJuVHqBYfql",
-      "text": "Não recomendo, estou tentando contato para um vizinho que é associado.\nNão recomendo pq o primeiro contato que tentei fazer o número 0800 não aceita ligação de celular (as pessoas hoje em dia a maioria tem celular e não mais fixo) o número de celular disponível no site não aceita ligação, somente mensagens de whats o que a pessoa associada não utiliza, tive de mandar mensagem pelo meu!!!!\nO Caht do site, ninguém responde e até o momento aguardo retorno de e-mail, chat, whats...\nDesde o mês passado meu vizinho (idoso) esta tentando contato sem sucesso, compreendemos o momento de pandemia por isso ele vem a meses tentando ligar!!!\nAté o momento não recebeu o boleto para pagamento.\nEsperamos confiantes um retorno e como eu disse no inicio eu não recomendaria!",
-      "author": "Rosália Figueiredo",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2020-07-20T17:40:10+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.031687+00:00",
       "raw_id": ""
     },
     {
@@ -8046,6 +8213,23 @@
       "raw_id": ""
     },
     {
+      "id": "28f5fdcc515b8755ed24edd2accd8a846fb19b38",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Todos os eventos das premiações da Ordem do Mérito Cívico da Liga da Defesa Nacional do Rio Grande do Sul ocorrem no salão de eventos da GBOEX. Excelente local!",
+      "url": "https://www.facebook.com/antoniorobertovigne/posts/pfbid0pCjcJWsWwHH687yL1CWz88qEVZMaK73zvr4YR72Ag37Rj91CsDtGw243N1ExJRiGl",
+      "text": "Todos os eventos das premiações da Ordem do Mérito Cívico da Liga da Defesa Nacional do Rio Grande do Sul ocorrem no salão de eventos da GBOEX. Excelente local!",
+      "author": "Antonio Roberto Vigne",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2019-12-19T02:22:10+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.091741+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "b206a9f1db554de396a8ddf11c512d6f42110061",
       "source": "facebook",
       "channel": "social",
@@ -8080,20 +8264,20 @@
       "raw_id": ""
     },
     {
-      "id": "dc9c03fb8737d6c98e15a2f3fedf848530e0c275",
+      "id": "318f6d40da52f2fd8fd819f670b25a0a80dd4f4f",
       "source": "facebook",
       "channel": "social",
-      "title": "Avaliação: Todos os eventos das premiações da Ordem do Mérito Cívico da Liga da Defesa Nacional do Rio Grande do Sul ocorrem no salão de eventos da GBOEX. Excelente local!",
-      "url": "https://www.facebook.com/antoniorobertovigne/posts/pfbid02sccEFJATL3AgcfhTqqewtUHCVugHVS9Cz6DKADg6ZAu9u3PYCLuJto6PpX57ernTl",
-      "text": "Todos os eventos das premiações da Ordem do Mérito Cívico da Liga da Defesa Nacional do Rio Grande do Sul ocorrem no salão de eventos da GBOEX. Excelente local!",
-      "author": "Antonio Roberto Vigne",
+      "title": "Avaliação: O GBOEX é uma empresa íntegra, idônea e muito humana. Com uma missão muito linda. E seu valores mais presente do que nunca.👏👏👏",
+      "url": "https://www.facebook.com/dymattos/posts/pfbid033XPvBAiqisMe4RCygEq6DeaiK2SFqKVVVsbrKrVEGgLVT6ccUybbJkkZgqtwxreYl",
+      "text": "O GBOEX é uma empresa íntegra, idônea e muito humana. Com uma missão muito linda. E seu valores mais presente do que nunca.👏👏👏",
+      "author": "Daiane Matos",
       "domain": "facebook.com",
       "language": "pt",
-      "published_at": "2019-12-19T02:22:10+00:00",
+      "published_at": "2019-10-31T22:31:12+00:00",
       "sentiment": "positivo",
       "sentiment_score": 0.6,
       "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.031796+00:00",
+      "collected_at": "2026-08-17T11:21:07.091862+00:00",
       "raw_id": ""
     },
     {
@@ -8128,23 +8312,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.555301+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "df4f2121bba6a668fa3f4b0b614255bdc319499c",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: O GBOEX é uma empresa íntegra, idônea e muito humana. Com uma missão muito linda. E seu valores mais presente do que nunca.👏👏👏",
-      "url": "https://www.facebook.com/dymattos/posts/pfbid0yYBe27TbQcg6MWp3s5YRyJPpYKw2zN8Q2GfPTEHTtjS8aMD1JhV9ZSxmMg5xb6YPl",
-      "text": "O GBOEX é uma empresa íntegra, idônea e muito humana. Com uma missão muito linda. E seu valores mais presente do que nunca.👏👏👏",
-      "author": "Daiane Matos",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2019-10-31T22:31:12+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.031850+00:00",
       "raw_id": ""
     },
     {
@@ -8284,6 +8451,23 @@
       "raw_id": ""
     },
     {
+      "id": "5726c4c0481f74cc3af6409031f7385bee9f2847",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Por ser um empresa séria que honra com seus compromissos.",
+      "url": "https://www.facebook.com/analuiza.ribeiro.5815/posts/pfbid02VDMHFPUEu2z915LXWcCEdxNbRWmpDh3p9VGuchsscrMKnRqgCNqWKem6wGyc9dk7l",
+      "text": "Por ser um empresa séria que honra com seus compromissos.",
+      "author": "Ana Luiza Ribeiro",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2019-04-07T03:45:08+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092093+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "0e8ea12c3c21b87023a908d76f507a1e0f260b1f",
       "source": "facebook",
       "channel": "social",
@@ -8315,23 +8499,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.555634+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "262378a713960bbd67738c71c77bda83928de10e",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Por ser um empresa séria que honra com seus compromissos.",
-      "url": "https://www.facebook.com/analuiza.ribeiro.5815/posts/pfbid0RE916LCzb81D1N3PGayxFfEEyRyp9Ftxzb7jXipJNyPm1V2v42vX7DdxjkskGk1il",
-      "text": "Por ser um empresa séria que honra com seus compromissos.",
-      "author": "Ana Luiza Ribeiro",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2019-04-07T03:45:08+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032010+00:00",
       "raw_id": ""
     },
     {
@@ -8369,6 +8536,23 @@
       "raw_id": ""
     },
     {
+      "id": "a4e4db28a91461d3418d87cba3ba975c70e017b4",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Empresa maravilhosa, melhor atendimento, pessoas capacitadas, benefícios em dia.\nÓtimas vantagens para o associado.",
+      "url": "https://www.facebook.com/priscila.rita.9/posts/pfbid0DmcLxL2uquBpXWezmveCcxT7C1CgmtyUTCWqCY7viGFMsRUTfJkZicRLJiDBcxiSl",
+      "text": "Empresa maravilhosa, melhor atendimento, pessoas capacitadas, benefícios em dia.\nÓtimas vantagens para o associado.",
+      "author": "Priscila Rita",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2019-03-22T13:51:55+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092162+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "37020cfc52d6cdeb26b89ea8167cd4a806e086db",
       "source": "facebook",
       "channel": "social",
@@ -8400,23 +8584,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.555744+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "33d4f095b3775a19969d81f969ec7835200cc58e",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa maravilhosa, melhor atendimento, pessoas capacitadas, benefícios em dia.\nÓtimas vantagens para o associado.",
-      "url": "https://www.facebook.com/priscila.rita.9/posts/pfbid02HfSVTku449JKsofhSHNBwJ5LSjP2qauTFArXYfXEgTGjCmKqtSsGv8h5gSGpHNRil",
-      "text": "Empresa maravilhosa, melhor atendimento, pessoas capacitadas, benefícios em dia.\nÓtimas vantagens para o associado.",
-      "author": "Priscila Rita",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2019-03-22T13:51:55+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032063+00:00",
       "raw_id": ""
     },
     {
@@ -8692,6 +8859,23 @@
       "raw_id": ""
     },
     {
+      "id": "7b18f7a99d8eaf81787ca43979362e7dc0d1b2a0",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: não que seja uma empresa séria, pois o cancelamento de matrícula só pode ser feito mediante ao envio de carta essa é a primeira empresa que não cancela por tele",
+      "url": "https://www.facebook.com/thiaguinho.fernandes1/posts/pfbid0d3StRJZJVYXrqecQhhVmrwPaDkgZwBT8ZhSC6fUunzDSJXgDSEMa4opDtABGNu3ol",
+      "text": "não que seja uma empresa séria, pois o cancelamento de matrícula só pode ser feito mediante ao envio de carta essa é a primeira empresa que não cancela por telefone ou representante",
+      "author": "Thiago Fernandes",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2018-05-31T20:57:56+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092365+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "c1d608955545dc617bfedd9b4aaa6e5a87c96a54",
       "source": "facebook",
       "channel": "social",
@@ -8723,23 +8907,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.556072+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e7632489e95d731bc9f0ba406e1c2b00bd21245a",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: não que seja uma empresa séria, pois o cancelamento de matrícula só pode ser feito mediante ao envio de carta essa é a primeira empresa que não cancela por tele",
-      "url": "https://www.facebook.com/thiaguinho.fernandes1/posts/pfbid02gTKWN5rEsxmitrP6hQceDjU1etcAa8gybPqtt8qV2XMBwCHgL3ZceeduWP3YAYiql",
-      "text": "não que seja uma empresa séria, pois o cancelamento de matrícula só pode ser feito mediante ao envio de carta essa é a primeira empresa que não cancela por telefone ou representante",
-      "author": "Thiago Fernandes",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2018-05-31T20:57:56+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032221+00:00",
       "raw_id": ""
     },
     {
@@ -8794,6 +8961,23 @@
       "raw_id": ""
     },
     {
+      "id": "f1ad9e818e1a5399a1b8ace99aa4cad0ef67e510",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Recomenda",
+      "url": "https://www.facebook.com/catarina.merci/posts/pfbid02Z1r18aHDH23kLMziCjTZYj4KvfVuu1WXTsWskjYT8kmdKYGCWXGuzBHutP5JuCnzl",
+      "text": "",
+      "author": "Catarina Merci",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2018-03-16T14:30:35+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092500+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "374015b87e285d159478923a352798c99c436147",
       "source": "facebook",
       "channel": "social",
@@ -8825,23 +9009,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.556293+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "9aa5ea8fbc2699dc8ec022b6513089b853de15d6",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/catarina.merci/posts/pfbid0V2diyX1xy1yqEWDnvyA5prfTMa9HJVK68ovtyS8H98pYUsej3CY7gUzyMYzzCnP4l",
-      "text": "",
-      "author": "Catarina Merci",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2018-03-16T14:30:35+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032329+00:00",
       "raw_id": ""
     },
     {
@@ -8896,6 +9063,23 @@
       "raw_id": ""
     },
     {
+      "id": "345164edbf24bc0947d9970d14df365539646f76",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Não recomenda",
+      "url": "https://www.facebook.com/eduardo.rochaalmeida/posts/pfbid02gHBHzU3ivf6KFXhYBtwQhFTozucoWuknTiXDC6pcBZ98ou3b2rzBZdBpfjKocUsRl",
+      "text": "",
+      "author": "Eduardo Rocha Almeida",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2017-12-28T12:01:36+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092632+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "e7d1d3455fb92190edd39d919ac0dc40630d27c2",
       "source": "facebook",
       "channel": "social",
@@ -8927,23 +9111,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.556521+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "3a3f216256f47eb2045633be54e52240c06136bc",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Não recomenda",
-      "url": "https://www.facebook.com/eduardo.rochaalmeida/posts/pfbid0cHy1qQnUccchQggq1T9oYp8Cq8oe4E7F9rGm3dFqoBeZic53BkdfBXeKH2mvUmxCl",
-      "text": "",
-      "author": "Eduardo Rocha Almeida",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2017-12-28T12:01:36+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032435+00:00",
       "raw_id": ""
     },
     {
@@ -8998,6 +9165,23 @@
       "raw_id": ""
     },
     {
+      "id": "018983c7d6003c86fbbd5280a200f9dac18266df",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Recomenda",
+      "url": "https://www.facebook.com/ana.maschio.clemente/posts/pfbid0cScHJeoCLjmVWEiq8j1SajsF6nexYgTMVj3rDTdxF9h3UTncJkKFPN2Gs5JHxq2Xl",
+      "text": "",
+      "author": "Ana Maschio Clemente",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2017-12-16T21:18:13+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092791+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "7dda679a5de83a8fad1b1fda64b1d611bfc0d006",
       "source": "facebook",
       "channel": "social",
@@ -9032,23 +9216,6 @@
       "raw_id": ""
     },
     {
-      "id": "fda4d0d8bec546365be1492b70dcdaafc0f1bc7a",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/ana.maschio.clemente/posts/pfbid02gLSRp5fLZ6dPBdiXqCLEMLCZLutgX72Xq8aennKXTc7XL97W5MNx6mdJJPQtPFWpl",
-      "text": "",
-      "author": "Ana Maschio Clemente",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2017-12-16T21:18:13+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032541+00:00",
-      "raw_id": ""
-    },
-    {
       "id": "0da034f663a8e149a4b6a3d3dd7793a3db13fc8f",
       "source": "youtube",
       "channel": "canal_proprio",
@@ -9063,6 +9230,23 @@
       "sentiment_score": 0.0,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.880552+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "3f9cb3fa1a0a2f5f488b4eecd76dbaf5e7b13560",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Empresa exemplo!!!",
+      "url": "https://www.facebook.com/olga.didio/posts/pfbid02dMuJeLD3xNCvCWhZSnFfdqxNXhUjn68ugtpeLANLUBHLCmNSLfJKtfxLee2sQWZUl",
+      "text": "Empresa exemplo!!!",
+      "author": "Olga Didio",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2017-10-20T20:56:25+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.092863+00:00",
       "raw_id": ""
     },
     {
@@ -9100,20 +9284,20 @@
       "raw_id": ""
     },
     {
-      "id": "4fa3660ea898fa83e7ef263a2481c20e9cd2299b",
+      "id": "05c89e54293783a91d989c1ca419d18be38b3a5f",
       "source": "facebook",
       "channel": "social",
-      "title": "Avaliação: Empresa exemplo!!!",
-      "url": "https://www.facebook.com/olga.didio/posts/pfbid0ZNh2VGwoeFEJNRmnzzAy6jSKnbTtPbzgpwyePZnJG8v7z4spNLC9ykqiisf5NU9Xl",
-      "text": "Empresa exemplo!!!",
-      "author": "Olga Didio",
+      "title": "Avaliação: EU TO A 1 MÊS CLICANDO PARA SAIR DA LIST DE EMAILS ( QUE POR SINAL EU NEM ME CADASTREI PRA RECEBER ) e contiinuo recebendo os emails de vocês. POR GENTILEZA NÂO",
+      "url": "https://www.facebook.com/passos.natan/posts/pfbid0mnQBQ637yzJ7DCwJERMv4hX15NKpYG2oga5yhP2rsFBrsT573mF5WmLrqv4TQSZhl",
+      "text": "EU TO A 1 MÊS CLICANDO PARA SAIR DA LIST DE EMAILS ( QUE POR SINAL EU NEM ME CADASTREI PRA RECEBER ) e contiinuo recebendo os emails de vocês. POR GENTILEZA NÂO ME MANDEM MAIS EMAILS GRATO. \n\nInformo meu email por inbox",
+      "author": "Natan Passos",
       "domain": "facebook.com",
       "language": "pt",
-      "published_at": "2017-10-20T20:56:25+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
+      "published_at": "2017-08-07T19:21:36+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
       "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032594+00:00",
+      "collected_at": "2026-08-17T11:21:07.092939+00:00",
       "raw_id": ""
     },
     {
@@ -9148,23 +9332,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.556962+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "18a0ac498ea884fd955b18d88a466db3bbe0aec4",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: EU TO A 1 MÊS CLICANDO PARA SAIR DA LIST DE EMAILS ( QUE POR SINAL EU NEM ME CADASTREI PRA RECEBER ) e contiinuo recebendo os emails de vocês. POR GENTILEZA NÂO",
-      "url": "https://www.facebook.com/passos.natan/posts/pfbid02qCGoLsL4NYWows31PigqRcXxfJKiTnoay1KDggd9LYxsbuZBBNQK81iTQVuhSNU5l",
-      "text": "EU TO A 1 MÊS CLICANDO PARA SAIR DA LIST DE EMAILS ( QUE POR SINAL EU NEM ME CADASTREI PRA RECEBER ) e contiinuo recebendo os emails de vocês. POR GENTILEZA NÂO ME MANDEM MAIS EMAILS GRATO. \n\nInformo meu email por inbox",
-      "author": "Natan Passos",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2017-08-07T19:21:36+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032648+00:00",
       "raw_id": ""
     },
     {
@@ -9338,6 +9505,23 @@
       "raw_id": ""
     },
     {
+      "id": "eddf8e35c0ae6b758efbd817af32d916fcd58267",
+      "source": "facebook",
+      "channel": "social",
+      "title": "Avaliação: Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,a",
+      "url": "https://www.facebook.com/alano.paiva/posts/pfbid0uQUxzVCp2K3NBAwsHav1edfYHsYBcEQAST8D5zGn1WJP79cyCTZJEHYAXFvYw99xl",
+      "text": "Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,acho que terei de tomar outras medidas.Espero não me decepcionar com uma seguradora que tem um nome a zelar.",
+      "author": "Alano Paiva",
+      "domain": "facebook.com",
+      "language": "pt",
+      "published_at": "2016-11-06T23:58:35+00:00",
+      "sentiment": "negativo",
+      "sentiment_score": -0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-17T11:21:07.093216+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "4932e1a7a6dd72d3df9f039e4ae9f4c8e9898d7b",
       "source": "facebook",
       "channel": "social",
@@ -9369,23 +9553,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.557369+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "0910c0a4a01d48a93abbc23def1771f5565660c1",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,a",
-      "url": "https://www.facebook.com/alano.paiva/posts/pfbid02xpMawGVkQqG51KBCR4tN5dDj1qsv8geCm5cT8pfRG49vcHJJsAnYaA5LYGHYaeynl",
-      "text": "Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,acho que terei de tomar outras medidas.Espero não me decepcionar com uma seguradora que tem um nome a zelar.",
-      "author": "Alano Paiva",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-11-06T23:58:35+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032859+00:00",
       "raw_id": ""
     },
     {
@@ -9438,165 +9605,12 @@
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.557461+00:00",
       "raw_id": ""
-    },
-    {
-      "id": "f441d4c35db234d3ab68ba0c2f2a08c4192527f0",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde poss",
-      "url": "https://www.facebook.com/vaniamaria.nevespoli/posts/pfbid0AxSCpK56UUEV7ToJdw3WQiXhkJDDZgaJYHNpBbRHVC23TSH1SP5BwBAzUmNwduHMl",
-      "text": "Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde possui convênio junto com o tal cartão de benefício. Isso já faz mais de um mês  e cadê?",
-      "author": "Vania Maria Neves Poli",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-09-12T19:06:17+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032912+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "07e4e8d2e5249676c9961877a051f399646dd4f7",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "url": "https://www.facebook.com/rozanarjlima/posts/pfbid02yF3ygJTLcAcv5Seutc422iz9DBxQKuvFj8DU78y1orUTr5HbLUNV3aTafKk2mPrVl",
-      "text": "Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "author": "Rozana Lima",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-22T21:00:06+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.770442+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "6025dae1af7c7c0d98d89656ff98f14ed5e888fb",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "url": "https://www.facebook.com/rozanarjlima/posts/pfbid0unRmQhK12kk5G8xbDBF6xaD19y8Xv1QuFJtkBDhQ1wscWH4zttrD3MR3vCsmXYctl",
-      "text": "Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "author": "Rozana Lima",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-22T21:00:06+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.557556+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "d261c08e774d094905cae86db3626c17f45103cf",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "url": "https://www.facebook.com/rozanarjlima/posts/pfbid02ybEwGZh7yTVPvDWa47XVwYRbzhfZ7jPQaHC77ztbfyhtqhXxATqoFvFMvzVKDEJel",
-      "text": "Gb é tudo na minha vida é meu sustento meu ganha pão.\nSem falar que meu marido faleceu e recebi certinho e em pouquíssimo tempo",
-      "author": "Rozana Lima",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-22T21:00:06+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032966+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "c28166cf085808afadd0b9be77ce32dc3045fc86",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/kelly.martins.56211/posts/pfbid025jVyg7ve8c67o5phRDAFAmoK7bV5tfQdZgbNWPLZBmSRT31TQxNJEKo6xdZw4LHVl",
-      "text": "",
-      "author": "Kelly Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-14T11:52:09+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.770510+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "b907b29cf248aefea31fe42ebd568eb80a6debbf",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/kelly.martins.56211/posts/pfbid02GsmQWnJZ7DL44sbEGkshGayrZnaYcDsMNTCxqUhoW7puGoPjasMod9yABEgDRPEl",
-      "text": "",
-      "author": "Kelly Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-14T11:52:09+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.557648+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "f28a475a58d86e917369f3af844b927b0414f30d",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/kelly.martins.56211/posts/pfbid0265gwGPARVavu3tvJNf27sWa2yaX81XtxYTY7ZAhejLACv2CkxtDozdf94oeL7xEtl",
-      "text": "",
-      "author": "Kelly Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-07-14T11:52:09+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.033019+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "5e19b005a9b08ff53299c8192164047f00c56efb",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX apresenta nova identidade visual - Revista Apólice",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeVZ5QjR2Z0NSZEd4b0ZhME9selYyNzQ0bUk5WUxRWHdoQWd6akZaNVJpSzN0VGQ3aVdQcnhSQ2VOMjY1cHFxZkthLWRvQ2lvY3lBQ28tT2xSWjRORVJwa3FjUUg1eUdqOTd1V05nSnVSYkZMT01xZTVhemhWaUlxV29Ndw?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxQeVZ5QjR2Z0NSZEd4b0ZhME9selYyNzQ0bUk5WUxRWHdoQWd6akZaNVJpSzN0VGQ3aVdQcnhSQ2VOMjY1cHFxZkthLWRvQ2lvY3lBQ28tT2xSWjRORVJwa3FjUUg1eUdqOTd1V05nSnVSYkZMT01xZTVhemhWaUlxV29Ndw?oc=5\" target=\"_blank\">GBOEX apresenta nova identidade visual</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Revista Apólice</font>",
-      "author": "Revista Apólice",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2012-11-28T08:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-09T23:12:47.534463+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "13d56c00db506fd48c2e096b8cd0f25c39650f75",
-      "source": "youtube",
-      "channel": "social",
-      "title": "GBOEX\r\nDireção: Raquel Diefenthäler",
-      "url": "https://www.youtube.com/watch?v=W-YrbC71vbE",
-      "text": "GBOEX\r\nDireção: Raquel Diefenthäler",
-      "author": "Iniciativa Cinema e Vídeo",
-      "domain": "youtube.com",
-      "language": "pt",
-      "published_at": "2009-04-16T17:58:01+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:12:38.828954+00:00",
-      "raw_id": ""
     }
   ],
   "consumo": {
-    "pct_usado": 37.8,
+    "pct_usado": 73.6,
     "ciclo_fim": "2026-09-15T23:59:59.999Z",
     "freado": false,
-    "coletas_restantes": 1
+    "coletas_restantes": 0
   }
 }
