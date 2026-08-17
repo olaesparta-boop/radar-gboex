@@ -49,7 +49,9 @@ jobs:
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SENTIMENT_MODEL: ${{ vars.SENTIMENT_MODEL }}
+          # veio junto do .env via `gh secret set -f .env`; se faltar, o
+          # config.py cai no padrão (Haiku)
+          SENTIMENT_MODEL: ${{ secrets.SENTIMENT_MODEL }}
         run: |
           if [ "${{ inputs.modo }}" = "gratis" ]; then
             python main.py --only google_news,gdelt,gboex_site

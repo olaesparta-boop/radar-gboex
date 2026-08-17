@@ -88,8 +88,10 @@ O `.env` não vai para o GitHub. As chaves precisam ser cadastradas uma vez em
 
 ```bash
 gh secret set -f .env -R olaesparta-boop/radar-gboex
-gh variable set SENTIMENT_MODEL -R olaesparta-boop/radar-gboex --body "claude-haiku-4-5-20251001"
 ```
+
+(feito em 16/08/2026 — `APIFY_TOKEN`, `ANTHROPIC_API_KEY` e `SENTIMENT_MODEL`
+já estão cadastrados; refaça o comando se trocar alguma chave no `.env`.)
 
 Sem `APIFY_TOKEN` cadastrado, a coleta na nuvem funciona só com as fontes
 grátis (Google News, GDELT, site GBOEX) — Reclame Aqui e redes ficam de fora.
