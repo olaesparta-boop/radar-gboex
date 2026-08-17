@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-17T00:42:10.543836+00:00",
+  "generated_at": "2026-08-17T00:49:00.120687+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 318,
@@ -9594,12 +9594,9 @@
     }
   ],
   "consumo": {
-    "orcamento_usd": 5.0,
-    "gasto_usd": 1.89,
-    "restante_usd": 3.11,
+    "pct_usado": 37.8,
     "ciclo_fim": "2026-09-15T23:59:59.999Z",
     "freado": false,
-    "custo_coleta_usd": 1.89,
     "coletas_restantes": 1
   }
 }

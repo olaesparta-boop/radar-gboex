@@ -62,19 +62,22 @@ def custo_da_rodada(antes: dict | None, depois: dict | None) -> float:
 
 def painel(gasto_ciclo_usd: float, ciclo_fim: str | None,
            custo_coleta_usd: float = 0.0, freado: bool = False) -> dict:
-    """Bloco público do data.json: só a verba do radar, nunca o saldo da conta."""
+    """
+    Bloco público do data.json. Vai só a PROPORÇÃO consumida da verba — nenhum
+    valor em dinheiro: nem o saldo da conta, nem a verba do radar. Quem precisa
+    do número em dólar olha o `config.py` e a tabela `run_costs` do banco.
+    """
     orcamento = float(config.RADAR_BUDGET_USD)
-    gasto = round(min(max(gasto_ciclo_usd, 0.0), orcamento * 99), 2)
-    restante = round(max(orcamento - gasto, 0.0), 2)
+    gasto = max(gasto_ciclo_usd, 0.0)
+    pct = round(min(100.0, (gasto / orcamento) * 100), 1) if orcamento else 0.0
+    restante = max(orcamento - gasto, 0.0)
 
     bloco = {
-        "orcamento_usd": round(orcamento, 2),
-        "gasto_usd": gasto,
-        "restante_usd": restante,
+        "pct_usado": pct,
         "ciclo_fim": ciclo_fim,
         "freado": bool(freado),
     }
+    # quantas coletas completas ainda cabem — contagem, não dinheiro
     if custo_coleta_usd > 0:
-        bloco["custo_coleta_usd"] = round(custo_coleta_usd, 2)
         bloco["coletas_restantes"] = int(restante // custo_coleta_usd)
     return bloco

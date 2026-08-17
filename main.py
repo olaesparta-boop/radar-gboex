@@ -12,6 +12,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 import traceback
@@ -58,8 +59,9 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
         if pagos:
             freado = True
             names = [n for n in names if n not in config.PAID_COLLECTORS]
-            print(f"\n[verba] US$ {gasto_ciclo:.2f} de {config.RADAR_BUDGET_USD:.2f} "
-                  f"já usados neste ciclo — pulando fontes pagas: {', '.join(pagos)}")
+            quanto = ("verba do ciclo esgotada" if os.environ.get("GITHUB_ACTIONS")
+                      else f"US$ {gasto_ciclo:.2f} de {config.RADAR_BUDGET_USD:.2f} já usados")
+            print(f"\n[verba] {quanto} — pulando fontes pagas: {', '.join(pagos)}")
 
     print(f"\n== Radar {config.BRAND} — coleta iniciada ==\n")
     for name in names:
@@ -104,9 +106,14 @@ def run(only: list[str] | None = None, no_apify: bool = False) -> int:
         consumo = apify_usage.painel(
             gasto_ciclo, (consumo_antes or {}).get("ciclo_fim"),
             custo_coleta_usd=referencia, freado=freado)
-        print(f"  verba do ciclo: US$ {consumo['gasto_usd']:.2f} de "
-              f"{consumo['orcamento_usd']:.2f} usados"
-              + (f" | esta coleta: US$ {custo:.2f}" if custo else ""))
+        # o log do Actions é público num repositório público: lá sai só a
+        # proporção; rodando na sua máquina, sai o valor em dólar
+        if os.environ.get("GITHUB_ACTIONS"):
+            print(f"  verba do ciclo: {consumo['pct_usado']:.0f}% consumidos")
+        else:
+            print(f"  verba do ciclo: US$ {gasto_ciclo:.2f} de "
+                  f"{config.RADAR_BUDGET_USD:.2f} usados"
+                  + (f" | esta coleta: US$ {custo:.2f}" if custo else ""))
 
     out = export.write(rows, consumo=consumo)
     print(f"\n== data.json gerado: {out} ==")

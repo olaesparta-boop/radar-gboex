@@ -630,19 +630,17 @@ function esc(s) {
 }
 
 /* ---------------- mapa de consumo ----------------
-   Verba reservada às coletas pagas (redes sociais e Reclame Aqui) e quanto
-   dela o ciclo já consumiu. Medido na hora da coleta e lido do data.json. */
-const usd = (v) => "US$ " + Number(v).toLocaleString("pt-BR",
-  { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+   Quanto da verba das coletas pagas (redes sociais e Reclame Aqui) o ciclo já
+   consumiu. Só a barra: nenhum valor em dinheiro aparece no painel. */
 const diaMes = (iso) => new Date(iso).toLocaleDateString("pt-BR",
   { day: "2-digit", month: "2-digit" });
 
 function renderConsumo(c) {
   const box = document.getElementById("consumoMeter");
   if (!box) return;
-  if (!c || !c.orcamento_usd) { box.innerHTML = ""; return; }
+  if (!c || c.pct_usado == null) { box.innerHTML = ""; return; }
 
-  const usadoPct = Math.min(100, (c.gasto_usd / c.orcamento_usd) * 100);
+  const usadoPct = Math.min(100, Math.max(0, c.pct_usado));
   /* estado: cor + palavra (nunca só cor) */
   const estado = c.freado || usadoPct >= 100 ? { cls: "crit", txt: "Verba esgotada" }
     : usadoPct >= 85 ? { cls: "crit", txt: "No limite" }
@@ -650,28 +648,20 @@ function renderConsumo(c) {
         : { cls: "ok", txt: "Folga" };
 
   const renova = c.ciclo_fim ? ` · renova em ${diaMes(c.ciclo_fim)}` : "";
-  /* a barra mostra o CONSUMIDO — dito em texto para não depender da cor */
-  let rodape = "A barra mostra o consumo do ciclo.";
+  let rodape = "Consumo da verba neste ciclo" + renova + ".";
   if (c.freado) {
-    rodape += " Verba do ciclo esgotada: as coletas seguem só com as fontes grátis" +
+    rodape = "Verba do ciclo esgotada: as coletas seguem só com as fontes grátis" +
       (c.ciclo_fim ? ` até ${diaMes(c.ciclo_fim)}.` : ".");
-  } else if (c.custo_coleta_usd) {
-    rodape += ` Última coleta completa: ≈ ${usd(c.custo_coleta_usd)}` +
-      (c.coletas_restantes
-        ? ` — cabem cerca de ${c.coletas_restantes} coleta${c.coletas_restantes > 1 ? "s" : ""} até o fim do ciclo.`
-        : " — sem verba para outra coleta completa neste ciclo.");
+  } else if (c.coletas_restantes) {
+    rodape += ` Cabem cerca de ${c.coletas_restantes} coleta${c.coletas_restantes > 1 ? "s" : ""} completa${c.coletas_restantes > 1 ? "s" : ""} até lá.`;
   }
 
   box.innerHTML = `
     <div class="meter-card">
       <div class="meter-head">
         <span class="meter-label">Mapa de consumo
-          <span class="hint">(verba das coletas em redes sociais e Reclame Aqui)</span></span>
+          <span class="hint">(coletas em redes sociais e Reclame Aqui)</span></span>
         <span class="meter-state m-${estado.cls}">● ${estado.txt}</span>
-      </div>
-      <div class="meter-nums">
-        <span><strong class="meter-hero">${usd(c.restante_usd)}</strong> disponíveis</span>
-        <span class="meter-right">${usd(c.gasto_usd)} de ${usd(c.orcamento_usd)} usados${renova}</span>
       </div>
       <div class="meter-track" role="img"
            aria-label="${usadoPct.toFixed(0)}% da verba do ciclo consumida">

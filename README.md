@@ -236,10 +236,15 @@ coleta **continua rodando só com as fontes grátis** até o ciclo virar
 (`BUDGET_ENFORCE = False` desliga esse freio).
 
 O painel mostra isso como **Mapa de consumo** (abaixo dos KPIs, aba Geral):
-quanto resta da verba, quanto a última coleta custou e quantas ainda cabem. A
-medição é feita na hora da coleta (`radar/apify_usage.py`), o gasto de cada
-rodada fica na tabela `run_costs` do `radar.db` e só o resumo vai para o
-`data.json`. Sem `APIFY_TOKEN` não há medição e o mapa não aparece.
+**só a barra**, sem nenhum valor em dinheiro — proporção da verba consumida no
+ciclo, o estado em palavra (Folga / Atenção / Verba esgotada) e quantas coletas
+completas ainda cabem. A medição acontece na coleta (`radar/apify_usage.py`), o
+gasto de cada rodada fica na tabela `run_costs` do `radar.db` e o `data.json`
+publicado leva apenas `pct_usado`. Sem `APIFY_TOKEN` não há medição e o mapa
+não aparece.
+
+> Os valores em dólar aparecem só para quem roda `python main.py` na própria
+> máquina; no log do GitHub Actions (que é público) sai a porcentagem.
 
 Para gastar menos: modo **"só fontes grátis"** na ⚙ do painel, `APIFY_MAX_ITEMS`
 menor ou tirar collectors caros de `PAID_COLLECTORS`/`config.py`.
