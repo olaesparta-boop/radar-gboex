@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-18T11:24:29.651976+00:00",
+  "generated_at": "2026-08-19T11:23:48.863417+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 320,
@@ -1260,6 +1260,23 @@
       "raw_id": ""
     },
     {
+      "id": "cfb4a08b5663bf79b0e6169ab98b54f3ba1b7d13",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "Na era da exposição, o dado preservado",
+      "url": "https://www.gboex.com.br/na-era-da-exposicao-o-dado-preservado/",
+      "text": "<p>Há tempos, expor dados e rotinas por escolha tornou-se realidade. Nunca se produziu tanto conteúdo, que também carrega informações sobre seus autores. Trend que mostra vivências, fotos e vídeos, redes sociais, cadastros em inúmeros aplicativos, ruas e estabelecimentos filmados: os dados estão em tudo. Ao mesmo tempo em que contribuem para a segurança, a interação...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/na-era-da-exposicao-o-dado-preservado/\" title=\"Read Na era da exposição, o dado preservado\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/na-era-da-exposicao-o-dado-preservado/\">Na era da exposição, o dado preservado</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-08-14T13:58:03+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.667,
+      "is_owned": 1,
+      "collected_at": "2026-08-19T11:23:48.398933+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "32b31e0ee2450848bd36f3305b464320caa7d0fe",
       "source": "instagram",
       "channel": "social",
@@ -1546,6 +1563,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-08-17T00:14:56.300768+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "97e0f23e990a6f45ac8954094bce94111e57d9b1",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "GBOEX conquista Prêmio Top Consumidor",
+      "url": "https://www.gboex.com.br/gboex-conquista-premio-top-consumidor/",
+      "text": "<p>O GBOEX, especialista em seguro de pessoas e previdência, recebeu a premiação Top Consumidor – Marcas de Respeito 2026, durante cerimônia promovida no dia 7 de agosto, no Palácio do Comércio, em Porto Alegre. O reconhecimento é concedido a empresas que se destacam pela qualidade, transparência e bom relacionamento com o cliente. No Rio Grande...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-conquista-premio-top-consumidor/\" title=\"Read GBOEX conquista Prêmio Top Consumidor\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-conquista-premio-top-consumidor/\">GBOEX conquista Prêmio Top Consumidor</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-08-11T13:55:21+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 1.0,
+      "is_owned": 1,
+      "collected_at": "2026-08-19T11:23:48.399048+00:00",
       "raw_id": ""
     },
     {
@@ -9570,40 +9604,6 @@
       "sentiment_score": 0.0,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.882692+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "db6b0d9dd9fe215a4310f38f3040dbb0d2c1ad55",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde poss",
-      "url": "https://www.facebook.com/vaniamaria.nevespoli/posts/pfbid0B6CmnhQWwBTsYAybxE6NAmsMmU5JwJ31Q4993BcFXrgftELLVtsR3MXTnei8wBY6l",
-      "text": "Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde possui convênio junto com o tal cartão de benefício. Isso já faz mais de um mês  e cadê?",
-      "author": "Vania Maria Neves Poli",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-09-12T19:06:17+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.770373+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e9186853f6c9ffeea8c6999bf78c88dc91e8a38d",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde poss",
-      "url": "https://www.facebook.com/vaniamaria.nevespoli/posts/pfbid0B14k97coPPf4yscguWNd44pFyph82wkCeNmsyD7ffFW9PMz8M5H25RhKbWcLHfavl",
-      "text": "Meu pai é associado a mais de 38 anos, deficiente fisico foi na agência de Porto Alegre e solicitou uma copia do contrato e um explicativo de custos e onde possui convênio junto com o tal cartão de benefício. Isso já faz mais de um mês  e cadê?",
-      "author": "Vania Maria Neves Poli",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-09-12T19:06:17+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.557461+00:00",
       "raw_id": ""
     }
   ],
