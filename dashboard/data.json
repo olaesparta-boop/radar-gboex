@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-20T11:25:43.585998+00:00",
+  "generated_at": "2026-08-21T11:24:50.090371+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 321,
+    "total_mentions": 323,
     "positivo": 165,
-    "neutro": 63,
+    "neutro": 65,
     "negativo": 93,
-    "net_sentiment": 22.4,
-    "sources": 145,
+    "net_sentiment": 22.3,
+    "sources": 146,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 29,
+    "noticia": 31,
     "reclamacao": 59,
     "social": 233
   },
   "by_sentiment": {
-    "neutro": 63,
+    "neutro": 65,
     "negativo": 93,
     "positivo": 165
   },
@@ -47,9 +47,9 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 29,
+      "total": 31,
       "positivo": 11,
-      "neutro": 18,
+      "neutro": 20,
       "negativo": 0
     },
     "youtube": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      7
+      8
     ],
     [
       "Sonho Seguro",
@@ -286,6 +286,13 @@
       "negativo": 0
     },
     {
+      "date": "2018-10-18",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
       "date": "2018-12-13",
       "total": 1,
       "positivo": 0,
@@ -301,6 +308,13 @@
     },
     {
       "date": "2019-02-08",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2019-02-20",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
@@ -8730,6 +8744,23 @@
       "raw_id": ""
     },
     {
+      "id": "aa783df5266bf2fa083eefa0a85e3e73b843fc19",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Lideranças do GBOEX estiveram reunidas para alinhar METAS 2019 e BALANÇO 2018 | SEGS Portal Nacional de... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUXp3a0tHYVA2UzZqcC1CeVh1V2l4NU90YV9sLS1ySjFZcWpFMUNBZjQ0ZzNHZ2M1QWNmVDEycXVFbXJ5bFdNOTl3czJYLWdjc24tRjMycjllOGxsTWdDcnZDdnViNGRXWG5DdlFtQXM0N0hhSmhhR0NKMk5NTjFjczlIV2wwdVFOQXhNNXllQ0RIb0lUMU50bnc1eWhzM0x3WUc3dDZwdWF4U1loX2hBNU9FeEc3bDjSAbwBQVVfeXFMTmRUeTJhVWVPVUgtLTFWRHppR0JyMW5UX1dBelVraElRT3NYREpFS3ZXczVubmktMlZMbTh4LW5FOTJ6Rzlqc3d5cGJOdm1DT1lNLXRlTGNUTURZSVVUd2FkR09VNkozREhsVW5rMHFGbVZjZ3AzYk9uaWRyRmR5MkFPZHBJVk5SQ2hqcXNIajhiWEF4QlFya0IwY0hxakdfX0g2MlVJd1p5eWVDWllJNi1LVk5ucmtJcVhLcUY?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNUXp3a0tHYVA2UzZqcC1CeVh1V2l4NU90YV9sLS1ySjFZcWpFMUNBZjQ0ZzNHZ2M1QWNmVDEycXVFbXJ5bFdNOTl3czJYLWdjc24tRjMycjllOGxsTWdDcnZDdnViNGRXWG5DdlFtQXM0N0hhSmhhR0NKMk5NTjFjczlIV2wwdVFOQXhNNXllQ0RIb0lUMU50bnc1eWhzM0x3WUc3dDZwdWF4U1loX2hBNU9FeEc3bDjSAbwBQVVfeXFMTmRUeTJhVWVPVUgtLTFWRHppR0JyMW5UX1dBelVraElRT3NYREpFS3ZXczVubmktMlZMbTh4LW5FOTJ6Rzlqc3d5cGJOdm1DT1lNLXRlTGNUTURZSVVUd2FkR09VNkozREhsVW5rMHFGbVZjZ3AzYk9uaWRyRmR5MkFPZHBJVk5SQ2hqcXNIajhiWEF4QlFya0IwY0hxakdfX0g2MlVJd1p5eWVDWllJNi1LVk5ucmtJcVhLcUY?oc=5\" target=\"_blank\">Lideranças do GBOEX estiveram reunidas para alinhar METAS 2019 e BALANÇO 2018 | SEGS Portal Nacional de...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2019-02-20T08:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-21T11:24:34.986645+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "a7237ed8dfbeb5aa0aa1d33d08ec7af521145820",
       "source": "google_news",
       "channel": "noticia",
@@ -8812,6 +8843,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-09T23:12:47.533038+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "e7bdb925f8e25fb53958a7fd04fba66ac6aa63a1",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "100-anos-GBOEX - Best Swimming",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNVlIN3RhZ0MydlZjeDg4NW5QeXljaENqTXNhRFVENVowSmFiU3FCU25xUWE1UndJZ3Iza3pBWUMxdlhfdGFCLTFEdVR0dV9fUk90NlpEY0VsYkxxbGN1dDVSWFNqQURjeHcyWFM4REYyT3FMdWNhaWJwWWpXMk1kQmVYODhic0J3Qk9RY2JkNE5OdkpOMzhxQ2ZzY211TzRwMWgwUGxES184NDZNdjBhX0otUUZ3VURuUTdV?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNVlIN3RhZ0MydlZjeDg4NW5QeXljaENqTXNhRFVENVowSmFiU3FCU25xUWE1UndJZ3Iza3pBWUMxdlhfdGFCLTFEdVR0dV9fUk90NlpEY0VsYkxxbGN1dDVSWFNqQURjeHcyWFM4REYyT3FMdWNhaWJwWWpXMk1kQmVYODhic0J3Qk9RY2JkNE5OdkpOMzhxQ2ZzY211TzRwMWgwUGxES184NDZNdjBhX0otUUZ3VURuUTdV?oc=5\" target=\"_blank\">100-anos-GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Best Swimming</font>",
+      "author": "Best Swimming",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2018-10-18T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-21T11:24:34.987219+00:00",
       "raw_id": ""
     },
     {
@@ -9577,40 +9625,6 @@
       "sentiment_score": -0.6,
       "is_owned": 0,
       "collected_at": "2026-08-17T11:21:07.093216+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "4932e1a7a6dd72d3df9f039e4ae9f4c8e9898d7b",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,a",
-      "url": "https://www.facebook.com/alano.paiva/posts/pfbid02xx89ueqAsTL5EonKGV6XN2NXTq2K59siYb87LeGG88GHicQ59Q4BoGSPafpwEFr5l",
-      "text": "Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,acho que terei de tomar outras medidas.Espero não me decepcionar com uma seguradora que tem um nome a zelar.",
-      "author": "Alano Paiva",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-11-06T23:58:35+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.770303+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "bae8979d4c570ad665ba67082634bc09b3a01153",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,a",
-      "url": "https://www.facebook.com/alano.paiva/posts/pfbid02xrz8G53TKfo1kMdk4BHZp9xTzEWzMwwqsfYnfJN4gGz93pk43fwLGihg4BFmwNJGl",
-      "text": "Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,acho que terei de tomar outras medidas.Espero não me decepcionar com uma seguradora que tem um nome a zelar.",
-      "author": "Alano Paiva",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-11-06T23:58:35+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.557369+00:00",
       "raw_id": ""
     }
   ],
