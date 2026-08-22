@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-21T11:24:50.090371+00:00",
+  "generated_at": "2026-08-22T11:19:49.320182+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 323,
+    "total_mentions": 324,
     "positivo": 165,
-    "neutro": 65,
+    "neutro": 66,
     "negativo": 93,
-    "net_sentiment": 22.3,
+    "net_sentiment": 22.2,
     "sources": 146,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 31,
+    "noticia": 32,
     "reclamacao": 59,
     "social": 233
   },
   "by_sentiment": {
-    "neutro": 65,
+    "neutro": 66,
     "negativo": 93,
     "positivo": 165
   },
@@ -47,9 +47,9 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 31,
+      "total": 32,
       "positivo": 11,
-      "neutro": 20,
+      "neutro": 21,
       "negativo": 0
     },
     "youtube": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      8
+      9
     ],
     [
       "Sonho Seguro",
@@ -249,6 +249,13 @@
       "positivo": 0,
       "neutro": 0,
       "negativo": 3
+    },
+    {
+      "date": "2018-06-10",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     },
     {
       "date": "2018-08-09",
@@ -1127,6 +1134,23 @@
     }
   ],
   "mentions": [
+    {
+      "id": "0f0c31a708e06f9232dd47b08f2263f4d66ba030",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "GBOEX reúne profissionais de todo o Brasil para encontro da área administrativa",
+      "url": "https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-da-area-administrativa/",
+      "text": "<p>De 11 a 14 de agosto, o GBOEX promoveu, na sede, em Porto Alegre, o Encontro Administrativo. Com abrangência nacional, a iniciativa reuniu profissionais que atuam nas unidades de negócios e pontos de atendimento localizados em 10 estados, além do Distrito Federal. Esta foi a segunda edição do evento, que foca na integração das equipes...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-da-area-administrativa/\" title=\"Read GBOEX reúne profissionais de todo o Brasil para encontro da área administrativa\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-da-area-administrativa/\">GBOEX reúne profissionais de todo o Brasil para encontro da área administrativa</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-08-21T14:18:49+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.333,
+      "is_owned": 1,
+      "collected_at": "2026-08-22T11:19:48.881860+00:00",
+      "raw_id": ""
+    },
     {
       "id": "1b92c276b6b8ba1348f28e6cf7c187d107f5b226",
       "source": "google_news",
@@ -8965,6 +8989,23 @@
       "raw_id": ""
     },
     {
+      "id": "cdcaa959963b6280b3d852ecca29181ce684ce38",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX - Rede de Convênios especial para o Dia dos Namorados | SEGS Portal Nacional de Seguros, Saúde,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcVUwOTBGbHgwalhib29KcFJWajFfQVlwVUJvME5zd295QnVreDBkay1SdkFycE5RMWFKdUJwQ2M3b3BfSkJUWTZMaHBZcFQtcU5LZDc0Z1RzMkNxSGplNG1zMjhJcmN1ekRMSjY4UWFnSnB6Z2VRRElQWWtIZExSUlZQZDR6TE5OcHdZMXFJaVlzUFRWU05mR1hab2jSAaIBQVVfeXFMUGNtcENULVpSQlFTd1NXeDdTZVNYWDBBbTNTNy1OT1JlT0k1QTViMy12Tk10b2N0Z2FTc2xZeVF1ZXVtbll4WGhJN25yeDRvOFBtaFRJeUZrN0g1aG9Nc3hsTHYySjJEeFAxeGRVUDF0ZEVlUlFTVzhteXphT19ISDJvbTBnWEJkVzZXQTF1UlJoT2NCcWpkSW5HVURubnR2VkpR?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPcVUwOTBGbHgwalhib29KcFJWajFfQVlwVUJvME5zd295QnVreDBkay1SdkFycE5RMWFKdUJwQ2M3b3BfSkJUWTZMaHBZcFQtcU5LZDc0Z1RzMkNxSGplNG1zMjhJcmN1ekRMSjY4UWFnSnB6Z2VRRElQWWtIZExSUlZQZDR6TE5OcHdZMXFJaVlzUFRWU05mR1hab2jSAaIBQVVfeXFMUGNtcENULVpSQlFTd1NXeDdTZVNYWDBBbTNTNy1OT1JlT0k1QTViMy12Tk10b2N0Z2FTc2xZeVF1ZXVtbll4WGhJN25yeDRvOFBtaFRJeUZrN0g1aG9Nc3hsTHYySjJEeFAxeGRVUDF0ZEVlUlFTVzhteXphT19ISDJvbTBnWEJkVzZXQTF1UlJoT2NCcWpkSW5HVURubnR2VkpR?oc=5\" target=\"_blank\">GBOEX - Rede de Convênios especial para o Dia dos Namorados | SEGS Portal Nacional de Seguros, Saúde,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2018-06-10T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-08-22T11:19:34.061700+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "7b18f7a99d8eaf81787ca43979362e7dc0d1b2a0",
       "source": "facebook",
       "channel": "social",
@@ -9591,40 +9632,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-06T17:07:55.557277+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "75cafd172c53562aa8778840342adac5407975a3",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Recomenda",
-      "url": "https://www.facebook.com/fernanda.lucas.967/posts/pfbid02VeEcJNALBTGf19UzbtB8Jbmwaqj5iWzN9mQdHFjhoLVckP5gwdUazS6Wfw316auFl",
-      "text": "",
-      "author": "Fernanda Lucas",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2017-03-18T22:55:39+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:06:11.032807+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "eddf8e35c0ae6b758efbd817af32d916fcd58267",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,a",
-      "url": "https://www.facebook.com/alano.paiva/posts/pfbid0uQUxzVCp2K3NBAwsHav1edfYHsYBcEQAST8D5zGn1WJP79cyCTZJEHYAXFvYw99xl",
-      "text": "Já estou me abusando com esse GBOEX. Uma semana pra da informação até agora nada,meu Pai pagou 49 anos esse seguro e pelo jeito tem coisa que não está batendo,acho que terei de tomar outras medidas.Espero não me decepcionar com uma seguradora que tem um nome a zelar.",
-      "author": "Alano Paiva",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2016-11-06T23:58:35+00:00",
-      "sentiment": "negativo",
-      "sentiment_score": -0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T11:21:07.093216+00:00",
       "raw_id": ""
     }
   ],
