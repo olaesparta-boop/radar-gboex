@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-29T15:30:17.184818+00:00",
+  "generated_at": "2026-08-30T15:10:42.854998+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 341,
-    "positivo": 180,
+    "total_mentions": 342,
+    "positivo": 181,
     "neutro": 65,
     "negativo": 96,
-    "net_sentiment": 24.6,
+    "net_sentiment": 24.9,
     "sources": 152,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "social": 241,
     "reclamacao": 62,
-    "noticia": 38
+    "noticia": 39
   },
   "by_sentiment": {
-    "positivo": 180,
+    "positivo": 181,
     "negativo": 96,
     "neutro": 65
   },
@@ -47,8 +47,8 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 38,
-      "positivo": 16,
+      "total": 39,
+      "positivo": 17,
       "neutro": 22,
       "negativo": 0
     },
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      11
+      12
     ],
     [
       "Revista Cobertura",
@@ -280,8 +280,8 @@
     },
     {
       "date": "2018-10-08",
-      "total": 1,
-      "positivo": 1,
+      "total": 2,
+      "positivo": 2,
       "neutro": 0,
       "negativo": 0
     },
@@ -9654,6 +9654,23 @@
       "raw_id": ""
     },
     {
+      "id": "fd1489df89e8144db774ff593391b7673a2d7076",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX no CONEC: incentivo e fortalecimento das relações com os corretores de seguros | SEGS Portal... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOWxPWGs1Wm9lcGJkVUctWFc2OUJRR1FOX1I4eGd5dnM0d3JBMVRMTFllTy1DdTd6d1U2RXQ3MXFDQjVyNmVIQmt2akJlN1V2akZacElTRWQwMTVLLTJMcUFXZ2pfaGNYQzRWQTF5NHdYNmZvajJXdjZtRkFvdkdVRUpWSnNHZjd3YWp3Y0JaQW5Zdk5aUjlJZlFNUnQ2RU1RY084MzNDUEJYUWN6RFdXM3g3RW1lc3lNVWx0SEwzb9IBxAFBVV95cUxOYTByb09ZYTlDZ2dMcFhtUlNNdjJTYTdEemhpZkhXTWYzYktPTG9qY1pLMFZFamZCUXVBejZ0dDdiZ21KRkx1NHQ5SmtuQXZ5YlV5bkRtV0JobHBiTXJhRG4tRFAzUTZ6VVRWbXpkZk5jdHNzd3R0VUltZ3hjYW9DSExJaWJTVmluNFBBckhBRHNSZ1NGOTUxemRnX2xtZEhaSXBPOUI4ekFoUjNBcU1DLWhmWHlFb0xBRGdvMnhvY0lma0Q3?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOOWxPWGs1Wm9lcGJkVUctWFc2OUJRR1FOX1I4eGd5dnM0d3JBMVRMTFllTy1DdTd6d1U2RXQ3MXFDQjVyNmVIQmt2akJlN1V2akZacElTRWQwMTVLLTJMcUFXZ2pfaGNYQzRWQTF5NHdYNmZvajJXdjZtRkFvdkdVRUpWSnNHZjd3YWp3Y0JaQW5Zdk5aUjlJZlFNUnQ2RU1RY084MzNDUEJYUWN6RFdXM3g3RW1lc3lNVWx0SEwzb9IBxAFBVV95cUxOYTByb09ZYTlDZ2dMcFhtUlNNdjJTYTdEemhpZkhXTWYzYktPTG9qY1pLMFZFamZCUXVBejZ0dDdiZ21KRkx1NHQ5SmtuQXZ5YlV5bkRtV0JobHBiTXJhRG4tRFAzUTZ6VVRWbXpkZk5jdHNzd3R0VUltZ3hjYW9DSExJaWJTVmluNFBBckhBRHNSZ1NGOTUxemRnX2xtZEhaSXBPOUI4ekFoUjNBcU1DLWhmWHlFb0xBRGdvMnhvY0lma0Q3?oc=5\" target=\"_blank\">GBOEX no CONEC: incentivo e fortalecimento das relações com os corretores de seguros | SEGS Portal...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2018-10-08T07:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.4,
+      "is_owned": 0,
+      "collected_at": "2026-08-30T15:10:05.981950+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "b4023f03bc6f2778d79e09c622dd8d71aac5eb40",
       "source": "google_news",
       "channel": "noticia",
@@ -9685,23 +9702,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:02:42.870333+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "781267427b3fc66aa02ae3e55320fa45bc3d3097",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX inaugura Galeria Histórica que reúne quadros dos ex-presidentes - Sonho Seguro",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOamJZdVBKRVp0QnF2Z3RlMmRVQ2NZUUFWT3kyT25XOWtBMmtyVEYyUkdjYWs2eWRsU3A5Y0l5V2lUbVdsa2RNc3AtZGhvQ0lHRW5sXzhIb203SXRzX0thYm8yaWRhdnZTdmVFd3VmQWIwNGFNSElRREl2Q0xDUFlCejk0clVJZzFKZUpkc2hDVFRwTlltWDh5eHlxQWtVRnNNdWpQdVBvOTFkNWRCbGR1RjZEb0lRbkZZem1PU3FhVm1GcTFvUW5ORXZHYmcwN1R1NWVrcm8zWXgtd2p4b213?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxOamJZdVBKRVp0QnF2Z3RlMmRVQ2NZUUFWT3kyT25XOWtBMmtyVEYyUkdjYWs2eWRsU3A5Y0l5V2lUbVdsa2RNc3AtZGhvQ0lHRW5sXzhIb203SXRzX0thYm8yaWRhdnZTdmVFd3VmQWIwNGFNSElRREl2Q0xDUFlCejk0clVJZzFKZUpkc2hDVFRwTlltWDh5eHlxQWtVRnNNdWpQdVBvOTFkNWRCbGR1RjZEb0lRbkZZem1PU3FhVm1GcTFvUW5ORXZHYmcwN1R1NWVrcm8zWXgtd2p4b213?oc=5\" target=\"_blank\">GBOEX inaugura Galeria Histórica que reúne quadros dos ex-presidentes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sonho Seguro</font>",
-      "author": "Sonho Seguro",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-08-27T07:00:00+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.4,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:04:09.714586+00:00",
       "raw_id": ""
     }
   ],
