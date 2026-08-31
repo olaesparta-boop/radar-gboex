@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-08-30T15:10:42.854998+00:00",
+  "generated_at": "2026-08-31T17:46:34.219506+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 342,
-    "positivo": 181,
+    "total_mentions": 343,
+    "positivo": 182,
     "neutro": 65,
     "negativo": 96,
-    "net_sentiment": 24.9,
+    "net_sentiment": 25.1,
     "sources": 152,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "social": 241,
     "reclamacao": 62,
-    "noticia": 39
+    "noticia": 40
   },
   "by_sentiment": {
-    "positivo": 181,
+    "positivo": 182,
     "negativo": 96,
     "neutro": 65
   },
@@ -47,8 +47,8 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 39,
-      "positivo": 17,
+      "total": 40,
+      "positivo": 18,
       "neutro": 22,
       "negativo": 0
     },
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      12
+      13
     ],
     [
       "Revista Cobertura",
@@ -584,6 +584,13 @@
       "total": 1,
       "positivo": 0,
       "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-12-08",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
       "negativo": 0
     },
     {
@@ -7631,6 +7638,23 @@
       "raw_id": ""
     },
     {
+      "id": "108f09ce14e117ce78147e06dc3595d3584434d2",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "“Associado da Sorte GBOEX” premia corretores de seguros e clientes | SEGS Portal Nacional de Seguros,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTUw0aUFrRGpvbG0temJJQjM1cmpObkJJdUo4dTUxX3hVbW5KbVFoTGVtTkxhUllYUDJKaDlVNld6bWNfRk85Z0Y3dm8yVjRsdC1FdWhoSjFDZ0w2a1Vpd3dnUWVjY0RfUDNIN3Bjb3BneGJCOVkyaGptUDF5cENjVDZNMVozX3RPX3BsRWRSSXRIY2szNTBEZWQxXzhYaVdsaWdneFZR0gGrAUFVX3lxTE5HV3Q1endFcHdLLXU5RjdNOTdZZU1jZHZ3NFJTNmZJZTB1aXdkeVlMc0x1YmVtSVR2ZVNfVTJCUTBvTFFaVmtwcWlrVjhiX3lpSElhQ3VCU3kyZnlJNlVXV01GWTBGOGtyOW1zLXBaMmN3NWdJbzlOVUJJTFR0Sy05dlRpVkxxTnpFTi1La0w2MnhQY3lzNzdFc2JKTkY4ak53bGVObU5vV1ZjOA?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQTUw0aUFrRGpvbG0temJJQjM1cmpObkJJdUo4dTUxX3hVbW5KbVFoTGVtTkxhUllYUDJKaDlVNld6bWNfRk85Z0Y3dm8yVjRsdC1FdWhoSjFDZ0w2a1Vpd3dnUWVjY0RfUDNIN3Bjb3BneGJCOVkyaGptUDF5cENjVDZNMVozX3RPX3BsRWRSSXRIY2szNTBEZWQxXzhYaVdsaWdneFZR0gGrAUFVX3lxTE5HV3Q1endFcHdLLXU5RjdNOTdZZU1jZHZ3NFJTNmZJZTB1aXdkeVlMc0x1YmVtSVR2ZVNfVTJCUTBvTFFaVmtwcWlrVjhiX3lpSElhQ3VCU3kyZnlJNlVXV01GWTBGOGtyOW1zLXBaMmN3NWdJbzlOVUJJTFR0Sy05dlRpVkxxTnpFTi1La0w2MnhQY3lzNzdFc2JKTkY4ak53bGVObU5vV1ZjOA?oc=5\" target=\"_blank\">“Associado da Sorte GBOEX” premia corretores de seguros e clientes | SEGS Portal Nacional de Seguros,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2025-12-08T08:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-08-31T17:46:07.775061+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "744683bbbae44a36c6c902af0533b54840d0bca5",
       "source": "youtube",
       "channel": "canal_proprio",
@@ -9686,29 +9710,12 @@
       "is_owned": 0,
       "collected_at": "2026-07-09T23:12:47.535451+00:00",
       "raw_id": ""
-    },
-    {
-      "id": "5ed143f569360a87d40e7cb05566ebd9b07720ea",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX – Inaugura Galeria Histórica que reúne quadros dos Ex-presidentes | SEGS Portal Nacional de... - SEGS Portal Nacional",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYS1WbkpMelVDdnhZc3BteFhSVXVUVEo2QXZIQ1ZXaFRFTlJWN3NPTmJGR0ZwcEFMRWc4RG5RZFJ5NjNUeWxxLTNfR195Qi1xeXU3dGp6Mm95bGVPdUwwSkNiOGY5MllZRnlpZm9HLW9xNGVtX0R0TXhkVFNicWNUeDhoaW9rUXhON2tqcWlGYTZIdU9FVlNEdi10OWJ0R0xBd0d4RTI1WktuOVpt0gGyAUFVX3lxTE9TQk9LOHcwZDd2UGY1UDZGLXMyOV83WmF6VWVMeVIyU3hEZklGZU5QVmU0dktSQjBSOXZPc2ItVnBaTEZ6enVWMHZvUDlrYll1UjNGcmJHc1FXZGxtUGZoNV8yUDl1UE4tMm0tYlh5b1pYMDdmS3RCZkVVZEZ1RU1GY29FcFVpbjdzYWpSV2pEbVVKcjlvcFhhRkNPX2xrMHFKWDBjY3dsb3VLdmtNNXlFeGc?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPYS1WbkpMelVDdnhZc3BteFhSVXVUVEo2QXZIQ1ZXaFRFTlJWN3NPTmJGR0ZwcEFMRWc4RG5RZFJ5NjNUeWxxLTNfR195Qi1xeXU3dGp6Mm95bGVPdUwwSkNiOGY5MllZRnlpZm9HLW9xNGVtX0R0TXhkVFNicWNUeDhoaW9rUXhON2tqcWlGYTZIdU9FVlNEdi10OWJ0R0xBd0d4RTI1WktuOVpt0gGyAUFVX3lxTE9TQk9LOHcwZDd2UGY1UDZGLXMyOV83WmF6VWVMeVIyU3hEZklGZU5QVmU0dktSQjBSOXZPc2ItVnBaTEZ6enVWMHZvUDlrYll1UjNGcmJHc1FXZGxtUGZoNV8yUDl1UE4tMm0tYlh5b1pYMDdmS3RCZkVVZEZ1RU1GY29FcFVpbjdzYWpSV2pEbVVKcjlvcFhhRkNPX2xrMHFKWDBjY3dsb3VLdmtNNXlFeGc?oc=5\" target=\"_blank\">GBOEX – Inaugura Galeria Histórica que reúne quadros dos Ex-presidentes | SEGS Portal Nacional de...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
-      "author": "SEGS Portal Nacional",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-09-03T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:02:42.870333+00:00",
-      "raw_id": ""
     }
   ],
   "consumo": {
     "pct_usado": 100.0,
     "ciclo_fim": "2026-09-15T23:59:59.999Z",
-    "freado": false,
+    "freado": true,
     "coletas_restantes": 0
   }
 }
