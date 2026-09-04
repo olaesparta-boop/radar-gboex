@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-03T14:53:36.761818+00:00",
+  "generated_at": "2026-09-04T14:48:26.637807+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 344,
-    "positivo": 182,
+    "total_mentions": 345,
+    "positivo": 183,
     "neutro": 66,
     "negativo": 96,
-    "net_sentiment": 25.0,
-    "sources": 152,
+    "net_sentiment": 25.2,
+    "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "social": 241,
     "reclamacao": 62,
-    "noticia": 41
+    "noticia": 42
   },
   "by_sentiment": {
-    "positivo": 182,
+    "positivo": 183,
     "negativo": 96,
     "neutro": 66
   },
@@ -47,8 +47,8 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 41,
-      "positivo": 18,
+      "total": 42,
+      "positivo": 19,
       "neutro": 23,
       "negativo": 0
     },
@@ -1155,8 +1155,8 @@
     },
     {
       "date": "2026-08-13",
-      "total": 1,
-      "positivo": 1,
+      "total": 2,
+      "positivo": 2,
       "neutro": 0,
       "negativo": 0
     },
@@ -1964,6 +1964,23 @@
       "sentiment_score": 1.0,
       "is_owned": 0,
       "collected_at": "2026-08-17T00:16:19.527899+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "4d099635fd91fbb03223120bb5c211fe69f1670e",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação - segs.com.br",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSEN1bXNET19WdXo1VGNYRlQ3alhETGV3QzVhZ1NwZ0NCUVpSTk9ZWlE3OTZESUhneXZtNnloWVk1QXdwam9nN3BjelFTSGdPZHV4ZDhZcE5Sd3RGS2NCWW9JbnhualRoS3U5MjZ1Mk5VaGtRdFJhRGotZnZTTGhLQXNwVTB4LWvSAYcBQVVfeXFMT0hDdW1zRE9fVnV6NVRjWEZUN2pYRExld0M1YWdTcGdDQlFaUk5PWVpRNzk2RElIZ3l2bTZ5aFlZNUF3cGpvZzdwY3pRU0hnT2R1eGQ4WXBOUnd0RktjQllvSW54bmpUaEt1OTI2dTJOVWhrUXRSYURqLWZ2U0xoS0FzcFUweC1r?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPSEN1bXNET19WdXo1VGNYRlQ3alhETGV3QzVhZ1NwZ0NCUVpSTk9ZWlE3OTZESUhneXZtNnloWVk1QXdwam9nN3BjelFTSGdPZHV4ZDhZcE5Sd3RGS2NCWW9JbnhualRoS3U5MjZ1Mk5VaGtRdFJhRGotZnZTTGhLQXNwVTB4LWvSAYcBQVVfeXFMT0hDdW1zRE9fVnV6NVRjWEZUN2pYRExld0M1YWdTcGdDQlFaUk5PWVpRNzk2RElIZ3l2bTZ5aFlZNUF3cGpvZzdwY3pRU0hnT2R1eGQ4WXBOUnd0RktjQllvSW54bmpUaEt1OTI2dTJOVWhrUXRSYURqLWZ2U0xoS0FzcFUweC1r?oc=5\" target=\"_blank\">GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">segs.com.br</font>",
+      "author": "segs.com.br",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-08-13T07:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.8,
+      "is_owned": 0,
+      "collected_at": "2026-09-04T14:48:04.819749+00:00",
       "raw_id": ""
     },
     {
@@ -9699,23 +9716,6 @@
       "sentiment_score": 0.4,
       "is_owned": 0,
       "collected_at": "2026-08-30T15:10:05.981950+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "b4023f03bc6f2778d79e09c622dd8d71aac5eb40",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX fortalece parceria com os corretores de seguros - Sonho Seguro",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkswQUZTM2ZyVzU4ZlVNVkdUb3pYSWZuZDBYMEs2bWMxOFA2U25sNFdwMmhoQUh5M0N1ODRaclA0TWpvSVN0Z2JOd3ZjMHRjTHFZV1l2LV9BR0JfNjNQdjRxNEJwSGRZWmNtbi1uYW56RjhiamFlalZmcHMzdF9mNEEtOXpMQXI0UXZfS0VScVpac1J2ZmhWdw?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkswQUZTM2ZyVzU4ZlVNVkdUb3pYSWZuZDBYMEs2bWMxOFA2U25sNFdwMmhoQUh5M0N1ODRaclA0TWpvSVN0Z2JOd3ZjMHRjTHFZV1l2LV9BR0JfNjNQdjRxNEJwSGRZWmNtbi1uYW56RjhiamFlalZmcHMzdF9mNEEtOXpMQXI0UXZfS0VScVpac1J2ZmhWdw?oc=5\" target=\"_blank\">GBOEX fortalece parceria com os corretores de seguros</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sonho Seguro</font>",
-      "author": "Sonho Seguro",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-10-08T07:00:00+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-07-09T23:12:47.535451+00:00",
       "raw_id": ""
     }
   ],
