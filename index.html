@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar GBOEX — Monitor de Menções</title>
+  <link rel="icon" href="https://www.gboex.com.br/wp-content/uploads/2025/03/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=c8e7698" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <header class="hdr">
+    <div class="hdr-in">
+      <div class="eyebrow">Previdência e Seguro de Pessoas · desde 1913</div>
+      <h1>Radar <strong>GBOEX</strong></h1>
+      <p>Monitor de notícias, dados e menções — o que falam da marca.</p>
+      <div class="hdr-meta">
+        <span id="generated">—</span>
+        <span id="refreshStatus" class="rf-status" hidden></span>
+        <button id="refresh" title="Buscar dados novos">↻ Atualizar</button>
+        <button id="ghConfig" class="icon-btn" title="Configurar coleta remota">⚙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- abas: Geral + uma por fonte -->
+  <nav class="tabs" id="tabs"></nav>
+
+  <main id="main">
+    <!-- barra de período (filtra tudo) -->
+    <div class="periodbar">
+      <span class="pb-label">Período de análise</span>
+      <div class="pb-seg" id="period" role="tablist">
+        <button class="pb-opt" data-days="30">30 dias</button>
+        <button class="pb-opt" data-days="90">90 dias</button>
+        <button class="pb-opt" data-days="365">12 meses</button>
+        <button class="pb-opt on" data-days="0">Todo o histórico</button>
+      </div>
+    </div>
+
+    <!-- ================= VISÃO GERAL ================= -->
+    <section class="view" id="view-overview">
+      <section class="kpis" id="kpis"></section>
+
+      <!-- mapa de consumo (só aparece quando o data.json traz a medição) -->
+      <div id="consumoMeter"></div>
+
+      <section class="grid">
+        <div class="card wide">
+          <h2>Volume e sentimento — <span id="lb">todo o histórico</span></h2>
+          <canvas id="timelineChart" height="90"></canvas>
+        </div>
+        <div class="card">
+          <h2>Sentimento</h2>
+          <canvas id="sentimentChart" height="180"></canvas>
+        </div>
+        <div class="card wide">
+          <h2>Por fonte <span class="hint">(clique para abrir a aba)</span></h2>
+          <div class="src-breakdown" id="sourceBreakdown"></div>
+        </div>
+        <div class="card">
+          <h2>Principais veículos/perfis</h2>
+          <ul class="sources" id="sources"></ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="mentions-head">
+          <h2>Menções</h2>
+          <div class="filters">
+            <input type="search" id="q" placeholder="Buscar no texto…" />
+            <select id="fSource"><option value="">Todas as fontes</option></select>
+            <select id="fChannel"><option value="">Todos os canais</option></select>
+            <select id="fSentiment">
+              <option value="">Todos sentimentos</option>
+              <option value="positivo">Positivo</option>
+              <option value="neutro">Neutro</option>
+              <option value="negativo">Negativo</option>
+            </select>
+            <button id="clearFilters" title="Limpar filtros">limpar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="mentionsTable">
+            <thead>
+              <tr><th>Data</th><th>Fonte</th><th>Autor/Veículo</th><th>Menção (link)</th><th>Sent.</th></tr>
+            </thead>
+            <tbody id="mentionsBody"></tbody>
+          </table>
+        </div>
+        <p class="muted" id="tableInfo"></p>
+      </section>
+    </section>
+
+    <!-- ================= DASHBOARD POR FONTE ================= -->
+    <section class="view" id="view-source" hidden>
+      <div class="src-hero" id="srcHero"></div>
+
+      <section class="kpis" id="srcKpis"></section>
+
+      <section class="grid">
+        <div class="card wide">
+          <h2>Volume e sentimento — <span class="src-lb">todo o histórico</span></h2>
+          <canvas id="srcTimelineChart" height="90"></canvas>
+        </div>
+        <div class="card">
+          <h2>Sentimento</h2>
+          <canvas id="srcSentimentChart" height="180"></canvas>
+        </div>
+        <div class="card">
+          <h2 id="srcTopTitle">Principais autores/perfis</h2>
+          <ul class="sources" id="srcTop"></ul>
+        </div>
+        <div class="card wide">
+          <h2>Destaques negativos</h2>
+          <div id="srcNeg"></div>
+        </div>
+      </section>
+
+      <!-- painel exclusivo do Reclame Aqui -->
+      <section class="card" id="srcRAcard" hidden>
+        <h2>Principais problemas — Reclame Aqui <span class="hint">(clique num tema para filtrar)</span></h2>
+        <div class="ra-stats" id="raStats"></div>
+        <div class="ra-problems" id="raProblems"></div>
+      </section>
+
+      <section class="card">
+        <div class="mentions-head">
+          <h2 id="srcMentionsTitle">Menções</h2>
+          <div class="filters">
+            <input type="search" id="srcQ" placeholder="Buscar no texto…" />
+            <select id="srcFSentiment">
+              <option value="">Todos sentimentos</option>
+              <option value="positivo">Positivo</option>
+              <option value="neutro">Neutro</option>
+              <option value="negativo">Negativo</option>
+            </select>
+            <button id="srcClear" title="Limpar filtros">limpar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Autor/Veículo</th><th>Menção (link)</th><th>Sent.</th></tr>
+            </thead>
+            <tbody id="srcMentionsBody"></tbody>
+          </table>
+        </div>
+        <p class="muted" id="srcTableInfo"></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    Radar <strong>GBOEX</strong> · Grêmio Beneficente, entidade de previdência e seguro de pessoas desde 1913 ·
+    coleta automática diária pelo GitHub Actions · botão <strong>Atualizar</strong> dispara uma coleta na hora
+  </footer>
+
+  <!-- ============ configuração da coleta remota ============ -->
+  <div class="modal" id="ghModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="ghModalTitle">
+      <h3 id="ghModalTitle">Coleta remota</h3>
+      <p class="modal-lead">
+        O painel é um site estático: ele sozinho não consegue vasculhar as fontes.
+        Quem coleta é o <strong>GitHub Actions</strong>. Com um token seu salvo aqui,
+        o botão <strong>Atualizar</strong> dispara uma coleta nova e recarrega o painel
+        quando ela terminar (leva de 2 a 6 minutos).
+      </p>
+      <ol class="modal-steps">
+        <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (token <em>fine-grained</em>).</li>
+        <li>Em <em>Repository access</em>, escolha <strong>Only select repositories → radar-gboex</strong>.</li>
+        <li>Em <em>Permissions → Repository permissions</em>, marque <strong>Actions: Read and write</strong>.</li>
+        <li>Gere o token, copie e cole abaixo.</li>
+      </ol>
+      <label class="modal-field">
+        <span>Token</span>
+        <!-- data-*ignore: pede aos gerenciadores de senha que ignorem o campo
+             (não é senha de conta; o popup deles atrapalharia a colagem) -->
+        <input type="password" id="ghTokenInput" placeholder="github_pat_…"
+               autocomplete="off" spellcheck="false" name="radar-gh-token"
+               data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other" />
+      </label>
+      <label class="modal-check">
+        <input type="checkbox" id="ghFree" />
+        <span>Coletar só as fontes grátis (notícias) — não consome nada da verba</span>
+      </label>
+      <p class="modal-note">
+        O token fica salvo <strong>só neste navegador</strong> (localStorage), nunca vai
+        para o repositório. Ele permite disparar e ler execuções deste repositório —
+        se vazar, revogue em <em>Settings → Developer settings</em>.
+      </p>
+      <div class="modal-actions">
+        <button id="ghSave" class="primary">Salvar</button>
+        <button id="ghForget">Remover token</button>
+        <button id="ghClose">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=c8e7698"></script>
+</body>
+</html>
