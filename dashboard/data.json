@@ -1,25 +1,25 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-05T13:40:52.010672+00:00",
+  "generated_at": "2026-09-06T13:56:29.965017+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 345,
+    "total_mentions": 346,
     "positivo": 183,
-    "neutro": 66,
+    "neutro": 67,
     "negativo": 96,
-    "net_sentiment": 25.2,
+    "net_sentiment": 25.1,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
+    "noticia": 43,
     "social": 241,
-    "reclamacao": 62,
-    "noticia": 42
+    "reclamacao": 62
   },
   "by_sentiment": {
+    "neutro": 67,
     "positivo": 183,
-    "negativo": 96,
-    "neutro": 66
+    "negativo": 96
   },
   "by_source_detail": {
     "instagram": {
@@ -47,9 +47,9 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 42,
+      "total": 43,
       "positivo": 19,
-      "neutro": 23,
+      "neutro": 24,
       "negativo": 0
     },
     "youtube": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      13
+      14
     ],
     [
       "Revista Cobertura",
@@ -1215,9 +1215,33 @@
       "positivo": 1,
       "neutro": 0,
       "negativo": 0
+    },
+    {
+      "date": "2026-09-04",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "74191bf93f7e12f52885464de3670e41c386e417",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHd9IBngFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHdw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHd9IBngFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHdw?oc=5\" target=\"_blank\">GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-04T17:26:46+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-06T13:56:08.685051+00:00",
+      "raw_id": ""
+    },
     {
       "id": "caa1457bad402e686ed8807118d202b7661a82fc",
       "source": "instagram",
@@ -9699,23 +9723,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-09T23:12:47.535721+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "fd1489df89e8144db774ff593391b7673a2d7076",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX no CONEC: incentivo e fortalecimento das relações com os corretores de seguros | SEGS Portal... - SEGS Portal Nacional",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOWxPWGs1Wm9lcGJkVUctWFc2OUJRR1FOX1I4eGd5dnM0d3JBMVRMTFllTy1DdTd6d1U2RXQ3MXFDQjVyNmVIQmt2akJlN1V2akZacElTRWQwMTVLLTJMcUFXZ2pfaGNYQzRWQTF5NHdYNmZvajJXdjZtRkFvdkdVRUpWSnNHZjd3YWp3Y0JaQW5Zdk5aUjlJZlFNUnQ2RU1RY084MzNDUEJYUWN6RFdXM3g3RW1lc3lNVWx0SEwzb9IBxAFBVV95cUxOYTByb09ZYTlDZ2dMcFhtUlNNdjJTYTdEemhpZkhXTWYzYktPTG9qY1pLMFZFamZCUXVBejZ0dDdiZ21KRkx1NHQ5SmtuQXZ5YlV5bkRtV0JobHBiTXJhRG4tRFAzUTZ6VVRWbXpkZk5jdHNzd3R0VUltZ3hjYW9DSExJaWJTVmluNFBBckhBRHNSZ1NGOTUxemRnX2xtZEhaSXBPOUI4ekFoUjNBcU1DLWhmWHlFb0xBRGdvMnhvY0lma0Q3?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOOWxPWGs1Wm9lcGJkVUctWFc2OUJRR1FOX1I4eGd5dnM0d3JBMVRMTFllTy1DdTd6d1U2RXQ3MXFDQjVyNmVIQmt2akJlN1V2akZacElTRWQwMTVLLTJMcUFXZ2pfaGNYQzRWQTF5NHdYNmZvajJXdjZtRkFvdkdVRUpWSnNHZjd3YWp3Y0JaQW5Zdk5aUjlJZlFNUnQ2RU1RY084MzNDUEJYUWN6RFdXM3g3RW1lc3lNVWx0SEwzb9IBxAFBVV95cUxOYTByb09ZYTlDZ2dMcFhtUlNNdjJTYTdEemhpZkhXTWYzYktPTG9qY1pLMFZFamZCUXVBejZ0dDdiZ21KRkx1NHQ5SmtuQXZ5YlV5bkRtV0JobHBiTXJhRG4tRFAzUTZ6VVRWbXpkZk5jdHNzd3R0VUltZ3hjYW9DSExJaWJTVmluNFBBckhBRHNSZ1NGOTUxemRnX2xtZEhaSXBPOUI4ekFoUjNBcU1DLWhmWHlFb0xBRGdvMnhvY0lma0Q3?oc=5\" target=\"_blank\">GBOEX no CONEC: incentivo e fortalecimento das relações com os corretores de seguros | SEGS Portal...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
-      "author": "SEGS Portal Nacional",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-10-08T07:00:00+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.4,
-      "is_owned": 0,
-      "collected_at": "2026-08-30T15:10:05.981950+00:00",
       "raw_id": ""
     }
   ],
