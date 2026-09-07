@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-06T13:56:29.965017+00:00",
+  "generated_at": "2026-09-07T16:12:26.778792+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 346,
-    "positivo": 183,
+    "total_mentions": 347,
+    "positivo": 184,
     "neutro": 67,
     "negativo": 96,
-    "net_sentiment": 25.1,
+    "net_sentiment": 25.4,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 43,
+    "noticia": 44,
     "social": 241,
     "reclamacao": 62
   },
   "by_sentiment": {
     "neutro": 67,
-    "positivo": 183,
+    "positivo": 184,
     "negativo": 96
   },
   "by_source_detail": {
@@ -47,8 +47,8 @@
       "negativo": 1
     },
     "google_news": {
-      "total": 43,
-      "positivo": 19,
+      "total": 44,
+      "positivo": 20,
       "neutro": 24,
       "negativo": 0
     },
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      14
+      15
     ],
     [
       "Revista Cobertura",
@@ -532,6 +532,13 @@
     },
     {
       "date": "2024-01-15",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
+      "negativo": 0
+    },
+    {
+      "date": "2024-10-23",
       "total": 1,
       "positivo": 1,
       "neutro": 0,
@@ -7975,6 +7982,23 @@
       "raw_id": ""
     },
     {
+      "id": "e49c2e71b5ab3eef4c2dbe942679f28cfa6832de",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Outubro Rosa: GBOEX, na campanha de conscientização, destaca a importância da proteção | SEGS Portal... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS0ExdExscDR1SFBGRkxZWUZMQ3RnUjhXbFd4MWpVc2FUYm5VMmNqT1NVMEFYRGVZTEF6bm16djdyV1NQQkNPWi13X0hxTU1ZTW1iV3BKczZNUTU5dFoxRnlvOTF1WWRVTlFLQ29Vd28wU2ZtaDhBXzQ2ek9qZzE2R2luS0pDcm9NcHJ0VEwzam9MOFJWN0tUbmtfazJfYWFZX1IyeXpCdzVOaGF5RmFhOGRhZUpiM0F6ZjFsc1dnQdIBxAFBVV95cUxPLWpuM2pqNW52bG1tODlNbFBsZjJMZUJZbzNjMUVOcEJzZTRqSGNsZk1vUExGV0tLeUt3VFVPaFZ4TUZqN0xSVXZDYlFoV2RQZk9MYUVKRTRqYnlfZXU3UmQwZGRqVzBHZlJsaWRYN2xpZjJEWlF4TWJRcW5ScXc1QmIyam90a056Skw2WjRiV2dPamZNenJiZmxGd0kwUkFhWjhKV1dPQW5OYjZoTDl6QVNwaE5COVhrdEg5SzBFdDVJZTBy?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOS0ExdExscDR1SFBGRkxZWUZMQ3RnUjhXbFd4MWpVc2FUYm5VMmNqT1NVMEFYRGVZTEF6bm16djdyV1NQQkNPWi13X0hxTU1ZTW1iV3BKczZNUTU5dFoxRnlvOTF1WWRVTlFLQ29Vd28wU2ZtaDhBXzQ2ek9qZzE2R2luS0pDcm9NcHJ0VEwzam9MOFJWN0tUbmtfazJfYWFZX1IyeXpCdzVOaGF5RmFhOGRhZUpiM0F6ZjFsc1dnQdIBxAFBVV95cUxPLWpuM2pqNW52bG1tODlNbFBsZjJMZUJZbzNjMUVOcEJzZTRqSGNsZk1vUExGV0tLeUt3VFVPaFZ4TUZqN0xSVXZDYlFoV2RQZk9MYUVKRTRqYnlfZXU3UmQwZGRqVzBHZlJsaWRYN2xpZjJEWlF4TWJRcW5ScXc1QmIyam90a056Skw2WjRiV2dPamZNenJiZmxGd0kwUkFhWjhKV1dPQW5OYjZoTDl6QVNwaE5COVhrdEg5SzBFdDVJZTBy?oc=5\" target=\"_blank\">Outubro Rosa: GBOEX, na campanha de conscientização, destaca a importância da proteção | SEGS Portal...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2024-10-23T07:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 0,
+      "collected_at": "2026-09-07T16:12:05.990399+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "a8eb92683042fcd6a04f799f5aed8bf26a638511",
       "source": "youtube",
       "channel": "canal_proprio",
@@ -9707,29 +9731,12 @@
       "is_owned": 0,
       "collected_at": "2026-08-21T11:24:34.987219+00:00",
       "raw_id": ""
-    },
-    {
-      "id": "96f953b05b2ba65321a7d014896ef1287106fa83",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX: o papel do Corretor de Seguros e o desenvolvimento do mercado - Sonho Seguro",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbmNIY0tOYm40cTNfSlhjTDc3TkJBYkJxd2JUVWctb0Z6aHZzeGZiWUhmUjZHUXVKQmRfczlRVmE5X09hSk9tTDRSUEdEU1M1N0RNTDd1UXVRWVlXLWdLanRtMnR4TVkxTnpFdnNKMnpNMFpUemdCMGpDeVhCMTZPVmxRclJTcnF2ekh2VVFqUnE2c3pKM29Kai1LdHFzSFBKZ0otd3Y0XzgxZGM?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbmNIY0tOYm40cTNfSlhjTDc3TkJBYkJxd2JUVWctb0Z6aHZzeGZiWUhmUjZHUXVKQmRfczlRVmE5X09hSk9tTDRSUEdEU1M1N0RNTDd1UXVRWVlXLWdLanRtMnR4TVkxTnpFdnNKMnpNMFpUemdCMGpDeVhCMTZPVmxRclJTcnF2ekh2VVFqUnE2c3pKM29Kai1LdHFzSFBKZ0otd3Y0XzgxZGM?oc=5\" target=\"_blank\">GBOEX: o papel do Corretor de Seguros e o desenvolvimento do mercado</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sonho Seguro</font>",
-      "author": "Sonho Seguro",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-10-11T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-09T23:12:47.535721+00:00",
-      "raw_id": ""
     }
   ],
   "consumo": {
     "pct_usado": 100.0,
     "ciclo_fim": "2026-09-15T23:59:59.999Z",
-    "freado": false,
+    "freado": true,
     "coletas_restantes": 0
   }
 }
