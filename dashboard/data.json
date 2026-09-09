@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-08T14:54:19.584232+00:00",
+  "generated_at": "2026-09-09T15:01:31.738149+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 347,
@@ -1232,6 +1232,23 @@
     }
   ],
   "mentions": [
+    {
+      "id": "d4c15245434665fa9c07536edcab78981f106968",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "GBOEX lança campanha de comunicação no Mês Farroupilha",
+      "url": "https://www.gboex.com.br/gboex-lanca-campanha-de-comunicacao-no-mes-farroupilha/",
+      "text": "<p>“Uma marca genuinamente gaúcha”. As raízes da fundação do GBOEX, criado há mais de um século, em Porto Alegre, são o mote da campanha de comunicação proposta para o mês de setembro. A iniciativa ocupa o trajeto que leva para o Acampamento Farroupilha, no Parque Harmonia (Parque Maurício Sirotsky Sobrinho), na capital do Rio Grande...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-lanca-campanha-de-comunicacao-no-mes-farroupilha/\" title=\"Read GBOEX lança campanha de comunicação no Mês Farroupilha\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-lanca-campanha-de-comunicacao-no-mes-farroupilha/\">GBOEX lança campanha de comunicação no Mês Farroupilha</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-09-08T18:10:15+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 1,
+      "collected_at": "2026-09-09T15:01:24.255573+00:00",
+      "raw_id": ""
+    },
     {
       "id": "74191bf93f7e12f52885464de3670e41c386e417",
       "source": "google_news",
@@ -9713,23 +9730,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-09T23:12:47.533038+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e7bdb925f8e25fb53958a7fd04fba66ac6aa63a1",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "100-anos-GBOEX - Best Swimming",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNVlIN3RhZ0MydlZjeDg4NW5QeXljaENqTXNhRFVENVowSmFiU3FCU25xUWE1UndJZ3Iza3pBWUMxdlhfdGFCLTFEdVR0dV9fUk90NlpEY0VsYkxxbGN1dDVSWFNqQURjeHcyWFM4REYyT3FMdWNhaWJwWWpXMk1kQmVYODhic0J3Qk9RY2JkNE5OdkpOMzhxQ2ZzY211TzRwMWgwUGxES184NDZNdjBhX0otUUZ3VURuUTdV?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNVlIN3RhZ0MydlZjeDg4NW5QeXljaENqTXNhRFVENVowSmFiU3FCU25xUWE1UndJZ3Iza3pBWUMxdlhfdGFCLTFEdVR0dV9fUk90NlpEY0VsYkxxbGN1dDVSWFNqQURjeHcyWFM4REYyT3FMdWNhaWJwWWpXMk1kQmVYODhic0J3Qk9RY2JkNE5OdkpOMzhxQ2ZzY211TzRwMWgwUGxES184NDZNdjBhX0otUUZ3VURuUTdV?oc=5\" target=\"_blank\">100-anos-GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Best Swimming</font>",
-      "author": "Best Swimming",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-10-18T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-08-21T11:24:34.987219+00:00",
       "raw_id": ""
     }
   ],
