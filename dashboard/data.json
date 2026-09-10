@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-09T15:01:31.738149+00:00",
+  "generated_at": "2026-09-10T14:50:55.611453+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 347,
+    "total_mentions": 350,
     "positivo": 184,
-    "neutro": 67,
+    "neutro": 70,
     "negativo": 96,
-    "net_sentiment": 25.4,
+    "net_sentiment": 25.1,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 44,
+    "noticia": 47,
     "social": 241,
     "reclamacao": 62
   },
   "by_sentiment": {
-    "neutro": 67,
+    "neutro": 70,
     "positivo": 184,
     "negativo": 96
   },
@@ -40,17 +40,17 @@
       "neutro": 0,
       "negativo": 62
     },
+    "google_news": {
+      "total": 47,
+      "positivo": 20,
+      "neutro": 27,
+      "negativo": 0
+    },
     "linkedin": {
       "total": 46,
       "positivo": 29,
       "neutro": 16,
       "negativo": 1
-    },
-    "google_news": {
-      "total": 44,
-      "positivo": 20,
-      "neutro": 24,
-      "negativo": 0
     },
     "youtube": {
       "total": 6,
@@ -66,11 +66,11 @@
     ],
     [
       "SEGS Portal Nacional",
-      15
+      16
     ],
     [
       "Revista Cobertura",
-      6
+      8
     ],
     [
       "Sonho Seguro",
@@ -468,6 +468,13 @@
       "negativo": 0
     },
     {
+      "date": "2021-09-16",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
       "date": "2021-11-22",
       "total": 1,
       "positivo": 1,
@@ -574,6 +581,13 @@
     },
     {
       "date": "2025-07-24",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-07-28",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
@@ -1225,9 +1239,9 @@
     },
     {
       "date": "2026-09-04",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 1,
+      "neutro": 2,
       "negativo": 0
     }
   ],
@@ -1247,6 +1261,23 @@
       "sentiment_score": 0.6,
       "is_owned": 1,
       "collected_at": "2026-09-09T15:01:24.255573+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "740027ae071bd26517409e7644bd57fb936abdb3",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQzh3d2Y3MVRDX0pzdHdLajdEb1JmWlkxeXRfMUNPVzh6bFl0X3FZcDQtdXlRNU10X2lJS3FiYUwzWC1wSXBzYnV3ZnFJQnZ3MHFLb0lGNEdVbUxzZ2JsM1gtaGlzSEhDNHhTSUVvVF9HWE9LVS1jUkpvLWp6Mzh3TkQ5REdZTk1KSkRTb2FZSkQ4UWRLTC1LRtIBngFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHdw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNQzh3d2Y3MVRDX0pzdHdLajdEb1JmWlkxeXRfMUNPVzh6bFl0X3FZcDQtdXlRNU10X2lJS3FiYUwzWC1wSXBzYnV3ZnFJQnZ3MHFLb0lGNEdVbUxzZ2JsM1gtaGlzSEhDNHhTSUVvVF9HWE9LVS1jUkpvLWp6Mzh3TkQ5REdZTk1KSkRTb2FZSkQ4UWRLTC1LRtIBngFBVV95cUxQQjBuV2tuS1gxczR0N182STgxZmJEQ0pLNFMzWUxoRC1RNEl2MkotcC13Q0xnUWFuc3JaT05xaVRQT25IQTVJWWdZOFNVVEhqc1BOc254WEVXUzgxRC1lbmVfa0VHeWVpckxUQlRuOW1uVWhfQmlsQTJoMkZaSEU0NmlCN3RWR2RadFlHenRfaDJQOUFkTGdqR2dYSGtHdw?oc=5\" target=\"_blank\">GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-04T17:26:46+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-10T14:50:31.843790+00:00",
       "raw_id": ""
     },
     {
@@ -7829,6 +7860,23 @@
       "raw_id": ""
     },
     {
+      "id": "ace1b0a1e97099b14fdf4b4b78b557c7e8b275d9",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança novo site - Revista Cobertura",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVUoyWHpjWE9zcVlFRmpUOTZKX0w3OUl5S1MtM21vNFYtRUhVWUZETGR0blVmMFVhUW5WTmxMckRGNnN4T3NDVzNnWjRELWVRcGc0N0xydnNyZmNGUGt2aXBlQlhVMHdpdDIwWXpscFFXWEExNk9zdmt6dkFPYkRVZlRINGc5Njg?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPVUoyWHpjWE9zcVlFRmpUOTZKX0w3OUl5S1MtM21vNFYtRUhVWUZETGR0blVmMFVhUW5WTmxMckRGNnN4T3NDVzNnWjRELWVRcGc0N0xydnNyZmNGUGt2aXBlQlhVMHdpdDIwWXpscFFXWEExNk9zdmt6dkFPYkRVZlRINGc5Njg?oc=5\" target=\"_blank\">GBOEX lança novo site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Revista Cobertura</font>",
+      "author": "Revista Cobertura",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2025-07-28T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-10T14:50:31.845824+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "d3d5c060b1f422d944c47958f7e862eee0842b9f",
       "source": "google_news",
       "channel": "noticia",
@@ -8574,6 +8622,23 @@
       "sentiment_score": 0.5,
       "is_owned": 0,
       "collected_at": "2026-08-24T11:18:33.702145+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "f23fc370c129f35365e8723347eb1125933e49b2",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Conselho Deliberativo do GBOEX celebra 79 anos de atuação Flávio da Cunha Vianna, GBOEX - Revista Cobertura",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZUhWSVIzR3duYTRqUDN4dXpwY3BSZEpfRC1NY3lfdTNOTE1RN2Y0aUhndmpIb0I3VlBBYzRvOXFhaC1PelpKT2R1NkdESVRCMkRpa3NoWnRaaEMxcTRBQ2E1ZUx1NTI5Q2ctR19PanZJdGRUTVpjTGg5a0tUcEluTGtPMFRYYndQSVF2UG1GZEYzTEdHbl9BcTFDRGFSZWhISXBYQjNpaTU2WkR0VmRmNFFjOHV2bnM?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQZUhWSVIzR3duYTRqUDN4dXpwY3BSZEpfRC1NY3lfdTNOTE1RN2Y0aUhndmpIb0I3VlBBYzRvOXFhaC1PelpKT2R1NkdESVRCMkRpa3NoWnRaaEMxcTRBQ2E1ZUx1NTI5Q2ctR19PanZJdGRUTVpjTGg5a0tUcEluTGtPMFRYYndQSVF2UG1GZEYzTEdHbl9BcTFDRGFSZWhISXBYQjNpaTU2WkR0VmRmNFFjOHV2bnM?oc=5\" target=\"_blank\">Conselho Deliberativo do GBOEX celebra 79 anos de atuação Flávio da Cunha Vianna, GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Revista Cobertura</font>",
+      "author": "Revista Cobertura",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2021-09-16T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-10T14:50:31.846558+00:00",
       "raw_id": ""
     },
     {
@@ -9679,57 +9744,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-24T11:22:24.548127+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "78cc483baddf6719c0f96282c21bb862f550dd0e",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa séria e comprometida !",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid09c36knvLT9c4e4rGsF3Fvo9beqmQPm23TtQuDgU4CJeHQSZqVPo8hA3HX6PpBMCEl&id=100002828481229",
-      "text": "Empresa séria e comprometida !",
-      "author": "Carlos Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2018-12-21T18:33:30+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.769399+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "96a14bf6c6745384a33422b8d5e781fe490c5741",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa séria e comprometida !",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid09Wu57D8cuL9w3hJ9KJvhsvFRhJTT5oNStbAib21RFpTiPnEeUZXN3eniKF5NkqWkl&id=100002828481229",
-      "text": "Empresa séria e comprometida !",
-      "author": "Carlos Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2018-12-21T18:33:30+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.555962+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e2bbb13663d7841d80c55b0154f7f6ba753a1067",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "Leonardo Neustadt é o novo superintendente comercial da GBOEX - Sonho Seguro",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYjhFeEtmVzZuaU45djRKbHM0RjVrSzVrZ1pjV2FldUZtbHAzZVpzNFEzdlNCd2ZaQjI1bjgwQUxkMDVLOHhaZFBic2VVd2EyZmpxMlBCNm51TThHSTdQMVJEV1BOUnZnMGFYbTMzM0hGVjJ1N1FEQUpXUGMyZTdPMUJvT0dGaUlpZU9OTkplVjF2R0ZSNmt1WG9maW9wdEZOVV9j?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNYjhFeEtmVzZuaU45djRKbHM0RjVrSzVrZ1pjV2FldUZtbHAzZVpzNFEzdlNCd2ZaQjI1bjgwQUxkMDVLOHhaZFBic2VVd2EyZmpxMlBCNm51TThHSTdQMVJEV1BOUnZnMGFYbTMzM0hGVjJ1N1FEQUpXUGMyZTdPMUJvT0dGaUlpZU9OTkplVjF2R0ZSNmt1WG9maW9wdEZOVV9j?oc=5\" target=\"_blank\">Leonardo Neustadt é o novo superintendente comercial da GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sonho Seguro</font>",
-      "author": "Sonho Seguro",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2018-12-13T08:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-09T23:12:47.533038+00:00",
       "raw_id": ""
     }
   ],
