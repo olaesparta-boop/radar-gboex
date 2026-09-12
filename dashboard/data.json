@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-11T14:50:51.690687+00:00",
+  "generated_at": "2026-09-12T13:53:37.356971+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 350,
+    "total_mentions": 351,
     "positivo": 184,
-    "neutro": 70,
+    "neutro": 71,
     "negativo": 96,
     "net_sentiment": 25.1,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 47,
+    "noticia": 48,
     "social": 241,
     "reclamacao": 62
   },
   "by_sentiment": {
-    "neutro": 70,
+    "neutro": 71,
     "positivo": 184,
     "negativo": 96
   },
@@ -41,9 +41,9 @@
       "negativo": 62
     },
     "google_news": {
-      "total": 47,
+      "total": 48,
       "positivo": 20,
-      "neutro": 27,
+      "neutro": 28,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      16
+      17
     ],
     [
       "Revista Cobertura",
@@ -494,6 +494,13 @@
       "positivo": 0,
       "neutro": 0,
       "negativo": 3
+    },
+    {
+      "date": "2022-06-07",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     },
     {
       "date": "2022-07-01",
@@ -8523,6 +8530,23 @@
       "raw_id": ""
     },
     {
+      "id": "d2e1b6c693289ae0e2472f1a292bf5ed92e7f2c5",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Rede de Convênios GBOEX celebra o Dia dos Namorados com descontos | SEGS Portal Nacional de Seguros,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSEQ3VklCRXJZWWVZQnpIQkVGMmxRZmhXLXhQNkh1bzg5bkxyanVmNzktNFQxX1BaV3UyWFFReWZiQVF3ZWhzNUFtS0VZeFlyUlZ6WTR1UXpBbGVkOTFmdXJ2bC1obE12cURVZWV4bGktUlhjS2o2QzA2aWoyeGl5QTFDZmhkRHI5d3JXa2tPOUFBZlRuT1ZKdzdoWi1objRRa0JfTl9lY9IBrAFBVV95cUxOVlRyaFMtOWZvNE9pM1hZeEc1Q0NseTd5dTVPVHpHWVV4Wml5M1AtbFYwbzN5Zk15MFpOTjVaWWVJNTJiLWk4Z2RQQWpfcmFJb3Y5Rkw1aGxTLWlMOExqNGhaaWJjVkhFQ3U4aFF0YS10Q05DSEIzTi1lS053Qk9BSWg4UHhGMGpkTlFQNWxCZzNaNXU4WXRMYWV1MWIxOWdWVWJSMWhLZFZfcDJE?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOSEQ3VklCRXJZWWVZQnpIQkVGMmxRZmhXLXhQNkh1bzg5bkxyanVmNzktNFQxX1BaV3UyWFFReWZiQVF3ZWhzNUFtS0VZeFlyUlZ6WTR1UXpBbGVkOTFmdXJ2bC1obE12cURVZWV4bGktUlhjS2o2QzA2aWoyeGl5QTFDZmhkRHI5d3JXa2tPOUFBZlRuT1ZKdzdoWi1objRRa0JfTl9lY9IBrAFBVV95cUxOVlRyaFMtOWZvNE9pM1hZeEc1Q0NseTd5dTVPVHpHWVV4Wml5M1AtbFYwbzN5Zk15MFpOTjVaWWVJNTJiLWk4Z2RQQWpfcmFJb3Y5Rkw1aGxTLWlMOExqNGhaaWJjVkhFQ3U4aFF0YS10Q05DSEIzTi1lS053Qk9BSWg4UHhGMGpkTlFQNWxCZzNaNXU4WXRMYWV1MWIxOWdWVWJSMWhLZFZfcDJE?oc=5\" target=\"_blank\">Rede de Convênios GBOEX celebra o Dia dos Namorados com descontos | SEGS Portal Nacional de Seguros,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2022-06-07T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-12T13:53:21.527705+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "ac6e739d803da80a94f2e52ce61f3587a1617c07",
       "source": "youtube",
       "channel": "canal_proprio",
@@ -9727,23 +9751,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-09T23:12:47.533447+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "0fc8bc00e12bd661d87b49296463dbc75b3cdbfc",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa séria e comprometida !",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02Cw1o432wquMfBGQmhtXz3r2Gq4aMyCWYhtLE88FF5Rryh2WqGWFs5q4CeH1kFW3sl&id=100002828481229",
-      "text": "Empresa séria e comprometida !",
-      "author": "Carlos Martins",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2018-12-21T18:33:30+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-24T11:22:24.548127+00:00",
       "raw_id": ""
     }
   ],
