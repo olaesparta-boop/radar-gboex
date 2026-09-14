@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-13T14:48:34.015821+00:00",
+  "generated_at": "2026-09-14T16:42:36.245973+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 351,
+    "total_mentions": 353,
     "positivo": 184,
-    "neutro": 71,
+    "neutro": 73,
     "negativo": 96,
-    "net_sentiment": 25.1,
+    "net_sentiment": 24.9,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 48,
+    "noticia": 50,
     "social": 241,
     "reclamacao": 62
   },
   "by_sentiment": {
-    "neutro": 71,
+    "neutro": 73,
     "positivo": 184,
     "negativo": 96
   },
@@ -41,9 +41,9 @@
       "negativo": 62
     },
     "google_news": {
-      "total": 48,
+      "total": 50,
       "positivo": 20,
-      "neutro": 28,
+      "neutro": 30,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      17
+      19
     ],
     [
       "Revista Cobertura",
@@ -552,6 +552,13 @@
       "negativo": 0
     },
     {
+      "date": "2024-09-13",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
       "date": "2024-10-23",
       "total": 1,
       "positivo": 1,
@@ -581,6 +588,13 @@
     },
     {
       "date": "2025-05-23",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-05-27",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
@@ -7918,6 +7932,23 @@
       "raw_id": ""
     },
     {
+      "id": "abd72466ab19bf81177cf235571fd58095a1d1cc",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX reinaugura Unidade de Porto Alegre como parte das comemorações de aniversário | SEGS Portal... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdDRhOFQzdlRUNVBwT1FDWmYyM0lPeUgwYld5RnpNY0ZiNGx4MHpSd2RHMVJyV1lCVGpmLXhHaks5TDBJc05SM3hvQWNseERYX1dZM1pYX1JhLXdmWUowbGtDVDEyUlZBcHdBM01nV2tZaEQ1anZwRGltVDNkVnlLSGRJdVVPSDl3NHpHZWZMYU45SDN2UGJyTXpjT1BQdTlGU1pfUzllWGhnSWdTRGJLOFI4MmVVY0RGZm11dk1Lc9IBxAFBVV95cUxNX09iM2IxdjE3Vk1fblptTlBpSGhOa3pCZXd4ZnFUUzFvQUY5ZDc2THhPUUc5UTJwdi1NYjJqbzR1dkVNUWRKZnJWTlZieXhmZkFaUTREb2pycmRVWlphMFk1ZERHZ2tOY0RJMWNJU3V2RWhtYXZRVkppa3JVbmF2RlRWZWphS3BlZGlPdFU2c0ZDbzd2eGhvTUx0NFl0MVZ3R1QxdlBxQklmNmdkVW9rWG9SdWlVRkVQaThuLVJpaG1OWTVm?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNdDRhOFQzdlRUNVBwT1FDWmYyM0lPeUgwYld5RnpNY0ZiNGx4MHpSd2RHMVJyV1lCVGpmLXhHaks5TDBJc05SM3hvQWNseERYX1dZM1pYX1JhLXdmWUowbGtDVDEyUlZBcHdBM01nV2tZaEQ1anZwRGltVDNkVnlLSGRJdVVPSDl3NHpHZWZMYU45SDN2UGJyTXpjT1BQdTlGU1pfUzllWGhnSWdTRGJLOFI4MmVVY0RGZm11dk1Lc9IBxAFBVV95cUxNX09iM2IxdjE3Vk1fblptTlBpSGhOa3pCZXd4ZnFUUzFvQUY5ZDc2THhPUUc5UTJwdi1NYjJqbzR1dkVNUWRKZnJWTlZieXhmZkFaUTREb2pycmRVWlphMFk1ZERHZ2tOY0RJMWNJU3V2RWhtYXZRVkppa3JVbmF2RlRWZWphS3BlZGlPdFU2c0ZDbzd2eGhvTUx0NFl0MVZ3R1QxdlBxQklmNmdkVW9rWG9SdWlVRkVQaThuLVJpaG1OWTVm?oc=5\" target=\"_blank\">GBOEX reinaugura Unidade de Porto Alegre como parte das comemorações de aniversário | SEGS Portal...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2025-05-27T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-14T16:42:20.191819+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "2e0b2091dc80f48b249626e3c5d8973babd61851",
       "source": "google_news",
       "channel": "noticia",
@@ -8119,6 +8150,23 @@
       "sentiment_score": 0.1,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.885130+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "9c70d57096963051868cf765122b6ce8b1dd8297",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "CVG-RS promove café itinerante com destaque para as oportunidades do GBOEX no mercado segurador | SEGS... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRVhic3Y4a05qWlJfbGgtZWpIZHE5Wm9SOTc1UFZEVnRIcVdrb2s0VG9TT0VhaTdKemN6Z3hjS2hsbmNTNU9jRk5UWGI5TVM5YmFFdE9nVUZzUW5Ka2JtZTVYcXlsRGs5WkNpVG5YQTkyQS1NVWNzTldBRHJlUmFBLXhzRW91eWVkeEJNTlpLUXRpUmpULTZyTjNnbFByaG04bFRhR1M1SWVlN3JrMVhxN2VROHN1dmxYWWhaMmJMLWtmcGt2YTRGQVBSSmNXb3fSAdQBQVVfeXFMUENJRy1pdWdvMHF0VThDRC1KOXBYQkZkbVdwamtTY3dWQnZ2VlRJWmNuTG9wdVBNZ01xWHRIRXFKaDJ3NEtuOFpNTWhfTHNaYjd6dDdyX0RqWEEyaVpjcWE3SlVnWnV6Z2JmTy1ldE9kM25JRTBHVmRsMGpGcldQR0dUU3AwT3pXQkJmYkw4NnhUaFREMFRLSWNNLVd3NXlPQTM0VHJYQlYzc19xMC00Nmh3U0xORkRsLWVHeGZtbXAxUHZOWEtXYWxvc0cxWXh3Z2lRMG0?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxQRVhic3Y4a05qWlJfbGgtZWpIZHE5Wm9SOTc1UFZEVnRIcVdrb2s0VG9TT0VhaTdKemN6Z3hjS2hsbmNTNU9jRk5UWGI5TVM5YmFFdE9nVUZzUW5Ka2JtZTVYcXlsRGs5WkNpVG5YQTkyQS1NVWNzTldBRHJlUmFBLXhzRW91eWVkeEJNTlpLUXRpUmpULTZyTjNnbFByaG04bFRhR1M1SWVlN3JrMVhxN2VROHN1dmxYWWhaMmJMLWtmcGt2YTRGQVBSSmNXb3fSAdQBQVVfeXFMUENJRy1pdWdvMHF0VThDRC1KOXBYQkZkbVdwamtTY3dWQnZ2VlRJWmNuTG9wdVBNZ01xWHRIRXFKaDJ3NEtuOFpNTWhfTHNaYjd6dDdyX0RqWEEyaVpjcWE3SlVnWnV6Z2JmTy1ldE9kM25JRTBHVmRsMGpGcldQR0dUU3AwT3pXQkJmYkw4NnhUaFREMFRLSWNNLVd3NXlPQTM0VHJYQlYzc19xMC00Nmh3U0xORkRsLWVHeGZtbXAxUHZOWEtXYWxvc0cxWXh3Z2lRMG0?oc=5\" target=\"_blank\">CVG-RS promove café itinerante com destaque para as oportunidades do GBOEX no mercado segurador | SEGS...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2024-09-13T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-14T16:42:20.192113+00:00",
       "raw_id": ""
     },
     {
@@ -9718,46 +9766,12 @@
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.885512+00:00",
       "raw_id": ""
-    },
-    {
-      "id": "aa783df5266bf2fa083eefa0a85e3e73b843fc19",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "Lideranças do GBOEX estiveram reunidas para alinhar METAS 2019 e BALANÇO 2018 | SEGS Portal Nacional de... - SEGS Portal Nacional",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUXp3a0tHYVA2UzZqcC1CeVh1V2l4NU90YV9sLS1ySjFZcWpFMUNBZjQ0ZzNHZ2M1QWNmVDEycXVFbXJ5bFdNOTl3czJYLWdjc24tRjMycjllOGxsTWdDcnZDdnViNGRXWG5DdlFtQXM0N0hhSmhhR0NKMk5NTjFjczlIV2wwdVFOQXhNNXllQ0RIb0lUMU50bnc1eWhzM0x3WUc3dDZwdWF4U1loX2hBNU9FeEc3bDjSAbwBQVVfeXFMTmRUeTJhVWVPVUgtLTFWRHppR0JyMW5UX1dBelVraElRT3NYREpFS3ZXczVubmktMlZMbTh4LW5FOTJ6Rzlqc3d5cGJOdm1DT1lNLXRlTGNUTURZSVVUd2FkR09VNkozREhsVW5rMHFGbVZjZ3AzYk9uaWRyRmR5MkFPZHBJVk5SQ2hqcXNIajhiWEF4QlFya0IwY0hxakdfX0g2MlVJd1p5eWVDWllJNi1LVk5ucmtJcVhLcUY?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNUXp3a0tHYVA2UzZqcC1CeVh1V2l4NU90YV9sLS1ySjFZcWpFMUNBZjQ0ZzNHZ2M1QWNmVDEycXVFbXJ5bFdNOTl3czJYLWdjc24tRjMycjllOGxsTWdDcnZDdnViNGRXWG5DdlFtQXM0N0hhSmhhR0NKMk5NTjFjczlIV2wwdVFOQXhNNXllQ0RIb0lUMU50bnc1eWhzM0x3WUc3dDZwdWF4U1loX2hBNU9FeEc3bDjSAbwBQVVfeXFMTmRUeTJhVWVPVUgtLTFWRHppR0JyMW5UX1dBelVraElRT3NYREpFS3ZXczVubmktMlZMbTh4LW5FOTJ6Rzlqc3d5cGJOdm1DT1lNLXRlTGNUTURZSVVUd2FkR09VNkozREhsVW5rMHFGbVZjZ3AzYk9uaWRyRmR5MkFPZHBJVk5SQ2hqcXNIajhiWEF4QlFya0IwY0hxakdfX0g2MlVJd1p5eWVDWllJNi1LVk5ucmtJcVhLcUY?oc=5\" target=\"_blank\">Lideranças do GBOEX estiveram reunidas para alinhar METAS 2019 e BALANÇO 2018 | SEGS Portal Nacional de...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
-      "author": "SEGS Portal Nacional",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2019-02-20T08:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-08-21T11:24:34.986645+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "a7237ed8dfbeb5aa0aa1d33d08ec7af521145820",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "Acqua Lokos Parque Hotel firma convênio com GBOEX - a folha torres",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMFRXRHAxUi1wRHlfRGJtX2daMDFWMGdIUFBxQ2RKUE8xelB4ZzRweXJzSGtWRHh3WW80UXpmdFdya1NZdUVydDJ3WTl6SjRuYmstOW13LVBWR1hZN1V1aHZxRHN0SC1RQTZjQmhkTmZyQ3J1aVdWS1B2V1k5cVlEUnBQSTk?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxQMFRXRHAxUi1wRHlfRGJtX2daMDFWMGdIUFBxQ2RKUE8xelB4ZzRweXJzSGtWRHh3WW80UXpmdFdya1NZdUVydDJ3WTl6SjRuYmstOW13LVBWR1hZN1V1aHZxRHN0SC1RQTZjQmhkTmZyQ3J1aVdWS1B2V1k5cVlEUnBQSTk?oc=5\" target=\"_blank\">Acqua Lokos Parque Hotel firma convênio com GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">a folha torres</font>",
-      "author": "a folha torres",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2019-02-08T08:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-09T23:12:47.533447+00:00",
-      "raw_id": ""
     }
   ],
   "consumo": {
     "pct_usado": 100.0,
     "ciclo_fim": "2026-09-15T23:59:59.999Z",
-    "freado": false,
+    "freado": true,
     "coletas_restantes": 0
   }
 }
