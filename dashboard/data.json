@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-19T14:11:47.048985+00:00",
+  "generated_at": "2026-09-20T14:30:40.751302+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 355,
+    "total_mentions": 357,
     "positivo": 184,
-    "neutro": 75,
+    "neutro": 77,
     "negativo": 96,
-    "net_sentiment": 24.8,
+    "net_sentiment": 24.6,
     "sources": 153,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 52,
+    "noticia": 54,
     "social": 241,
     "reclamacao": 62
   },
   "by_sentiment": {
-    "neutro": 75,
+    "neutro": 77,
     "positivo": 184,
     "negativo": 96
   },
@@ -41,9 +41,9 @@
       "negativo": 62
     },
     "google_news": {
-      "total": 52,
+      "total": 54,
       "positivo": 20,
-      "neutro": 32,
+      "neutro": 34,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      19
+      21
     ],
     [
       "Revista Cobertura",
@@ -539,6 +539,13 @@
     },
     {
       "date": "2023-10-09",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2024-01-10",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
@@ -1267,9 +1274,9 @@
     },
     {
       "date": "2026-09-16",
-      "total": 2,
+      "total": 3,
       "positivo": 0,
-      "neutro": 2,
+      "neutro": 3,
       "negativo": 0
     }
   ],
@@ -1289,6 +1296,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-09-18T14:47:36.206271+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "21e622286462bd3a299c1b3dcb52add9a966e0ce",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança campanha de comunicação em mais de 40 rádios | SEGS Portal Nacional de Seguros, Saúde, Info,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNU2lQWDcwYWxaUDRncWFGZFJVaWVTWFJjMTNMOUdTWUFVR0ViRWYtMkk5RDRXcTNGcncyLVlhT19fdUd6aWZKeUlFNVJVb3pqYU1SNC11N1lwYlhhS2NEeVBNWDZNS3o1aFpTU0QzWjlqSzZ4dFZ4RG9KbGo0TTM2RWlfelZFcjdaZ0VwRFprODY0V1RuaFVNUjEtNNIBoAFBVV95cUxPSGFTZHByOWljcDlqOVR4LXVkWWNFb05SbTVtY2NqdF9MVndDUml5VXRrMXVVR1JNRlJXWllIYnhRWTJJV0dVZ0FZaEJpaGJNX3RhOHp2WkhwX1MxR056RFJDRUxHU19qQjhvR0otTHk1MWdHOWhqUDN6S2lpQWpWSksxN2tENVJsU1VJZC04aWdVOHNSWUV2eElyUmplVjRn?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNU2lQWDcwYWxaUDRncWFGZFJVaWVTWFJjMTNMOUdTWUFVR0ViRWYtMkk5RDRXcTNGcncyLVlhT19fdUd6aWZKeUlFNVJVb3pqYU1SNC11N1lwYlhhS2NEeVBNWDZNS3o1aFpTU0QzWjlqSzZ4dFZ4RG9KbGo0TTM2RWlfelZFcjdaZ0VwRFprODY0V1RuaFVNUjEtNNIBoAFBVV95cUxPSGFTZHByOWljcDlqOVR4LXVkWWNFb05SbTVtY2NqdF9MVndDUml5VXRrMXVVR1JNRlJXWllIYnhRWTJJV0dVZ0FZaEJpaGJNX3RhOHp2WkhwX1MxR056RFJDRUxHU19qQjhvR0otTHk1MWdHOWhqUDN6S2lpQWpWSksxN2tENVJsU1VJZC04aWdVOHNSWUV2eElyUmplVjRn?oc=5\" target=\"_blank\">GBOEX lança campanha de comunicação em mais de 40 rádios | SEGS Portal Nacional de Seguros, Saúde, Info,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-16T19:11:15+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-20T14:30:23.076247+00:00",
       "raw_id": ""
     },
     {
@@ -8279,6 +8303,23 @@
       "raw_id": ""
     },
     {
+      "id": "4c5ad74dcef92091a3db2cd5ce22526a0ddd58e1",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Gboex Lança a Campanha Desafio 2024 | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4SngxMnVrQkxtWHdCOGhwRGNuRVk5ZlRwT0tTaXU2c2FpaG43THJ0X2hjazhPYTQzRjJoLW41QjMyNnZ6UkdsN0VBWXdLNm1KRWNuQ0JEeFZxblEtTVhvR0Y0YW9qZ3lwN2lJVXZLU1p3VnNYQ1A2RXFYV2k0dUHSAYQBQVVfeXFMTU4tVzFHdXRMME82MTlMYzBjc2lZWHpsV3ZRUXVCQ1pGcFYtOUV5c2dCVEJmTE91RjJXbXB3Zl8yWVBoTE5tbmkxWDlwX3FVaGNVbEZlT3dQWjNEbkhPV2hvQzNYbkpJZFFlekdVdktKX0ZHaGJlYnhhRFBVVnZ1amNEb0Rj?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB4SngxMnVrQkxtWHdCOGhwRGNuRVk5ZlRwT0tTaXU2c2FpaG43THJ0X2hjazhPYTQzRjJoLW41QjMyNnZ6UkdsN0VBWXdLNm1KRWNuQ0JEeFZxblEtTVhvR0Y0YW9qZ3lwN2lJVXZLU1p3VnNYQ1A2RXFYV2k0dUHSAYQBQVVfeXFMTU4tVzFHdXRMME82MTlMYzBjc2lZWHpsV3ZRUXVCQ1pGcFYtOUV5c2dCVEJmTE91RjJXbXB3Zl8yWVBoTE5tbmkxWDlwX3FVaGNVbEZlT3dQWjNEbkhPV2hvQzNYbkpJZFFlekdVdktKX0ZHaGJlYnhhRFBVVnZ1amNEb0Rj?oc=5\" target=\"_blank\">Gboex Lança a Campanha Desafio 2024 | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2024-01-10T08:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-20T14:30:23.079582+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "dd8ccacc9a5748c67306a605bb95c3753a3a084f",
       "source": "google_news",
       "channel": "noticia",
@@ -9738,40 +9779,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-24T11:22:24.548092+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "76a3d33f7ffee740dd66b589693c481c032b1050",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa séria que valoriza o seu associado! A Rede de Convênios é maravilhosa!!!",
-      "url": "https://www.facebook.com/carolinefhenriques/posts/pfbid02SUziBX72mEcVgpQfri42CMU6MwRxBw5wWmbhxhaof7QrfJsA8iESLra4KXtCtPmRl",
-      "text": "Empresa séria que valoriza o seu associado! A Rede de Convênios é maravilhosa!!!",
-      "author": "Caroline F Henriques",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2019-03-22T13:51:08+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-17T00:14:03.769332+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "7b4c463c2e91f68b1929d86d2518351f315b3798",
-      "source": "facebook",
-      "channel": "social",
-      "title": "Avaliação: Empresa séria que valoriza o seu associado! A Rede de Convênios é maravilhosa!!!",
-      "url": "https://www.facebook.com/carolinefhenriques/posts/pfbid0P2NVuuxhBrMTN2dBoFD7twu7Hj7ZHH53qon4jfHz2hC1tiW4iQUJbAR8sY3g5r3Dl",
-      "text": "Empresa séria que valoriza o seu associado! A Rede de Convênios é maravilhosa!!!",
-      "author": "Caroline F Henriques",
-      "domain": "facebook.com",
-      "language": "pt",
-      "published_at": "2019-03-22T13:51:08+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:07:55.555853+00:00",
       "raw_id": ""
     }
   ],
