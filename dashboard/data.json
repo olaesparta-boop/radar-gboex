@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-21T16:46:54.447184+00:00",
+  "generated_at": "2026-09-22T15:25:42.006062+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 404,
+    "total_mentions": 405,
     "positivo": 196,
-    "neutro": 100,
+    "neutro": 101,
     "negativo": 108,
-    "net_sentiment": 21.8,
+    "net_sentiment": 21.7,
     "sources": 174,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "social": 273,
     "reclamacao": 75,
-    "noticia": 56
+    "noticia": 57
   },
   "by_sentiment": {
     "positivo": 196,
-    "neutro": 100,
+    "neutro": 101,
     "negativo": 108
   },
   "by_source_detail": {
@@ -47,9 +47,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 56,
+      "total": 57,
       "positivo": 20,
-      "neutro": 36,
+      "neutro": 37,
       "negativo": 0
     },
     "youtube": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      23
+      24
     ],
     [
       "Revista Cobertura",
@@ -504,6 +504,13 @@
     },
     {
       "date": "2022-07-01",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2022-08-30",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
