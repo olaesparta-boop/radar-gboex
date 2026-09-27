@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-26T14:53:27.563149+00:00",
+  "generated_at": "2026-09-27T15:31:55.637668+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 406,
+    "total_mentions": 407,
     "positivo": 196,
-    "neutro": 102,
+    "neutro": 103,
     "negativo": 108,
-    "net_sentiment": 21.7,
+    "net_sentiment": 21.6,
     "sources": 174,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 58,
+    "noticia": 59,
     "social": 273,
     "reclamacao": 75
   },
   "by_sentiment": {
-    "neutro": 102,
+    "neutro": 103,
     "positivo": 196,
     "negativo": 108
   },
@@ -41,9 +41,9 @@
       "negativo": 75
     },
     "google_news": {
-      "total": 58,
+      "total": 59,
       "positivo": 20,
-      "neutro": 38,
+      "neutro": 39,
       "negativo": 0
     },
     "linkedin": {
@@ -101,11 +101,11 @@
       3
     ],
     [
-      "SulSeguro",
+      "segs.com.br",
       3
     ],
     [
-      "JRS.digital",
+      "SulSeguro",
       3
     ]
   ],
@@ -504,9 +504,9 @@
     },
     {
       "date": "2022-07-01",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 1,
+      "neutro": 2,
       "negativo": 0
     },
     {
