@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-09-29T16:48:02.915654+00:00",
+  "generated_at": "2026-09-30T16:40:05.369835+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 418,
+    "total_mentions": 420,
     "positivo": 199,
-    "neutro": 103,
+    "neutro": 105,
     "negativo": 116,
-    "net_sentiment": 19.9,
-    "sources": 175,
+    "net_sentiment": 19.8,
+    "sources": 176,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "reclamacao": 83,
     "social": 276,
-    "noticia": 59
+    "noticia": 61
   },
   "by_sentiment": {
     "negativo": 116,
-    "neutro": 103,
+    "neutro": 105,
     "positivo": 199
   },
   "by_source_detail": {
@@ -41,9 +41,9 @@
       "negativo": 83
     },
     "google_news": {
-      "total": 59,
+      "total": 61,
       "positivo": 20,
-      "neutro": 39,
+      "neutro": 41,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      24
+      25
     ],
     [
       "Revista Cobertura",
@@ -577,6 +577,13 @@
       "total": 1,
       "positivo": 1,
       "neutro": 0,
+      "negativo": 0
+    },
+    {
+      "date": "2025-01-13",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
       "negativo": 0
     },
     {
@@ -1435,9 +1442,9 @@
     },
     {
       "date": "2026-09-25",
-      "total": 7,
+      "total": 8,
       "positivo": 3,
-      "neutro": 4,
+      "neutro": 5,
       "negativo": 0
     },
     {
@@ -1634,6 +1641,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-09-28T18:23:31.495265+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "ab5b202ad298383617182bf24cef8a88c3795c70",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária - jrs portal",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSWh6UnNkX3JEUXlmejhDTGk5LWFBRmVHRTViS0JsU0d0M1pITlZMZTdwcmRvVE5iOU92SE1PZG1abV84NTBTcmU1bFB6c0djOWJua1YyVGJYNUItc3hMd3J4OUhXaFo2aEdrcDhOQ1NVZ1o4YjVBTWljZUZ0MWo3MHoxVG41WEd5bU5SSlprQkdRd2FPbmcycTNSRjJTdV9FNXRRTnhIZw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOSWh6UnNkX3JEUXlmejhDTGk5LWFBRmVHRTViS0JsU0d0M1pITlZMZTdwcmRvVE5iOU92SE1PZG1abV84NTBTcmU1bFB6c0djOWJua1YyVGJYNUItc3hMd3J4OUhXaFo2aEdrcDhOQ1NVZ1o4YjVBTWljZUZ0MWo3MHoxVG41WEd5bU5SSlprQkdRd2FPbmcycTNSRjJTdV9FNXRRTnhIZw?oc=5\" target=\"_blank\">Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jrs portal</font>",
+      "author": "jrs portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-25T15:14:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-09-30T16:39:49.039587+00:00",
       "raw_id": ""
     },
     {
@@ -9930,23 +9954,6 @@
       "sentiment_score": 0.7,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.882016+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "c47dcd76eeaa80e586e69d57a6338cf8680f477b",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "Conselho Deliberativo do GBOEX celebra 83 anos - Revista Cobertura",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR3ZZYm1kUDZoOWdVOVY3eGhlbUtMUWxZMHVoRTRNT1pOYnBXaTJCd1Q3dDJQNjl4QU9JN0l2WnFDUlBpUDFrdVphSjAwYjgybENDWkNJZU1Ob2tCQTdBZ0k1Ry0taXdIdzg2SjJIemZ5c2pEVzRxY24tZ2lpaFVFWFE0QWRDOFlxQnRfZGk1NUdKZHZYeGFJM1FaWkZwTkJ3N1F3YW85b18?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR3ZZYm1kUDZoOWdVOVY3eGhlbUtMUWxZMHVoRTRNT1pOYnBXaTJCd1Q3dDJQNjl4QU9JN0l2WnFDUlBpUDFrdVphSjAwYjgybENDWkNJZU1Ob2tCQTdBZ0k1Ry0taXdIdzg2SjJIemZ5c2pEVzRxY24tZ2lpaFVFWFE0QWRDOFlxQnRfZGk1NUdKZHZYeGFJM1FaWkZwTkJ3N1F3YW85b18?oc=5\" target=\"_blank\">Conselho Deliberativo do GBOEX celebra 83 anos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Revista Cobertura</font>",
-      "author": "Revista Cobertura",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2025-09-30T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-08-06T17:04:09.711150+00:00",
       "raw_id": ""
     }
   ],
