@@ -1,11 +1,11 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-02T16:30:00.252482+00:00",
+  "generated_at": "2026-10-03T15:03:30.605512+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 421,
+    "total_mentions": 422,
     "positivo": 199,
-    "neutro": 106,
+    "neutro": 107,
     "negativo": 116,
     "net_sentiment": 19.7,
     "sources": 176,
@@ -14,11 +14,11 @@
   "by_channel": {
     "reclamacao": 83,
     "social": 276,
-    "noticia": 62
+    "noticia": 63
   },
   "by_sentiment": {
     "negativo": 116,
-    "neutro": 106,
+    "neutro": 107,
     "positivo": 199
   },
   "by_source_detail": {
@@ -41,9 +41,9 @@
       "negativo": 83
     },
     "google_news": {
-      "total": 62,
+      "total": 63,
       "positivo": 20,
-      "neutro": 42,
+      "neutro": 43,
       "negativo": 0
     },
     "linkedin": {
@@ -609,9 +609,9 @@
     },
     {
       "date": "2025-05-07",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 1,
+      "neutro": 2,
       "negativo": 0
     },
     {
@@ -1505,6 +1505,23 @@
       "sentiment_score": 0.667,
       "is_owned": 1,
       "collected_at": "2026-09-28T18:19:29.614819+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "8c27563640906fd12ad65d052b57eb9dd80ce3bd",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária",
+      "url": "https://www.gboex.com.br/conselho-deliberativo-do-gboex-completa-84-anos-com-sessao-plenaria/",
+      "text": "<p>A celebração dos 84 anos do Conselho Deliberativo (CD) do GBOEX foi a pauta da sessão plenária promovida na manhã dessa quarta-feira (23), na sede da empresa, em Porto Alegre. Conselheiros, diretores, colaboradores e parceiros comerciais participaram da iniciativa. Fundado em 19 de setembro de 1942, o órgão exerce um papel indispensável na trajetória da...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/conselho-deliberativo-do-gboex-completa-84-anos-com-sessao-plenaria/\" title=\"Read Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/conselho-deliberativo-do-gboex-completa-84-anos-com-sessao-plenaria/\">Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-09-28T16:54:27+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.333,
+      "is_owned": 1,
+      "collected_at": "2026-10-03T15:03:29.800463+00:00",
       "raw_id": ""
     },
     {
@@ -9937,23 +9954,6 @@
       "sentiment_score": 0.6,
       "is_owned": 0,
       "collected_at": "2026-08-31T17:46:07.775061+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "744683bbbae44a36c6c902af0533b54840d0bca5",
-      "source": "youtube",
-      "channel": "canal_proprio",
-      "title": "Cada trajetória é composta por etapas que exigem atenção, planejamento e segurança.\n\nNo GBOEX, atuamos com tradição e solidez para oferecer soluções que acompanham as necessidades …",
-      "url": "https://www.youtube.com/watch?v=B1v6GoSians",
-      "text": "Cada trajetória é composta por etapas que exigem atenção, planejamento e segurança.\n\nNo GBOEX, atuamos com tradição e solidez para oferecer soluções que acompanham as necessidades de cada fase da vida.\n\nCom produtos estruturados e suporte especializado, garantimos proteção e tranquilidade para que você e quem você ama.\n\nPorque valorizar cada história é parte do nosso compromisso com o seu futuro!",
-      "author": "GBOEX",
-      "domain": "youtube.com",
-      "language": "pt",
-      "published_at": "2025-11-19T13:41:49+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.7,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:51:01.880344+00:00",
       "raw_id": ""
     }
   ],
