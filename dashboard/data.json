@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-03T15:03:30.605512+00:00",
+  "generated_at": "2026-10-04T15:40:06.875062+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 422,
+    "total_mentions": 423,
     "positivo": 199,
-    "neutro": 107,
+    "neutro": 108,
     "negativo": 116,
-    "net_sentiment": 19.7,
+    "net_sentiment": 19.6,
     "sources": 176,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "reclamacao": 83,
     "social": 276,
-    "noticia": 63
+    "noticia": 64
   },
   "by_sentiment": {
     "negativo": 116,
-    "neutro": 107,
+    "neutro": 108,
     "positivo": 199
   },
   "by_source_detail": {
@@ -41,9 +41,9 @@
       "negativo": 83
     },
     "google_news": {
-      "total": 63,
+      "total": 64,
       "positivo": 20,
-      "neutro": 43,
+      "neutro": 44,
       "negativo": 0
     },
     "linkedin": {
@@ -101,11 +101,11 @@
       3
     ],
     [
-      "SulSeguro",
+      "jrs portal",
       3
     ],
     [
-      "mariolescano",
+      "SulSeguro",
       3
     ]
   ],
@@ -724,6 +724,13 @@
       "total": 1,
       "positivo": 1,
       "neutro": 0,
+      "negativo": 0
+    },
+    {
+      "date": "2026-03-24",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
       "negativo": 0
     },
     {
@@ -9294,6 +9301,23 @@
       "raw_id": ""
     },
     {
+      "id": "742d27a8adc0e17f0c290429cca226f6ce46802e",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX disponibiliza planos via Pix Automático - jrs portal",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXlhRUFZZGVZd2VBSnFNOEJVOHg2U2lDNGxoSjM5Q2Fwcko0b0pDaENFVkpybEctdmUtU2U3Z01RME5jT29WczBicVc0U3ptaURHXzhkbVN1M3lTUGlRUElLQmwtcXBqT2hsT1FkUmpTRndTZ2NiMHVNaC1pc3VYcHU4bUY4aVJpbXc?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXlhRUFZZGVZd2VBSnFNOEJVOHg2U2lDNGxoSjM5Q2Fwcko0b0pDaENFVkpybEctdmUtU2U3Z01RME5jT29WczBicVc0U3ptaURHXzhkbVN1M3lTUGlRUElLQmwtcXBqT2hsT1FkUmpTRndTZ2NiMHVNaC1pc3VYcHU4bUY4aVJpbXc?oc=5\" target=\"_blank\">GBOEX disponibiliza planos via Pix Automático</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jrs portal</font>",
+      "author": "jrs portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-03-24T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-04T15:39:51.633196+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "47b55c7e5f851cee9996a2f058efdfe4e4c29e6a",
       "source": "gboex_site",
       "channel": "canal_proprio",
@@ -9937,23 +9961,6 @@
       "sentiment_score": 0.7,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.881219+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "108f09ce14e117ce78147e06dc3595d3584434d2",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "“Associado da Sorte GBOEX” premia corretores de seguros e clientes | SEGS Portal Nacional de Seguros,... - SEGS Portal Nacional",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTUw0aUFrRGpvbG0temJJQjM1cmpObkJJdUo4dTUxX3hVbW5KbVFoTGVtTkxhUllYUDJKaDlVNld6bWNfRk85Z0Y3dm8yVjRsdC1FdWhoSjFDZ0w2a1Vpd3dnUWVjY0RfUDNIN3Bjb3BneGJCOVkyaGptUDF5cENjVDZNMVozX3RPX3BsRWRSSXRIY2szNTBEZWQxXzhYaVdsaWdneFZR0gGrAUFVX3lxTE5HV3Q1endFcHdLLXU5RjdNOTdZZU1jZHZ3NFJTNmZJZTB1aXdkeVlMc0x1YmVtSVR2ZVNfVTJCUTBvTFFaVmtwcWlrVjhiX3lpSElhQ3VCU3kyZnlJNlVXV01GWTBGOGtyOW1zLXBaMmN3NWdJbzlOVUJJTFR0Sy05dlRpVkxxTnpFTi1La0w2MnhQY3lzNzdFc2JKTkY4ak53bGVObU5vV1ZjOA?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQTUw0aUFrRGpvbG0temJJQjM1cmpObkJJdUo4dTUxX3hVbW5KbVFoTGVtTkxhUllYUDJKaDlVNld6bWNfRk85Z0Y3dm8yVjRsdC1FdWhoSjFDZ0w2a1Vpd3dnUWVjY0RfUDNIN3Bjb3BneGJCOVkyaGptUDF5cENjVDZNMVozX3RPX3BsRWRSSXRIY2szNTBEZWQxXzhYaVdsaWdneFZR0gGrAUFVX3lxTE5HV3Q1endFcHdLLXU5RjdNOTdZZU1jZHZ3NFJTNmZJZTB1aXdkeVlMc0x1YmVtSVR2ZVNfVTJCUTBvTFFaVmtwcWlrVjhiX3lpSElhQ3VCU3kyZnlJNlVXV01GWTBGOGtyOW1zLXBaMmN3NWdJbzlOVUJJTFR0Sy05dlRpVkxxTnpFTi1La0w2MnhQY3lzNzdFc2JKTkY4ak53bGVObU5vV1ZjOA?oc=5\" target=\"_blank\">“Associado da Sorte GBOEX” premia corretores de seguros e clientes | SEGS Portal Nacional de Seguros,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
-      "author": "SEGS Portal Nacional",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2025-12-08T08:00:00+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.6,
-      "is_owned": 0,
-      "collected_at": "2026-08-31T17:46:07.775061+00:00",
       "raw_id": ""
     }
   ],
