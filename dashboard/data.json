@@ -1,25 +1,25 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-08T17:44:05.059951+00:00",
+  "generated_at": "2026-10-09T17:20:21.649004+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 446,
-    "positivo": 201,
-    "neutro": 125,
+    "total_mentions": 449,
+    "positivo": 202,
+    "neutro": 127,
     "negativo": 120,
-    "net_sentiment": 18.2,
-    "sources": 182,
+    "net_sentiment": 18.3,
+    "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
     "social": 286,
     "reclamacao": 87,
-    "noticia": 73
+    "noticia": 76
   },
   "by_sentiment": {
-    "positivo": 201,
+    "positivo": 202,
     "negativo": 120,
-    "neutro": 125
+    "neutro": 127
   },
   "by_source_detail": {
     "instagram": {
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 73,
-      "positivo": 20,
-      "neutro": 53,
+      "total": 76,
+      "positivo": 21,
+      "neutro": 55,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      33
+      35
     ],
     [
       "Revista Cobertura",
@@ -255,6 +255,13 @@
       "total": 1,
       "positivo": 0,
       "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2018-04-10",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
       "negativo": 0
     },
     {
@@ -1484,9 +1491,9 @@
     },
     {
       "date": "2026-09-28",
-      "total": 3,
+      "total": 4,
       "positivo": 1,
-      "neutro": 2,
+      "neutro": 3,
       "negativo": 0
     },
     {
@@ -1498,9 +1505,9 @@
     },
     {
       "date": "2026-09-30",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 0,
+      "neutro": 1,
       "negativo": 1
     },
     {
@@ -1867,6 +1874,23 @@
       "raw_id": "JpnFYAwC5sOxjyTj"
     },
     {
+      "id": "9c7056cb9ca97af8b16d00088e2d2005fcb2ba1d",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX - GREMIO BENEFICENTE - trademap.com.br",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80NmRCdFBrQThqOHZzanFMQUMwV0J4UGVVTS12bGtrUjh0M0lIUWtOOExkR3pnOGxXaUlPU0dWVExXN1J3aGQ3YXJBLWNjV2ctaHdSMHByMkl1d2hCNUtWVzFTQ0RaTG1rMXIxVktnb1h0SV9vZEZQQlZoUk1Sdw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE80NmRCdFBrQThqOHZzanFMQUMwV0J4UGVVTS12bGtrUjh0M0lIUWtOOExkR3pnOGxXaUlPU0dWVExXN1J3aGQ3YXJBLWNjV2ctaHdSMHByMkl1d2hCNUtWVzFTQ0RaTG1rMXIxVktnb1h0SV9vZEZQQlZoUk1Sdw?oc=5\" target=\"_blank\">GBOEX - GREMIO BENEFICENTE</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">trademap.com.br</font>",
+      "author": "trademap.com.br",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-30T13:53:33+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-09T17:20:03.250197+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "5c72752aa01790800d2f6baf2735ba6e1d7b97e3",
       "source": "reclame_aqui",
       "channel": "reclamacao",
@@ -1915,6 +1939,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-10-05T19:32:21.455170+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "a856cd1ded5b2c0aafc3187dee7829a5fa7081a3",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária | SEGS Portal Nacional de Seguros,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUTZnN0pqNUtRV3dSak13clU1eWNSZTJuNVp6b2FTVHptVy03VnJYV0xheGtJTE5rN085MC1ZYWtoVEFoRDFGTW1aQnFLajA0bTlvZ2VaUDh5cWxrYmZldHZVdmR4S3JXNXNrWUJWX3hydTVkNDN4VkVYaS05dUZyYXFQYUtySTZOamd0WGpkVDE2MXdZaTY4ZWlBZEdCZEJqTEc1Q3NuQzMwZ9IBrwFBVV95cUxNV0M2T2JGUTVseXU0Vmc1dDNFSFBRMmhmTnRFTTItbDRjUEFVdjBvV0xvQk02TDNtdkgtQTdIUndhTlpkWHF1cW5TY3M5Q3BFcVBNajVzN2N5VHBVRjQzek8xLWNsbFVEQXBiYWdaRndVVUxQV0p3a3l1Z2hmWk1JZHBsWUlhR0dFOHREQm1BS3lxWWp5S0dRSzk0SXVMUzZFeVNHcXdJUzdNWk5IM21F?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUTZnN0pqNUtRV3dSak13clU1eWNSZTJuNVp6b2FTVHptVy03VnJYV0xheGtJTE5rN085MC1ZYWtoVEFoRDFGTW1aQnFLajA0bTlvZ2VaUDh5cWxrYmZldHZVdmR4S3JXNXNrWUJWX3hydTVkNDN4VkVYaS05dUZyYXFQYUtySTZOamd0WGpkVDE2MXdZaTY4ZWlBZEdCZEJqTEc1Q3NuQzMwZ9IBrwFBVV95cUxNV0M2T2JGUTVseXU0Vmc1dDNFSFBRMmhmTnRFTTItbDRjUEFVdjBvV0xvQk02TDNtdkgtQTdIUndhTlpkWHF1cW5TY3M5Q3BFcVBNajVzN2N5VHBVRjQzek8xLWNsbFVEQXBiYWdaRndVVUxQV0p3a3l1Z2hmWk1JZHBsWUlhR0dFOHREQm1BS3lxWWp5S0dRSzk0SXVMUzZFeVNHcXdJUzdNWk5IM21F?oc=5\" target=\"_blank\">Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária | SEGS Portal Nacional de Seguros,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-28T18:41:51+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-09T17:20:03.250920+00:00",
       "raw_id": ""
     },
     {
@@ -9990,40 +10031,6 @@
       "sentiment_score": 0.8,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:05:16.974030+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "7afa344cb2d4c4897d3a3f4d7c19bb0150e91f77",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Show de festa! Parabéns Alessandro!",
-      "url": "https://www.instagram.com/p/DVbp01KEX4j/c/17919263292267787",
-      "text": "Show de festa! Parabéns Alessandro!",
-      "author": "nilza.l.marques",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-04T20:02:14+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.8,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T00:09:02.323366+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "74676d7c92a676b3ebc9edf6e2c886f4fbc8d421",
-      "source": "instagram",
-      "channel": "social",
-      "title": "💙💙💙 Parabéns pelo belíssimo evento!",
-      "url": "https://www.instagram.com/p/DVbp01KEX4j/c/18570049369006137",
-      "text": "💙💙💙 Parabéns pelo belíssimo evento!",
-      "author": "samuel_calebe_",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-04T15:38:34+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.85,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T00:09:02.323437+00:00",
       "raw_id": ""
     }
   ],
