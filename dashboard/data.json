@@ -1,25 +1,25 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-12T20:03:26.661768+00:00",
+  "generated_at": "2026-10-13T17:56:51.174280+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 451,
+    "total_mentions": 452,
     "positivo": 202,
-    "neutro": 129,
+    "neutro": 130,
     "negativo": 120,
-    "net_sentiment": 18.2,
+    "net_sentiment": 18.1,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
+    "noticia": 79,
     "social": 286,
-    "reclamacao": 87,
-    "noticia": 78
+    "reclamacao": 87
   },
   "by_sentiment": {
+    "neutro": 130,
     "positivo": 202,
-    "negativo": 120,
-    "neutro": 129
+    "negativo": 120
   },
   "by_source_detail": {
     "instagram": {
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 78,
+      "total": 79,
       "positivo": 21,
-      "neutro": 57,
+      "neutro": 58,
       "negativo": 0
     },
     "linkedin": {
@@ -74,7 +74,7 @@
     ],
     [
       "jrs portal",
-      5
+      6
     ],
     [
       "Consumidor RS",
@@ -1544,9 +1544,33 @@
       "positivo": 1,
       "neutro": 1,
       "negativo": 2
+    },
+    {
+      "date": "2026-10-13",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "0ff439006a69d5fb0d2393b529db68f4f3a065b1",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX realiza café de negócios em parceria com o Clube das Gurias - jrs portal",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOanRDMW1KaC1CeGVPU3J6RzRLaFd4RXFOLWwtd25Lc21nOXpxVXcxWTZBbERQY0NQYTNnOGxYbjFHSnRZc3JCOEVOREVDZXdVOXBKZGlfQWh1WlVrV2txY214SXJEbzIxc2lQNmJvS2pZZ2s2Ul82YlVRN3Vab0pRdFdJMEtMajNQWGc4QlMwZ1Z5aVNHcWQ5MWNRQ3lUUFdPbTRFTg?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOanRDMW1KaC1CeGVPU3J6RzRLaFd4RXFOLWwtd25Lc21nOXpxVXcxWTZBbERQY0NQYTNnOGxYbjFHSnRZc3JCOEVOREVDZXdVOXBKZGlfQWh1WlVrV2txY214SXJEbzIxc2lQNmJvS2pZZ2s2Ul82YlVRN3Vab0pRdFdJMEtMajNQWGc4QlMwZ1Z5aVNHcWQ5MWNRQ3lUUFdPbTRFTg?oc=5\" target=\"_blank\">GBOEX realiza café de negócios em parceria com o Clube das Gurias</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jrs portal</font>",
+      "author": "jrs portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-10-13T14:25:46+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-13T17:56:35.808124+00:00",
+      "raw_id": ""
+    },
     {
       "id": "e1fce3f796bfa547b87201e31e3098c6ac2f8304",
       "source": "linkedin",
@@ -10029,29 +10053,12 @@
       "is_owned": 0,
       "collected_at": "2026-07-21T23:05:16.973946+00:00",
       "raw_id": ""
-    },
-    {
-      "id": "33b4848c1fc67aa918ec2777240c5ae53115be4d",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Clareza. Estrutura. Resultado. 🎯\n\nQuando marketing e vendas falam a mesma língua, a empresa para de depender da sorte e começa a depender de processo.\n\nFoi isso que a @gboex_oficia…",
-      "url": "https://www.instagram.com/p/DVgZEpZEbgM/",
-      "text": "Clareza. Estrutura. Resultado. 🎯\n\nQuando marketing e vendas falam a mesma língua, a empresa para de depender da sorte e começa a depender de processo.\n\nFoi isso que a @gboex_oficial viveu na parceria com a Hello Mídia:\n✅ Funil bem definido\n✅ Marketing e vendas integrados\n✅ Geração crescente de leads qualificados\n✅ Decisões muito mais assertivas\n\n“A parceria trouxe a clareza e a estrutura que precisávamos”\n— Letícia Vaz, Gerente de Marketing do GBOEX\n\nMarketing de Performance B2B Especializado em Seguros.\n🔗 Link na bio\n\n#MarketingDePerformance #GeraçãoDeLeads #MarketingB2B #HelloMídia GBOEX Vendas Funil MarketingDigital",
-      "author": "hellomarketingb2b",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-05T14:28:45+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.8,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:05:16.974030+00:00",
-      "raw_id": ""
     }
   ],
   "consumo": {
     "pct_usado": 100.0,
     "ciclo_fim": "2026-10-15T23:59:59.999Z",
-    "freado": true,
+    "freado": false,
     "coletas_restantes": 0
   }
 }
