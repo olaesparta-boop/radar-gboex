@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-14T15:42:35.370189+00:00",
+  "generated_at": "2026-10-15T15:30:18.969343+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 452,
+    "total_mentions": 453,
     "positivo": 202,
-    "neutro": 130,
+    "neutro": 131,
     "negativo": 120,
     "net_sentiment": 18.1,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 79,
+    "noticia": 80,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 130,
+    "neutro": 131,
     "positivo": 202,
     "negativo": 120
   },
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 79,
+      "total": 80,
       "positivo": 21,
-      "neutro": 58,
+      "neutro": 59,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      37
+      38
     ],
     [
       "Revista Cobertura",
@@ -1103,6 +1103,13 @@
       "positivo": 0,
       "neutro": 0,
       "negativo": 2
+    },
+    {
+      "date": "2026-07-06",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     },
     {
       "date": "2026-07-07",
@@ -7233,6 +7240,23 @@
       "raw_id": ""
     },
     {
+      "id": "e8939340df400b1aebd74724b26660c1f3093334",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Rumo ao pódio: GBOEX lança nova etapa da campanha Desafio | SEGS Portal Nacional de Seguros, Saúde, Info,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRndjTno1Zk5ZRUpiQ05SNmVjcGs2Nk10T3pNRlVtNkZuLWF2d1VBeENUSnFfWThMazRHa2lFZUtUeDZxTDg4dHNva0JrSEtudXhQeUNCSlNlbmFLZDdjZlhtQUNwQ2Z4bGVZTlltUUQwYWpzajdFSWkxRTlUd0FqWF9XZ3Q4STdBX2lRdnVDeTZVbmpnMndoVmphS2h2RHBR0gGgAUFVX3lxTE9Gd2NOejVmTllFSmJDTlI2ZWNwazY2TXRPek1GVW02Rm4tYXZ3VUF4Q1RKcV9ZOExrNEdraUVlS1R4NnFMODh0c29rQmtIS251eFB5Q0JKU2VuYUtkN2NmWG1BQ3BDZnhsZVlOWW1RRDBhanNqN0VJaTFFOVR3QWpYX1dndDhJN0FfaVF2dUN5NlVuamcyd2hWamFLaHZEcFE?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPRndjTno1Zk5ZRUpiQ05SNmVjcGs2Nk10T3pNRlVtNkZuLWF2d1VBeENUSnFfWThMazRHa2lFZUtUeDZxTDg4dHNva0JrSEtudXhQeUNCSlNlbmFLZDdjZlhtQUNwQ2Z4bGVZTlltUUQwYWpzajdFSWkxRTlUd0FqWF9XZ3Q4STdBX2lRdnVDeTZVbmpnMndoVmphS2h2RHBR0gGgAUFVX3lxTE9Gd2NOejVmTllFSmJDTlI2ZWNwazY2TXRPek1GVW02Rm4tYXZ3VUF4Q1RKcV9ZOExrNEdraUVlS1R4NnFMODh0c29rQmtIS251eFB5Q0JKU2VuYUtkN2NmWG1BQ3BDZnhsZVlOWW1RRDBhanNqN0VJaTFFOVR3QWpYX1dndDhJN0FfaVF2dUN5NlVuamcyd2hWamFLaHZEcFE?oc=5\" target=\"_blank\">Rumo ao pódio: GBOEX lança nova etapa da campanha Desafio | SEGS Portal Nacional de Seguros, Saúde, Info,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-07-06T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-15T15:29:49.012359+00:00",
+      "raw_id": ""
+    },
+    {
       "id": "295d584309ec29396641afd84417e5102cf0e669",
       "source": "reclame_aqui",
       "channel": "reclamacao",
@@ -10035,23 +10059,6 @@
       "sentiment_score": 0.8,
       "is_owned": 0,
       "collected_at": "2026-07-10T00:09:02.323293+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "ed100ef00ee6240eb4829d1ed27252127b9922ab",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Tarde de negócios na matriz da Rede Centrosul Corretora de Seguros!\n\nNesta quinta-feira, os sócios-diretores de Santa Maria,  Glevander Ruviaro, Walter Franz e Roberval Bresolin, r…",
-      "url": "https://www.instagram.com/p/DVhDck0kaT2/",
-      "text": "Tarde de negócios na matriz da Rede Centrosul Corretora de Seguros!\n\nNesta quinta-feira, os sócios-diretores de Santa Maria,  Glevander Ruviaro, Walter Franz e Roberval Bresolin, receberam Luiz Mauro Godoi Moller, sócio-diretor da unidade de São Borja, além de Samuel da Costa, Comercial da GBOEX e Estela de Moura Rey, gerente de negócios da GBOEX Porto Alegre. \n\nO encontro teve como foco a Reunião Comercial para fechamento de novos acordos de produção e apresentação de produtos inovadores, sempre com o objetivo de oferecer soluções mais completas e eficazes aos nossos clientes. \n\n🎯 O destaque está no atendimento especializado aos servidores militares das Forças Armadas, Polícia Civil e Brigada Militar, reforçando nosso compromisso em estar cada vez mais próximos e preparados para atender às suas necessidades.\n\n#redecentrosul #corretoradeseguros \n#networking",
-      "author": "redecentrosul.corretora",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-05T20:39:04+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:05:16.973946+00:00",
       "raw_id": ""
     }
   ],
