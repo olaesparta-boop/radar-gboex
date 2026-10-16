@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-15T15:30:18.969343+00:00",
+  "generated_at": "2026-10-16T15:13:31.228925+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 453,
@@ -10063,9 +10063,9 @@
     }
   ],
   "consumo": {
-    "pct_usado": 100.0,
-    "ciclo_fim": "2026-10-15T23:59:59.999Z",
+    "pct_usado": 0.0,
+    "ciclo_fim": "2026-11-15T23:59:59.999Z",
     "freado": false,
-    "coletas_restantes": 0
+    "coletas_restantes": 2
   }
 }
