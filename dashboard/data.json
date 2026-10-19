@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-18T14:19:54.393985+00:00",
+  "generated_at": "2026-10-19T17:15:57.618818+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 453,
+    "total_mentions": 455,
     "positivo": 202,
-    "neutro": 131,
+    "neutro": 133,
     "negativo": 120,
-    "net_sentiment": 18.1,
+    "net_sentiment": 18.0,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 80,
+    "noticia": 82,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 131,
+    "neutro": 133,
     "positivo": 202,
     "negativo": 120
   },
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 80,
+      "total": 82,
       "positivo": 21,
-      "neutro": 59,
+      "neutro": 61,
       "negativo": 0
     },
     "linkedin": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      38
+      39
     ],
     [
       "Revista Cobertura",
@@ -78,7 +78,7 @@
     ],
     [
       "Consumidor RS",
-      5
+      6
     ],
     [
       "Sonho Seguro",
@@ -1400,9 +1400,9 @@
     },
     {
       "date": "2026-09-04",
-      "total": 3,
+      "total": 4,
       "positivo": 0,
-      "neutro": 2,
+      "neutro": 3,
       "negativo": 1
     },
     {
@@ -1498,9 +1498,9 @@
     },
     {
       "date": "2026-09-25",
-      "total": 9,
+      "total": 10,
       "positivo": 3,
-      "neutro": 6,
+      "neutro": 7,
       "negativo": 0
     },
     {
@@ -2358,6 +2358,23 @@
       "sentiment_score": 0.667,
       "is_owned": 0,
       "collected_at": "2026-09-28T18:23:31.497234+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "5e34d0720591fa7fd9ed83f7a24722b8bb660eea",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária - Consumidor RS",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9WTWVzRDFuS0RBZkFvRTVpOTI4UzQ5cVpWbUo5X1R1V3NZcTYyM1otRnhLZ2t5YjVmbVVrUktPbWY1UHpzWTNMRVIzVURhc0NWZ21UYmVPQk9VMzU3V0tac2FGQ2kzRVpxNmVJUFZScw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9WTWVzRDFuS0RBZkFvRTVpOTI4UzQ5cVpWbUo5X1R1V3NZcTYyM1otRnhLZ2t5YjVmbVVrUktPbWY1UHpzWTNMRVIzVURhc0NWZ21UYmVPQk9VMzU3V0tac2FGQ2kzRVpxNmVJUFZScw?oc=5\" target=\"_blank\">Conselho Deliberativo do GBOEX completa 84 anos com sessão plenária</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Consumidor RS</font>",
+      "author": "Consumidor RS",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-25T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-19T17:15:27.287133+00:00",
       "raw_id": ""
     },
     {
@@ -4025,6 +4042,23 @@
       "is_owned": 0,
       "collected_at": "2026-09-21T16:42:40.671919+00:00",
       "raw_id": "CqvHbMLDNVMrzJ_l"
+    },
+    {
+      "id": "9b55f9031312533d8b5f79cfb166b4b2d48df9e6",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTk9PeEZmb2NCTG95X2Z0RTM5aVlyczVza2lxc2twNmVicjgwazBEUlNiRGw2c2Fna3l0RmVqMUFUVTRuNVZ1RVF5eXk0c0J4Z3oxTlhaT2V6SmNzQ0VTUFlCSm0zWjc4ODQ0U3dva3QyZzV3LVdRRVZsd2xndVJNUTlBejE2VjhwdHVwR1VmUlU3WjA4Z1Q5ZmlyYmhicl8wZHUtV1Bmd2FUcEJwcGY2X9IBsAFBVV95cUxPTk9PeEZmb2NCTG95X2Z0RTM5aVlyczVza2lxc2twNmVicjgwazBEUlNiRGw2c2Fna3l0RmVqMUFUVTRuNVZ1RVF5eXk0c0J4Z3oxTlhaT2V6SmNzQ0VTUFlCSm0zWjc4ODQ0U3dva3QyZzV3LVdRRVZsd2xndVJNUTlBejE2VjhwdHVwR1VmUlU3WjA4Z1Q5ZmlyYmhicl8wZHUtV1Bmd2FUcEJwcGY2Xw?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPTk9PeEZmb2NCTG95X2Z0RTM5aVlyczVza2lxc2twNmVicjgwazBEUlNiRGw2c2Fna3l0RmVqMUFUVTRuNVZ1RVF5eXk0c0J4Z3oxTlhaT2V6SmNzQ0VTUFlCSm0zWjc4ODQ0U3dva3QyZzV3LVdRRVZsd2xndVJNUTlBejE2VjhwdHVwR1VmUlU3WjA4Z1Q5ZmlyYmhicl8wZHUtV1Bmd2FUcEJwcGY2X9IBsAFBVV95cUxPTk9PeEZmb2NCTG95X2Z0RTM5aVlyczVza2lxc2twNmVicjgwazBEUlNiRGw2c2Fna3l0RmVqMUFUVTRuNVZ1RVF5eXk0c0J4Z3oxTlhaT2V6SmNzQ0VTUFlCSm0zWjc4ODQ0U3dva3QyZzV3LVdRRVZsd2xndVJNUTlBejE2VjhwdHVwR1VmUlU3WjA4Z1Q5ZmlyYmhicl8wZHUtV1Bmd2FUcEJwcGY2Xw?oc=5\" target=\"_blank\">GBOEX lança campanha de comunicação no Mês Farroupilha | SEGS Portal Nacional de Seguros, Saúde, Info,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-09-04T07:00:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-19T17:15:27.288093+00:00",
+      "raw_id": ""
     },
     {
       "id": "c50d6f489ffb147097c1f49092b39dec14738fef",
@@ -10025,40 +10059,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-10-04T15:39:51.633196+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "47b55c7e5f851cee9996a2f058efdfe4e4c29e6a",
-      "source": "gboex_site",
-      "channel": "canal_proprio",
-      "title": "GBOEX reúne profissionais de todo o Brasil para Encontro Comercial",
-      "url": "https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-comercial/",
-      "text": "<p>De 24 a 27 de fevereiro, o GBOEX promoveu mais uma edição do Encontro Comercial, na sede, em Porto Alegre. A iniciativa, realizada todos os anos, tem como objetivos a atualização de conhecimentos, o alinhamento de estratégias de negócios e o planejamento dos setores de vendas e atendimento para os próximos meses. Dinâmicas, reuniões e...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-comercial/\" title=\"Read GBOEX reúne profissionais de todo o Brasil para Encontro Comercial\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-reune-profissionais-de-todo-o-brasil-para-encontro-comercial/\">GBOEX reúne profissionais de todo o Brasil para Encontro Comercial</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
-      "author": "GBOEX (oficial)",
-      "domain": "gboex.com.br",
-      "language": "pt",
-      "published_at": "2026-03-09T14:05:03+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:13:16.430974+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e67945c6993d51717064ea8b0ef4a33e4bf49d82",
-      "source": "instagram",
-      "channel": "social",
-      "title": "👏👏👏👏",
-      "url": "https://www.instagram.com/p/DVbp01KEX4j/c/17879487402480207",
-      "text": "👏👏👏👏",
-      "author": "anamaria1rp",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-06T00:32:41+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.8,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T00:09:02.323293+00:00",
       "raw_id": ""
     }
   ],
