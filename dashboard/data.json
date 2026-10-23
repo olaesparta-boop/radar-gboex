@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-22T15:49:05.682689+00:00",
+  "generated_at": "2026-10-23T15:40:16.604642+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 456,
-    "positivo": 202,
-    "neutro": 134,
+    "total_mentions": 458,
+    "positivo": 203,
+    "neutro": 135,
     "negativo": 120,
-    "net_sentiment": 18.0,
+    "net_sentiment": 18.1,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 83,
+    "noticia": 85,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 134,
-    "positivo": 202,
+    "neutro": 135,
+    "positivo": 203,
     "negativo": 120
   },
   "by_source_detail": {
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 83,
-      "positivo": 21,
-      "neutro": 62,
+      "total": 85,
+      "positivo": 22,
+      "neutro": 63,
       "negativo": 0
     },
     "linkedin": {
@@ -70,11 +70,11 @@
     ],
     [
       "Revista Cobertura",
-      10
+      11
     ],
     [
       "jrs portal",
-      6
+      7
     ],
     [
       "Consumidor RS",
@@ -696,6 +696,13 @@
       "total": 1,
       "positivo": 0,
       "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-05-28",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
       "negativo": 0
     },
     {
@@ -1565,9 +1572,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-10-22",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "46a9d9a7fc65288a07839d98befe6e1d1bcac192",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX promove capacitação para corretores de seguros - Revista Cobertura",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQkxYRnE1X0FMTXJhbnVTOURFYTdaS2plTUV5NTBoc2F4MVVJYzF3S1BQVzZEMlA0dll6YWhtUnpQV01hWVZFaHUza09xajU1cjR0N2cxenhQNjgxajhrSnFza0dhb2hzdnFJcGJ6VTM1NkNYLTRmRUJhRWkwYkI1eEpLRXZCVDV1OEhWNmxwLXdKMTNoUTU3N3ZHMWxsend6eFlfRGNCa3pLVlg2TDQxLWZzWWlkbUtCWkl1QQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxQQkxYRnE1X0FMTXJhbnVTOURFYTdaS2plTUV5NTBoc2F4MVVJYzF3S1BQVzZEMlA0dll6YWhtUnpQV01hWVZFaHUza09xajU1cjR0N2cxenhQNjgxajhrSnFza0dhb2hzdnFJcGJ6VTM1NkNYLTRmRUJhRWkwYkI1eEpLRXZCVDV1OEhWNmxwLXdKMTNoUTU3N3ZHMWxsend6eFlfRGNCa3pLVlg2TDQxLWZzWWlkbUtCWkl1QQ?oc=5\" target=\"_blank\">GBOEX promove capacitação para corretores de seguros</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Revista Cobertura</font>",
+      "author": "Revista Cobertura",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-10-22T19:40:34+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-23T15:38:36.561480+00:00",
+      "raw_id": ""
+    },
     {
       "id": "0ff439006a69d5fb0d2393b529db68f4f3a065b1",
       "source": "google_news",
@@ -10049,23 +10080,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:02:42.866423+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "742d27a8adc0e17f0c290429cca226f6ce46802e",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX disponibiliza planos via Pix Automático - jrs portal",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXlhRUFZZGVZd2VBSnFNOEJVOHg2U2lDNGxoSjM5Q2Fwcko0b0pDaENFVkpybEctdmUtU2U3Z01RME5jT29WczBicVc0U3ptaURHXzhkbVN1M3lTUGlRUElLQmwtcXBqT2hsT1FkUmpTRndTZ2NiMHVNaC1pc3VYcHU4bUY4aVJpbXc?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXlhRUFZZGVZd2VBSnFNOEJVOHg2U2lDNGxoSjM5Q2Fwcko0b0pDaENFVkpybEctdmUtU2U3Z01RME5jT29WczBicVc0U3ptaURHXzhkbVN1M3lTUGlRUElLQmwtcXBqT2hsT1FkUmpTRndTZ2NiMHVNaC1pc3VYcHU4bUY4aVJpbXc?oc=5\" target=\"_blank\">GBOEX disponibiliza planos via Pix Automático</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jrs portal</font>",
-      "author": "jrs portal",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2026-03-24T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-10-04T15:39:51.633196+00:00",
       "raw_id": ""
     }
   ],
