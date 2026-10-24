@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-23T15:40:16.604642+00:00",
+  "generated_at": "2026-10-24T14:15:53.697941+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 458,
+    "total_mentions": 459,
     "positivo": 203,
-    "neutro": 135,
+    "neutro": 136,
     "negativo": 120,
     "net_sentiment": 18.1,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 85,
+    "noticia": 86,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 135,
+    "neutro": 136,
     "positivo": 203,
     "negativo": 120
   },
@@ -41,9 +41,9 @@
       "negativo": 87
     },
     "google_news": {
-      "total": 85,
+      "total": 86,
       "positivo": 22,
-      "neutro": 63,
+      "neutro": 64,
       "negativo": 0
     },
     "linkedin": {
@@ -74,7 +74,7 @@
     ],
     [
       "jrs portal",
-      7
+      8
     ],
     [
       "Consumidor RS",
@@ -714,6 +714,13 @@
     },
     {
       "date": "2025-07-28",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2025-07-31",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
