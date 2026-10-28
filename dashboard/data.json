@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-10-27T16:12:39.477049+00:00",
+  "generated_at": "2026-10-28T17:00:05.346149+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 460,
+    "total_mentions": 461,
     "positivo": 204,
-    "neutro": 136,
+    "neutro": 137,
     "negativo": 120,
-    "net_sentiment": 18.3,
+    "net_sentiment": 18.2,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 87,
+    "noticia": 88,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 136,
+    "neutro": 137,
     "positivo": 204,
     "negativo": 120
   },
@@ -35,9 +35,9 @@
       "negativo": 33
     },
     "google_news": {
-      "total": 87,
+      "total": 88,
       "positivo": 23,
-      "neutro": 64,
+      "neutro": 65,
       "negativo": 0
     },
     "reclame_aqui": {
@@ -78,7 +78,7 @@
     ],
     [
       "Consumidor RS",
-      6
+      7
     ],
     [
       "Sonho Seguro",
@@ -1593,9 +1593,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-10-28",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "621b33b1f2c9a115371e5d1fe424be5c04314b3c",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX investe na área de Relacionamento com o Cliente - Consumidor RS",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Nc0o0dkpPYUpOVUlXcGtRSHJlQWlQcTdENVQ2ZTlROU5MdF9TLV9Bem1UcUk0U0NSeVJ3TXNtSkxCQk1hS0MtNTBtMWo0UG1yRlVwbTJhUW9Td19fdnliV3V5VV9lQzhrV0FsQVVvUQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1Nc0o0dkpPYUpOVUlXcGtRSHJlQWlQcTdENVQ2ZTlROU5MdF9TLV9Bem1UcUk0U0NSeVJ3TXNtSkxCQk1hS0MtNTBtMWo0UG1yRlVwbTJhUW9Td19fdnliV3V5VV9lQzhrV0FsQVVvUQ?oc=5\" target=\"_blank\">GBOEX investe na área de Relacionamento com o Cliente</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Consumidor RS</font>",
+      "author": "Consumidor RS",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-10-28T09:23:18+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-10-28T16:59:45.053027+00:00",
+      "raw_id": ""
+    },
     {
       "id": "46a9d9a7fc65288a07839d98befe6e1d1bcac192",
       "source": "google_news",
@@ -10077,23 +10101,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:05:16.973790+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "16ef9c792f3c04643521a7f7041935f50663b683",
-      "source": "google_news",
-      "channel": "noticia",
-      "title": "GBOEX lança planos com pagamento via Pix Automático | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,... - SEGS Portal Nacional",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcTVGbU16M3RfQkUzRnU4czFuY3oxQTlqSVB0ZXZobkdaZm1rS1BGWUhNd04yeWltNDh0VXVmNnZiUzV0M05PZXAtVkYtVXplcEVubko1dU1ZVy1OVDI3aGlyQ1haVVcxeUZldUtob1d1THhaZkczTXY5bUY2OGVvNzFObnhaZXpTMVZoTm9Dc2V5YUpq0gGaAUFVX3lxTE5oSHhES2pwOXJoeFJjYVVkSlRWWnZpWnhzbC1xVG5HSTFIbnoxeXBKWFFlSEIzQlVuWVRlSHVCQnhmbTduXzJ3UlVaRDZkNC1lVzF2SDh1T2xqOUNTaUdvV3duTUtDdTdxV1V6aFVmSy1WNTJnUzB3ci16MmxnSjZvR0RuVjI1b3VFTkd0cVRONnhLTWM4YW9XSlE?oc=5",
-      "text": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOcTVGbU16M3RfQkUzRnU4czFuY3oxQTlqSVB0ZXZobkdaZm1rS1BGWUhNd04yeWltNDh0VXVmNnZiUzV0M05PZXAtVkYtVXplcEVubko1dU1ZVy1OVDI3aGlyQ1haVVcxeUZldUtob1d1THhaZkczTXY5bUY2OGVvNzFObnhaZXpTMVZoTm9Dc2V5YUpq0gGaAUFVX3lxTE5oSHhES2pwOXJoeFJjYVVkSlRWWnZpWnhzbC1xVG5HSTFIbnoxeXBKWFFlSEIzQlVuWVRlSHVCQnhmbTduXzJ3UlVaRDZkNC1lVzF2SDh1T2xqOUNTaUdvV3duTUtDdTdxV1V6aFVmSy1WNTJnUzB3ci16MmxnSjZvR0RuVjI1b3VFTkd0cVRONnhLTWM4YW9XSlE?oc=5\" target=\"_blank\">GBOEX lança planos com pagamento via Pix Automático | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
-      "author": "SEGS Portal Nacional",
-      "domain": "news.google.com",
-      "language": "pt",
-      "published_at": "2026-03-25T07:00:00+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:02:42.866423+00:00",
       "raw_id": ""
     }
   ],
