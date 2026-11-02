@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-01T17:00:06.907934+00:00",
+  "generated_at": "2026-11-02T20:35:14.857932+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 461,
-    "positivo": 204,
+    "total_mentions": 462,
+    "positivo": 205,
     "neutro": 137,
     "negativo": 120,
-    "net_sentiment": 18.2,
+    "net_sentiment": 18.4,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 88,
+    "noticia": 89,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
+    "positivo": 205,
     "neutro": 137,
-    "positivo": 204,
     "negativo": 120
   },
   "by_source_detail": {
@@ -35,8 +35,8 @@
       "negativo": 33
     },
     "google_news": {
-      "total": 88,
-      "positivo": 23,
+      "total": 89,
+      "positivo": 24,
       "neutro": 65,
       "negativo": 0
     },
@@ -74,7 +74,7 @@
     ],
     [
       "jrs portal",
-      9
+      10
     ],
     [
       "Consumidor RS",
@@ -1600,9 +1600,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-02",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "39498bbc613e184ac1929da63e779942478d46c3",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX recebe Troféu JRS na categoria Marca que Atravessa Gerações - jrs portal",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVXNhXy0wVVlxeW11bllaRmVzR21qUFJJMjFpRG1qcUtfTjNFR1c5NFhmcmVjaU0xbXZ6NnM1akpFaC1HY01qbnhPZDd5czNLY2JveDFQaTJYMjh5X29ELURVYmgxSWx3c3FGSnBPQzA5YS1NNE94c0Rncl9KY2FuZzU3VGljdWFUcmFxSDJHSGZsQk1ZU2F6dlIxaHFjZTlFT3cwWA?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOVXNhXy0wVVlxeW11bllaRmVzR21qUFJJMjFpRG1qcUtfTjNFR1c5NFhmcmVjaU0xbXZ6NnM1akpFaC1HY01qbnhPZDd5czNLY2JveDFQaTJYMjh5X29ELURVYmgxSWx3c3FGSnBPQzA5YS1NNE94c0Rncl9KY2FuZzU3VGljdWFUcmFxSDJHSGZsQk1ZU2F6dlIxaHFjZTlFT3cwWA?oc=5\" target=\"_blank\">GBOEX recebe Troféu JRS na categoria Marca que Atravessa Gerações</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jrs portal</font>",
+      "author": "jrs portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-02T14:05:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.8,
+      "is_owned": 0,
+      "collected_at": "2026-11-02T20:34:46.007938+00:00",
+      "raw_id": ""
+    },
     {
       "id": "621b33b1f2c9a115371e5d1fe424be5c04314b3c",
       "source": "google_news",
@@ -10084,23 +10108,6 @@
       "sentiment_score": 0.5,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:05:16.973549+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "d02bfdd8884d6267ce2fbe0f9597f71110669937",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Os corretores de seguros de todo o País, parceiros do GBOEX, contam com mais uma modalidade de comercialização de planos por meio do “Pix Automático”. A empresa passou a oferecer a…",
-      "url": "https://www.instagram.com/p/DWT3LX4mf-i/",
-      "text": "Os corretores de seguros de todo o País, parceiros do GBOEX, contam com mais uma modalidade de comercialização de planos por meio do “Pix Automático”. A empresa passou a oferecer a nova condição para vendas dos produtos, que agregam múltiplas coberturas e serviços integrados, em todos os bancos que mantêm cadastro no Banco Central do Brasil, incluindo bancos digitais.\n\n•• SulSeguro.com\nO mercado do Sul se conecta aqui.\nE o futuro do seguro também.\n\n#sulseguro #mercadodeseguros #corretoresdeseguros #corretordeseguros #seguros",
-      "author": "sulseguro",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-03-25T14:13:18+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-21T23:05:16.973790+00:00",
       "raw_id": ""
     }
   ],
