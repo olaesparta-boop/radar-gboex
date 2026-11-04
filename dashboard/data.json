@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-03T18:14:35.221663+00:00",
+  "generated_at": "2026-11-04T18:28:43.996278+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 462,
+    "total_mentions": 463,
     "positivo": 205,
-    "neutro": 137,
+    "neutro": 138,
     "negativo": 120,
     "net_sentiment": 18.4,
     "sources": 183,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 89,
+    "noticia": 90,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
     "positivo": 205,
-    "neutro": 137,
+    "neutro": 138,
     "negativo": 120
   },
   "by_source_detail": {
@@ -35,9 +35,9 @@
       "negativo": 33
     },
     "google_news": {
-      "total": 89,
+      "total": 90,
       "positivo": 24,
-      "neutro": 65,
+      "neutro": 66,
       "negativo": 0
     },
     "reclame_aqui": {
@@ -81,12 +81,12 @@
       7
     ],
     [
-      "Sonho Seguro",
+      "Revista Apólice",
       5
     ],
     [
-      "Revista Apólice",
-      4
+      "Sonho Seguro",
+      5
     ],
     [
       "JRS.digital",
@@ -581,9 +581,9 @@
     },
     {
       "date": "2023-08-26",
-      "total": 1,
+      "total": 2,
       "positivo": 0,
-      "neutro": 1,
+      "neutro": 2,
       "negativo": 0
     },
     {
