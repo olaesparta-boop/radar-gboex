@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-05T18:32:27.109778+00:00",
+  "generated_at": "2026-11-06T17:48:41.540531+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 463,
+    "total_mentions": 464,
     "positivo": 205,
-    "neutro": 138,
+    "neutro": 139,
     "negativo": 120,
-    "net_sentiment": 18.4,
-    "sources": 183,
+    "net_sentiment": 18.3,
+    "sources": 184,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 90,
+    "noticia": 91,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
+    "neutro": 139,
     "positivo": 205,
-    "neutro": 138,
     "negativo": 120
   },
   "by_source_detail": {
@@ -35,9 +35,9 @@
       "negativo": 33
     },
     "google_news": {
-      "total": 90,
+      "total": 91,
       "positivo": 24,
-      "neutro": 66,
+      "neutro": 67,
       "negativo": 0
     },
     "reclame_aqui": {
@@ -1607,9 +1607,33 @@
       "positivo": 1,
       "neutro": 0,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-05",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "dc124e1bdd8735de702eaf8cf46efa55d87f164e",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Brasília recebe Café com a Livo Interagir em parceria com o GBOEX - JRS Portal",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWGRGd3VwLVN6YVlyV2pvVXpJb3pRT1djQ09YZlNmRmlrNnlkcmZkVVg5eW50TVRJcTFqSHhhOGxGMU42cFBWckVZUjlHOFZka20yaWMwRnBwdkY4NVJhby0waldMVFd5VU1pWUstZ0VQUk5VcGViTzZMaDZMYXJfN0NNMVlrUWFTWG4xMVFrVDd4bVVLaW02NGVUaE5HbVYtc0NHSg?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQWGRGd3VwLVN6YVlyV2pvVXpJb3pRT1djQ09YZlNmRmlrNnlkcmZkVVg5eW50TVRJcTFqSHhhOGxGMU42cFBWckVZUjlHOFZka20yaWMwRnBwdkY4NVJhby0waldMVFd5VU1pWUstZ0VQUk5VcGViTzZMaDZMYXJfN0NNMVlrUWFTWG4xMVFrVDd4bVVLaW02NGVUaE5HbVYtc0NHSg?oc=5\" target=\"_blank\">Brasília recebe Café com a Livo Interagir em parceria com o GBOEX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">JRS Portal</font>",
+      "author": "JRS Portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-05T19:14:26+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-06T17:48:19.202516+00:00",
+      "raw_id": ""
+    },
     {
       "id": "39498bbc613e184ac1929da63e779942478d46c3",
       "source": "google_news",
@@ -10091,23 +10115,6 @@
       "sentiment_score": 0.5,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:13:16.430726+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "9ae3926f8b4c28c6844a52bce3096ef97b19bb12",
-      "source": "gboex_site",
-      "channel": "canal_proprio",
-      "title": "Rede de Vantagens GBOEX tem serviços com foco no cuidado da saúde integral",
-      "url": "https://www.gboex.com.br/rede-de-vantagens-gboex-tem-servicos-com-foco-no-cuidado-da-saude-integral/",
-      "text": "<p>Este mês é marcado pelo alerta de cuidado com a saúde de maneira integral. Ao celebrar a data em 7 de abril, a reflexão sobre hábitos que resguardam o corpo e a mente é intensificada para instigar mais pessoas nesse sentido. O GBOEX mantém programas voltados para as atualizações da Norma Regulamentadora NR-1, preserva valores...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/rede-de-vantagens-gboex-tem-servicos-com-foco-no-cuidado-da-saude-integral/\" title=\"Read Rede de Vantagens GBOEX tem serviços com foco no cuidado da saúde integral\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/rede-de-vantagens-gboex-tem-servicos-com-foco-no-cuidado-da-saude-integral/\">Rede de Vantagens GBOEX tem serviços com foco no cuidado da saúde integral</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
-      "author": "GBOEX (oficial)",
-      "domain": "gboex.com.br",
-      "language": "pt",
-      "published_at": "2026-04-06T18:30:20+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.5,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:13:16.430842+00:00",
       "raw_id": ""
     }
   ],
