@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-06T17:48:41.540531+00:00",
+  "generated_at": "2026-11-07T16:45:00.965645+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 464,
+    "total_mentions": 465,
     "positivo": 205,
-    "neutro": 139,
+    "neutro": 140,
     "negativo": 120,
     "net_sentiment": 18.3,
     "sources": 184,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 91,
+    "noticia": 92,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 139,
+    "neutro": 140,
     "positivo": 205,
     "negativo": 120
   },
@@ -35,9 +35,9 @@
       "negativo": 33
     },
     "google_news": {
-      "total": 91,
+      "total": 92,
       "positivo": 24,
-      "neutro": 67,
+      "neutro": 68,
       "negativo": 0
     },
     "reclame_aqui": {
@@ -1614,9 +1614,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-06",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "d1cb3081843ad12eb03d7775319b630da820a842",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Livo Interagir e GBOEX promovem encontro com profissionais do mercado em Porto Alegre - JRS Portal",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY09uWkFlVFVOWEQ0Z0Z0aXBzbFY4Q29Gd3pCb3U0Vk9NOHF0QkdDbEdwQzJpNFVSZExLTFVXcTlSU2Y0QnE3U3lKQjh3UFNOWHRtbG0yQkJPUGNxV0xGWUFBUDkzTk5UckdqOFBMSWduTWJOaFlETk4wNEcxWl8zMzZGMW5lN0VuYzMwR0R6eUlJb3VwbVpmT25uX1ZobEFnX2FlbFVJdk40bExueG9XdXQ3enQyVDJjNFdTZE41RQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOY09uWkFlVFVOWEQ0Z0Z0aXBzbFY4Q29Gd3pCb3U0Vk9NOHF0QkdDbEdwQzJpNFVSZExLTFVXcTlSU2Y0QnE3U3lKQjh3UFNOWHRtbG0yQkJPUGNxV0xGWUFBUDkzTk5UckdqOFBMSWduTWJOaFlETk4wNEcxWl8zMzZGMW5lN0VuYzMwR0R6eUlJb3VwbVpmT25uX1ZobEFnX2FlbFVJdk40bExueG9XdXQ3enQyVDJjNFdTZE41RQ?oc=5\" target=\"_blank\">Livo Interagir e GBOEX promovem encontro com profissionais do mercado em Porto Alegre</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">JRS Portal</font>",
+      "author": "JRS Portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-06T19:54:55+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-07T16:44:40.607639+00:00",
+      "raw_id": ""
+    },
     {
       "id": "dc124e1bdd8735de702eaf8cf46efa55d87f164e",
       "source": "google_news",
@@ -10098,23 +10122,6 @@
       "sentiment_score": 0.5,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:13:16.430617+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "874208b9a1bb5b3029bf17a467a8c8bfb9b04304",
-      "source": "gboex_site",
-      "channel": "canal_proprio",
-      "title": "GBOEX disponibiliza planos via Pix Automático",
-      "url": "https://www.gboex.com.br/gboex-disponibiliza-planos-via-pix-automatico/",
-      "text": "<p>Os corretores de seguros de todo o País, parceiros do GBOEX, contam com mais uma modalidade de comercialização de planos por meio do “Pix Automático”. A empresa passou a oferecer a nova condição para vendas dos produtos, que agregam múltiplas coberturas e serviços integrados, em todos os bancos que mantêm cadastro no Banco Central do...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-disponibiliza-planos-via-pix-automatico/\" title=\"Read GBOEX disponibiliza planos via Pix Automático\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-disponibiliza-planos-via-pix-automatico/\">GBOEX disponibiliza planos via Pix Automático</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
-      "author": "GBOEX (oficial)",
-      "domain": "gboex.com.br",
-      "language": "pt",
-      "published_at": "2026-04-09T18:29:09+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.5,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:13:16.430726+00:00",
       "raw_id": ""
     }
   ],
