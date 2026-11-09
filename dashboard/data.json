@@ -1,6 +1,6 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-08T16:55:45.006170+00:00",
+  "generated_at": "2026-11-09T21:12:00.668800+00:00",
   "lookback_days": 30,
   "kpis": {
     "total_mentions": 465,
@@ -1656,6 +1656,23 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-11-06T17:48:19.202516+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "1add2c48302508558c64b3d27c3bdb8881d19484",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "GBOEX investe na área de Relacionamento com o Cliente",
+      "url": "https://www.gboex.com.br/gboex-investe-na-area-de-relacionamento-com-o-cliente/",
+      "text": "<p>A manutenção da qualidade do atendimento aos associados GBOEX e melhorias contínuas são os objetivos dos mais recentes investimentos do setor de Relacionamento com o Cliente da empresa, especialista em seguro de pessoas e previdência. A entidade revitalizou os espaços físicos – instalados na sede, em Porto Alegre – e ampliou o número de colaboradores...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-investe-na-area-de-relacionamento-com-o-cliente/\" title=\"Read GBOEX investe na área de Relacionamento com o Cliente\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-investe-na-area-de-relacionamento-com-o-cliente/\">GBOEX investe na área de Relacionamento com o Cliente</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-11-03T16:26:31+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 1,
+      "collected_at": "2026-11-09T21:11:48.631597+00:00",
       "raw_id": ""
     },
     {
@@ -10105,23 +10122,6 @@
       "sentiment_score": 0.7,
       "is_owned": 0,
       "collected_at": "2026-07-10T14:40:41.730109+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "1217273c3fc1888b646b1cf627d351b0925ad700",
-      "source": "gboex_site",
-      "channel": "canal_proprio",
-      "title": "Saúde mental: compromisso contínuo",
-      "url": "https://www.gboex.com.br/saude-mental-compromisso-continuo/",
-      "text": "<p>A Norma Regulamentadora nº 1 (NR-1), de 1978, passou por uma atualização relevante em agosto de 2024 ao incorporar o gerenciamento dos riscos psicossociais no ambiente de trabalho. Com prazo de implantação em maio deste ano, a mudança reflete um movimento global de atenção à saúde mental dos trabalhadores e ao impacto das relações, da...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/saude-mental-compromisso-continuo/\" title=\"Read Saúde mental: compromisso contínuo\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/saude-mental-compromisso-continuo/\">Saúde mental: compromisso contínuo</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
-      "author": "GBOEX (oficial)",
-      "domain": "gboex.com.br",
-      "language": "pt",
-      "published_at": "2026-04-13T18:28:30+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.5,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:13:16.430617+00:00",
       "raw_id": ""
     }
   ],
