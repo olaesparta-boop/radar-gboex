@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-10T18:28:50.989544+00:00",
+  "generated_at": "2026-11-11T18:23:38.013524+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 465,
+    "total_mentions": 466,
     "positivo": 205,
-    "neutro": 140,
+    "neutro": 141,
     "negativo": 120,
-    "net_sentiment": 18.3,
-    "sources": 184,
+    "net_sentiment": 18.2,
+    "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 92,
+    "noticia": 93,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 140,
+    "neutro": 141,
     "positivo": 205,
     "negativo": 120
   },
@@ -28,17 +28,17 @@
       "neutro": 46,
       "negativo": 0
     },
+    "google_news": {
+      "total": 93,
+      "positivo": 24,
+      "neutro": 69,
+      "negativo": 0
+    },
     "facebook": {
       "total": 93,
       "positivo": 60,
       "neutro": 0,
       "negativo": 33
-    },
-    "google_news": {
-      "total": 92,
-      "positivo": 24,
-      "neutro": 68,
-      "negativo": 0
     },
     "reclame_aqui": {
       "total": 87,
@@ -595,6 +595,13 @@
     },
     {
       "date": "2023-10-20",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
+    },
+    {
+      "date": "2023-10-22",
       "total": 1,
       "positivo": 0,
       "neutro": 1,
