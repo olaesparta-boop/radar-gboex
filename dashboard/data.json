@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-11T18:23:38.013524+00:00",
+  "generated_at": "2026-11-12T18:42:19.252822+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 466,
-    "positivo": 205,
-    "neutro": 141,
+    "total_mentions": 468,
+    "positivo": 206,
+    "neutro": 142,
     "negativo": 120,
-    "net_sentiment": 18.2,
+    "net_sentiment": 18.4,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 93,
+    "noticia": 95,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 141,
-    "positivo": 205,
+    "neutro": 142,
+    "positivo": 206,
     "negativo": 120
   },
   "by_source_detail": {
@@ -29,9 +29,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 93,
-      "positivo": 24,
-      "neutro": 69,
+      "total": 95,
+      "positivo": 25,
+      "neutro": 70,
       "negativo": 0
     },
     "facebook": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      40
+      41
     ],
     [
       "Revista Cobertura",
@@ -89,6 +89,10 @@
       5
     ],
     [
+      "JRS Portal",
+      3
+    ],
+    [
       "JRS.digital",
       3
     ],
@@ -102,10 +106,6 @@
     ],
     [
       "mariolescano",
-      3
-    ],
-    [
-      "castroalves.seguros",
       3
     ]
   ],
@@ -535,6 +535,13 @@
       "total": 2,
       "positivo": 0,
       "neutro": 2,
+      "negativo": 0
+    },
+    {
+      "date": "2022-07-11",
+      "total": 1,
+      "positivo": 1,
+      "neutro": 0,
       "negativo": 0
     },
     {
@@ -1628,9 +1635,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-12",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "bf3ef641a4700c41353efd3330c31adff22fffb2",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança podcast com foco no mercado de seguros - JRS Portal",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUDVTWHB0Y0hCdm4zUEVEWXdQNDdZYlFuSTVROXhUTjZVem9wN0xISHZZbDZqNC13RGxFTkRXR0tQSV8yNjJMcnJPUjBWUnFyYy0wdWl0UF9ER204aWJONURpX0NLekF6R3lnYzlBOEc2NEtsWFN1azhuSGZySEJsWDlGTlY4MVU4UXBPYUk5ZlM?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOUDVTWHB0Y0hCdm4zUEVEWXdQNDdZYlFuSTVROXhUTjZVem9wN0xISHZZbDZqNC13RGxFTkRXR0tQSV8yNjJMcnJPUjBWUnFyYy0wdWl0UF9ER204aWJONURpX0NLekF6R3lnYzlBOEc2NEtsWFN1azhuSGZySEJsWDlGTlY4MVU4UXBPYUk5ZlM?oc=5\" target=\"_blank\">GBOEX lança podcast com foco no mercado de seguros</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">JRS Portal</font>",
+      "author": "JRS Portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-12T15:20:56+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-12T18:41:43.093797+00:00",
+      "raw_id": ""
+    },
     {
       "id": "d1cb3081843ad12eb03d7775319b630da820a842",
       "source": "google_news",
@@ -10112,23 +10143,6 @@
       "sentiment_score": 0.7,
       "is_owned": 0,
       "collected_at": "2026-07-21T23:05:16.973406+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "cb0d8afde809423be7142dc387fea2fd1361846d",
-      "source": "instagram",
-      "channel": "social",
-      "title": "O GBOEX marca presença como patrocinador da Festa Destaques CVG RS.\n\nUma parceria que reforça a importância de valorizar o mercado segurador e reconhecer quem contribui diariamente…",
-      "url": "https://www.instagram.com/p/DXXPjP7DxYX/",
-      "text": "O GBOEX marca presença como patrocinador da Festa Destaques CVG RS.\n\nUma parceria que reforça a importância de valorizar o mercado segurador e reconhecer quem contribui diariamente para o seu desenvolvimento.\n\nQuer estar junto neste momento? Entre em contato e saiba como participar como patrocinador.\n\n#CVGRS #FestaDestaques #MercadoDeSeguros #Parceria #Patrocinador",
-      "author": "cvgrs",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-04-20T19:00:23+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.7,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T14:40:41.730109+00:00",
       "raw_id": ""
     }
   ],
