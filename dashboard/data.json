@@ -1,24 +1,24 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-13T18:23:38.194528+00:00",
+  "generated_at": "2026-11-14T16:51:22.466411+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 470,
-    "positivo": 206,
+    "total_mentions": 471,
+    "positivo": 207,
     "neutro": 144,
     "negativo": 120,
-    "net_sentiment": 18.3,
+    "net_sentiment": 18.5,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 97,
+    "noticia": 98,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
     "neutro": 144,
-    "positivo": 206,
+    "positivo": 207,
     "negativo": 120
   },
   "by_source_detail": {
@@ -29,8 +29,8 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 97,
-      "positivo": 25,
+      "total": 98,
+      "positivo": 26,
       "neutro": 72,
       "negativo": 0
     },
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      42
+      43
     ],
     [
       "Revista Cobertura",
@@ -1309,8 +1309,8 @@
     },
     {
       "date": "2026-08-12",
-      "total": 2,
-      "positivo": 2,
+      "total": 3,
+      "positivo": 3,
       "neutro": 0,
       "negativo": 0
     },
@@ -1645,6 +1645,23 @@
     }
   ],
   "mentions": [
+    {
+      "id": "d22993df513c6bbb8a44a7ead78efe58eeae5f87",
+      "source": "gboex_site",
+      "channel": "canal_proprio",
+      "title": "GBOEX lança podcast com foco no mercado de seguros",
+      "url": "https://www.gboex.com.br/gboex-lanca-podcast-com-foco-no-mercado-de-seguros/",
+      "text": "<p>Apoiar profissionais do setor e clientes que buscam as melhores soluções são objetivos da iniciativa, a qual contará com participantes de diferentes áreas, mas que se relacionam com o segmento. “Um espaço para quem vive de proteger pessoas, mercado, vendas e o dia a dia de quem faz acontecer.” Essa é a proposta da marca...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-lanca-podcast-com-foco-no-mercado-de-seguros/\" title=\"Read GBOEX lança podcast com foco no mercado de seguros\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-lanca-podcast-com-foco-no-mercado-de-seguros/\">GBOEX lança podcast com foco no mercado de seguros</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
+      "author": "GBOEX (oficial)",
+      "domain": "gboex.com.br",
+      "language": "pt",
+      "published_at": "2026-11-13T20:06:34+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.6,
+      "is_owned": 1,
+      "collected_at": "2026-11-14T16:51:16.640161+00:00",
+      "raw_id": ""
+    },
     {
       "id": "88c2d75b32cb3906b62d6cd7e64ae14fdfee1d69",
       "source": "google_news",
@@ -5655,6 +5672,23 @@
       "sentiment_score": 1.0,
       "is_owned": 0,
       "collected_at": "2026-08-17T00:13:11.647417+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "e146cb9272353495cf47794df8cb25254682dc62",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX3ByV0lMczVtZW1CTmUtSmR3UkVjZW9xNld1cnBNcUVTM3VsdnZsUzJOVjVJUHdubk5rTlZuVXRRZXdaNFpBd3lmLU5JeU5teDdDbmRWTVloUXpXaEFERkNsS01wTjBEME1hWEV0clMwbEZ1aW5OUmZMV2lwbGF3dU1yM3JLN3fSAYcBQVVfeXFMTV9wcldJTHM1bWVtQk5lLUpkd1JFY2VvcTZXdXJwTXFFUzN1bHZ2bFMyTlY1SVB3bm5Oa05WblV0UWV3WjRaQXd5Zi1OSXlObXg3Q25kVk1ZaFF6V2hBREZDbEtNcE4wRDBNYVhFdHJTMGxGdWluTlJmTFdpcGxhd3VNcjNySzd3?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNX3ByV0lMczVtZW1CTmUtSmR3UkVjZW9xNld1cnBNcUVTM3VsdnZsUzJOVjVJUHdubk5rTlZuVXRRZXdaNFpBd3lmLU5JeU5teDdDbmRWTVloUXpXaEFERkNsS01wTjBEME1hWEV0clMwbEZ1aW5OUmZMV2lwbGF3dU1yM3JLN3fSAYcBQVVfeXFMTV9wcldJTHM1bWVtQk5lLUpkd1JFY2VvcTZXdXJwTXFFUzN1bHZ2bFMyTlY1SVB3bm5Oa05WblV0UWV3WjRaQXd5Zi1OSXlObXg3Q25kVk1ZaFF6V2hBREZDbEtNcE4wRDBNYVhFdHJTMGxGdWluTlJmTFdpcGxhd3VNcjNySzd3?oc=5\" target=\"_blank\">GBOEX conquista Prêmio Top Consumidor | SEGS Portal Nacional de Seguros, Saúde, Info, Ti, Educação</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-08-12T07:00:00+00:00",
+      "sentiment": "positivo",
+      "sentiment_score": 0.8,
+      "is_owned": 0,
+      "collected_at": "2026-11-14T16:51:02.455251+00:00",
       "raw_id": ""
     },
     {
@@ -10109,40 +10143,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-10T14:40:41.731468+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "5492468ab7060c083038cbfbf862e6d3ff5905dd",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Por trás de cada ação da AFAS, existem pessoas que escolheram fazer parte dessa missão 💛\n\nOs nossos mantenedores são fundamentais para que projetos saiam do papel e o cuidado chegu…",
-      "url": "https://www.instagram.com/p/DYAnd6PGcD-/",
-      "text": "Por trás de cada ação da AFAS, existem pessoas que escolheram fazer parte dessa missão 💛\n\nOs nossos mantenedores são fundamentais para que projetos saiam do papel e o cuidado chegue até as famílias atendidas.\n\nÉ através desse apoio que seguimos firmes, fazendo a diferença todos os dias.\n\nNossa gratidão a cada mantenedor que acredita e caminha conosco.",
-      "author": "afas_mg",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-05-06T19:53:01+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T14:40:41.731535+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "14b23a22f8b07356daec3da36314969745bd6dbc",
-      "source": "gboex_site",
-      "channel": "canal_proprio",
-      "title": "GBOEX Qualifica: palestra aborda planejamento financeiro e sucessório",
-      "url": "https://www.gboex.com.br/gboex-qualifica-palestra-aborda-planejamento-financeiro-e-sucessorio/",
-      "text": "<p>No dia 6 de maio, a partir das 9h30min, o GBOEX promoverá palestra on-line para corretores de seguros parceiros da entidade e colaboradores de todo o Brasil. A iniciativa integra o programa GBOEX Qualifica, o qual oportuniza atualização de conhecimentos específicos na área de atuação dos profissionais, em diversas atividades realizadas durante o ano. O...  <a class=\"excerpt-read-more\" href=\"https://www.gboex.com.br/gboex-qualifica-palestra-aborda-planejamento-financeiro-e-sucessorio/\" title=\"Read GBOEX Qualifica: palestra aborda planejamento financeiro e sucessório\">Leia mais &#187;</a></p>\n<p>O post <a href=\"https://www.gboex.com.br/gboex-qualifica-palestra-aborda-planejamento-financeiro-e-sucessorio/\">GBOEX Qualifica: palestra aborda planejamento financeiro e sucessório</a> apareceu primeiro em <a href=\"https://www.gboex.com.br\">GBOEX - Previdência e Seguro de Pessoas </a>.</p>",
-      "author": "GBOEX (oficial)",
-      "domain": "gboex.com.br",
-      "language": "pt",
-      "published_at": "2026-05-04T17:00:00+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.5,
-      "is_owned": 1,
-      "collected_at": "2026-07-09T23:13:16.430506+00:00",
       "raw_id": ""
     }
   ],
