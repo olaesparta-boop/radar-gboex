@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-15T17:34:18.278320+00:00",
+  "generated_at": "2026-11-16T20:44:42.587462+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 471,
+    "total_mentions": 472,
     "positivo": 207,
-    "neutro": 144,
+    "neutro": 145,
     "negativo": 120,
-    "net_sentiment": 18.5,
+    "net_sentiment": 18.4,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 98,
+    "noticia": 99,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 144,
+    "neutro": 145,
     "positivo": 207,
     "negativo": 120
   },
@@ -29,9 +29,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 98,
+      "total": 99,
       "positivo": 26,
-      "neutro": 72,
+      "neutro": 73,
       "negativo": 0
     },
     "facebook": {
@@ -90,7 +90,7 @@
     ],
     [
       "JRS Portal",
-      3
+      4
     ],
     [
       "JRS.digital",
@@ -780,6 +780,13 @@
       "total": 1,
       "positivo": 1,
       "neutro": 0,
+      "negativo": 0
+    },
+    {
+      "date": "2025-12-18",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
       "negativo": 0
     },
     {
@@ -10148,7 +10155,7 @@
   ],
   "consumo": {
     "pct_usado": 0.0,
-    "ciclo_fim": "2026-11-15T23:59:59.999Z",
+    "ciclo_fim": "2026-12-15T23:59:59.999Z",
     "freado": false,
     "coletas_restantes": 2
   }
