@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-16T20:44:42.587462+00:00",
+  "generated_at": "2026-11-17T19:38:16.913024+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 472,
+    "total_mentions": 473,
     "positivo": 207,
-    "neutro": 145,
+    "neutro": 146,
     "negativo": 120,
     "net_sentiment": 18.4,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 99,
+    "noticia": 100,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 145,
+    "neutro": 146,
     "positivo": 207,
     "negativo": 120
   },
@@ -29,9 +29,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 99,
+      "total": 100,
       "positivo": 26,
-      "neutro": 73,
+      "neutro": 74,
       "negativo": 0
     },
     "facebook": {
@@ -66,7 +66,7 @@
     ],
     [
       "SEGS Portal Nacional",
-      43
+      44
     ],
     [
       "Revista Cobertura",
@@ -1649,6 +1649,13 @@
       "positivo": 0,
       "neutro": 2,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-13",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
@@ -1667,6 +1674,23 @@
       "sentiment_score": 0.6,
       "is_owned": 1,
       "collected_at": "2026-11-14T16:51:16.640161+00:00",
+      "raw_id": ""
+    },
+    {
+      "id": "4192fcb3081a93a5eb8727f242a8b8d49c9b7b08",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX lança podcast com foco no mercado de seguros | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,... - SEGS Portal Nacional",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObXZmYk11NmhtV1JkRlg0R2pVY2EybWtkNGE2WW5URHBadlpOZGw1THpjd0dOYnY2UDFHZVM1U3NXeUtMSWdIa0hQR3hJeHJla0N4WU50SjZ2RHdwRVVfS3pIUHZnWWxjUXg5aU5wb0x1YVBiOUpVS2huUkxQUHEyQ3E1LXRzWlc3VmZORFdEUjhnRDFvejZtcdIBmAFBVV95cUxObXZmYk11NmhtV1JkRlg0R2pVY2EybWtkNGE2WW5URHBadlpOZGw1THpjd0dOYnY2UDFHZVM1U3NXeUtMSWdIa0hQR3hJeHJla0N4WU50SjZ2RHdwRVVfS3pIUHZnWWxjUXg5aU5wb0x1YVBiOUpVS2huUkxQUHEyQ3E1LXRzWlc3VmZORFdEUjhnRDFvejZtcQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxObXZmYk11NmhtV1JkRlg0R2pVY2EybWtkNGE2WW5URHBadlpOZGw1THpjd0dOYnY2UDFHZVM1U3NXeUtMSWdIa0hQR3hJeHJla0N4WU50SjZ2RHdwRVVfS3pIUHZnWWxjUXg5aU5wb0x1YVBiOUpVS2huUkxQUHEyQ3E1LXRzWlc3VmZORFdEUjhnRDFvejZtcdIBmAFBVV95cUxObXZmYk11NmhtV1JkRlg0R2pVY2EybWtkNGE2WW5URHBadlpOZGw1THpjd0dOYnY2UDFHZVM1U3NXeUtMSWdIa0hQR3hJeHJla0N4WU50SjZ2RHdwRVVfS3pIUHZnWWxjUXg5aU5wb0x1YVBiOUpVS2huUkxQUHEyQ3E1LXRzWlc3VmZORFdEUjhnRDFvejZtcQ?oc=5\" target=\"_blank\">GBOEX lança podcast com foco no mercado de seguros | SEGS Portal Nacional de Seguros, Saúde, Info, Ti,...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SEGS Portal Nacional</font>",
+      "author": "SEGS Portal Nacional",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-13T17:38:14+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-17T19:37:57.959154+00:00",
       "raw_id": ""
     },
     {
@@ -10133,23 +10157,6 @@
       "sentiment_score": 0.7,
       "is_owned": 0,
       "collected_at": "2026-07-10T14:40:41.731265+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "8e75408939757f92c804234f2af7f4e52078c8e0",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Hoje o trabalho é aqui.\n\nA escrita e a comunicação profissional dizem muito antes mesmo de qualquer reunião acontecer.\n\nUm e-mail mal escrito, uma mensagem confusa ou uma resposta …",
-      "url": "https://www.instagram.com/p/DYPMDXjhoPY/",
-      "text": "Hoje o trabalho é aqui.\n\nA escrita e a comunicação profissional dizem muito antes mesmo de qualquer reunião acontecer.\n\nUm e-mail mal escrito, uma mensagem confusa ou uma resposta sem clareza podem transmitir desorganização, despreparo e até falta de interesse. Por outro lado, quando a comunicação é objetiva, respeitosa e bem construída, ela gera confiança, credibilidade e conexão com o cliente.\n\nO cliente não compra apenas um produto ou serviço. Ele compra segurança. Compra a sensação de estar lidando com alguém que sabe o que faz, que entende sua necessidade e que consegue se comunicar com profissionalismo.\n\nSaber escrever bem não significa usar palavras difíceis. Significa conseguir ser claro, humano e estratégico ao mesmo tempo. É entender o momento certo de falar, ouvir, explicar, negociar e até silenciar.\n\nUma boa comunicação evita conflitos, reduz ruídos, fortalece relacionamentos e aumenta as chances de fidelização. Muitas vezes, o diferencial entre fechar ou perder um negócio está justamente na forma como a mensagem foi passada.\n\nEmpresas e profissionais que dominam a comunicação conseguem criar experiências melhores, construir autoridade e se destacar em mercados cada vez mais competitivos.\n\nPorque no fim, pessoas lembram de como foram tratadas. E a comunicação é uma das maiores ferramentas para transformar atendimento em relacionamento.\n\n#ComunicaçãoProfissional #EscritaProfissional #RelacionamentoComCliente #AtendimentoAoCliente #PosicionamentoProfissional",
-      "author": "escolagiselekumpel",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-05-12T11:42:28+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T14:40:41.731468+00:00",
       "raw_id": ""
     }
   ],
