@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-19T19:21:46.276784+00:00",
+  "generated_at": "2026-11-20T18:58:23.460605+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 473,
+    "total_mentions": 474,
     "positivo": 207,
-    "neutro": 146,
+    "neutro": 147,
     "negativo": 120,
     "net_sentiment": 18.4,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 100,
+    "noticia": 101,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 146,
+    "neutro": 147,
     "positivo": 207,
     "negativo": 120
   },
@@ -29,9 +29,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 100,
+      "total": 101,
       "positivo": 26,
-      "neutro": 74,
+      "neutro": 75,
       "negativo": 0
     },
     "facebook": {
@@ -81,16 +81,16 @@
       8
     ],
     [
+      "JRS Portal",
+      5
+    ],
+    [
       "Revista Apólice",
       5
     ],
     [
       "Sonho Seguro",
       5
-    ],
-    [
-      "JRS Portal",
-      4
     ],
     [
       "JRS.digital",
@@ -1656,9 +1656,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-19",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "917c61c48cebfbf3bd29ea1d7688eabb7b4d8784",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "GBOEX e Interagir reforçam parceria e destacam papel dos corretores na expansão do mercado segurador - JRS Portal",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNGR5dHRiZHhMTF9rUlB6RTJPNE0wZDBCYy01RDQ1Vk9YSWpvMmlaT2gwY3o3OUpuSzQyMTdjRkVva1JpVHZHTlpjemVRMnRFOFFBTk1MaE5fM3RrZXFqLUJUN0VRTVMyTzNTR0xMV09GR1pwMFMtdXF0RnBma3hNRjQwczE5OGNJdHZFaE1faHZMUXRqaUU2blh2WE42UVM4RW5aTGxjLThFRmN1Q3FPaHJEYS1jVGR3elpKWlhocVhySUJrRkIxc2NyMGpiZHBQcGo4?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNGR5dHRiZHhMTF9rUlB6RTJPNE0wZDBCYy01RDQ1Vk9YSWpvMmlaT2gwY3o3OUpuSzQyMTdjRkVva1JpVHZHTlpjemVRMnRFOFFBTk1MaE5fM3RrZXFqLUJUN0VRTVMyTzNTR0xMV09GR1pwMFMtdXF0RnBma3hNRjQwczE5OGNJdHZFaE1faHZMUXRqaUU2blh2WE42UVM4RW5aTGxjLThFRmN1Q3FPaHJEYS1jVGR3elpKWlhocVhySUJrRkIxc2NyMGpiZHBQcGo4?oc=5\" target=\"_blank\">GBOEX e Interagir reforçam parceria e destacam papel dos corretores na expansão do mercado segurador</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">JRS Portal</font>",
+      "author": "JRS Portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-19T19:19:10+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-20T18:58:04.678047+00:00",
+      "raw_id": ""
+    },
     {
       "id": "d22993df513c6bbb8a44a7ead78efe58eeae5f87",
       "source": "gboex_site",
@@ -10140,23 +10164,6 @@
       "sentiment_score": 0.0,
       "is_owned": 0,
       "collected_at": "2026-07-10T14:40:41.731082+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "e1b117a774b039e9330d7ec8d2e70f2752946e54",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Quer treinar a sua equipe com uma Escrita Profissional para Atendimento?\n\nHoje, no segundo dia do treinamento aqui no @gboex_oficial , cada vez mais podemos perceber o quanto este …",
-      "url": "https://www.instagram.com/p/DYXYpc0ljJg/",
-      "text": "Quer treinar a sua equipe com uma Escrita Profissional para Atendimento?\n\nHoje, no segundo dia do treinamento aqui no @gboex_oficial , cada vez mais podemos perceber o quanto este assunto tem se tornado parte fundamental do dia a dia da equipe.\n\nChama a gente.\n\n#escolagiselekumpel #treinamento #comunicacaoprofissional #curso #gboex",
-      "author": "escolagiselekumpel",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-05-15T16:06:04+00:00",
-      "sentiment": "positivo",
-      "sentiment_score": 0.7,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T14:40:41.731265+00:00",
       "raw_id": ""
     }
   ],
