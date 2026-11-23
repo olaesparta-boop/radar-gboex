@@ -1,23 +1,23 @@
 {
   "brand": "GBOEX",
-  "generated_at": "2026-11-22T18:14:58.676432+00:00",
+  "generated_at": "2026-11-23T22:19:11.930147+00:00",
   "lookback_days": 30,
   "kpis": {
-    "total_mentions": 474,
+    "total_mentions": 475,
     "positivo": 207,
-    "neutro": 147,
+    "neutro": 148,
     "negativo": 120,
-    "net_sentiment": 18.4,
+    "net_sentiment": 18.3,
     "sources": 185,
     "ra_score": "Reputação no Reclame Aqui: 7.4/10 · Bom · 25 reclamações/30d"
   },
   "by_channel": {
-    "noticia": 101,
+    "noticia": 102,
     "social": 286,
     "reclamacao": 87
   },
   "by_sentiment": {
-    "neutro": 147,
+    "neutro": 148,
     "positivo": 207,
     "negativo": 120
   },
@@ -29,9 +29,9 @@
       "negativo": 0
     },
     "google_news": {
-      "total": 101,
+      "total": 102,
       "positivo": 26,
-      "neutro": 75,
+      "neutro": 76,
       "negativo": 0
     },
     "facebook": {
@@ -82,7 +82,7 @@
     ],
     [
       "JRS Portal",
-      5
+      6
     ],
     [
       "Revista Apólice",
@@ -1663,9 +1663,33 @@
       "positivo": 0,
       "neutro": 1,
       "negativo": 0
+    },
+    {
+      "date": "2026-11-23",
+      "total": 1,
+      "positivo": 0,
+      "neutro": 1,
+      "negativo": 0
     }
   ],
   "mentions": [
+    {
+      "id": "1ea5419fd7da8a9597d77a3e08d320e4458b0a64",
+      "source": "google_news",
+      "channel": "noticia",
+      "title": "Rede de Vantagens GBOEX tem descontos extras na Black Friday - JRS Portal",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUHZqc2NjMWVSWkh3Vm1sck85R2RQZERxSG5wMjNPOVdHVm1tSkpyNkl3QXV0dmxlYm5Zb1JqU1NxZncxUGZ0eUYyblZSLXg2cnRQQ3NiVmFRNjB6cXg5LTg2WjA3bUtIVXZLV2JnWmlSWTBwbEN5TGlRNnNmZDlTNVpTVEJtbG9fNm1vd25FSlZCQ3V2YS1saUF3Y2RGUQ?oc=5",
+      "text": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNUHZqc2NjMWVSWkh3Vm1sck85R2RQZERxSG5wMjNPOVdHVm1tSkpyNkl3QXV0dmxlYm5Zb1JqU1NxZncxUGZ0eUYyblZSLXg2cnRQQ3NiVmFRNjB6cXg5LTg2WjA3bUtIVXZLV2JnWmlSWTBwbEN5TGlRNnNmZDlTNVpTVEJtbG9fNm1vd25FSlZCQ3V2YS1saUF3Y2RGUQ?oc=5\" target=\"_blank\">Rede de Vantagens GBOEX tem descontos extras na Black Friday</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">JRS Portal</font>",
+      "author": "JRS Portal",
+      "domain": "news.google.com",
+      "language": "pt",
+      "published_at": "2026-11-23T18:24:00+00:00",
+      "sentiment": "neutro",
+      "sentiment_score": 0.0,
+      "is_owned": 0,
+      "collected_at": "2026-11-23T22:18:42.302857+00:00",
+      "raw_id": ""
+    },
     {
       "id": "917c61c48cebfbf3bd29ea1d7688eabb7b4d8784",
       "source": "google_news",
@@ -10147,23 +10171,6 @@
       "sentiment_score": 0.8,
       "is_owned": 1,
       "collected_at": "2026-07-09T23:51:01.882877+00:00",
-      "raw_id": ""
-    },
-    {
-      "id": "febeab1ffb12fced0d585e95c7f2b653d67a450f",
-      "source": "instagram",
-      "channel": "social",
-      "title": "Trabalho floral lindo para @serataeventosoficial \nDestaques 2025 desafio GBOEX \n\n#designfloral #evento #artefloral",
-      "url": "https://www.instagram.com/p/DYdaykYjtuX/",
-      "text": "Trabalho floral lindo para @serataeventosoficial \nDestaques 2025 desafio GBOEX \n\n#designfloral #evento #artefloral",
-      "author": "rosifloresoficial",
-      "domain": "instagram.com",
-      "language": "pt",
-      "published_at": "2026-05-18T00:20:13+00:00",
-      "sentiment": "neutro",
-      "sentiment_score": 0.0,
-      "is_owned": 0,
-      "collected_at": "2026-07-10T14:40:41.731082+00:00",
       "raw_id": ""
     }
   ],
